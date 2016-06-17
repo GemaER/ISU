@@ -82,12 +82,6 @@
     <Compile Include="..\..\..\isu.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Consult.Designer.vb">
-      <DependentUpon>Consult.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Consult.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Consultar.Designer.vb">
       <DependentUpon>Consultar.vb</DependentUpon>
     </Compile>
@@ -112,22 +106,10 @@
     <Compile Include="Ingresar.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Insert.Designer.vb">
-      <DependentUpon>Insert.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Insert.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Modificar.Designer.vb">
       <DependentUpon>Modificar.vb</DependentUpon>
     </Compile>
     <Compile Include="Modificar.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Modify.Designer.vb">
-      <DependentUpon>Modify.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Modify.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -145,25 +127,16 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Remove.Designer.vb">
-      <DependentUpon>Remove.vb</DependentUpon>
+    <Compile Include="Tambo.Designer.vb">
+      <DependentUpon>Tambo.vb</DependentUpon>
     </Compile>
-    <Compile Include="Remove.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Show.Designer.vb">
-      <DependentUpon>Show.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Show.vb">
+    <Compile Include="Tambo.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="..\..\..\isu.resx">
       <DependentUpon>isu.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Consult.resx">
-      <DependentUpon>Consult.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Consultar.resx">
       <DependentUpon>Consultar.vb</DependentUpon>
@@ -177,14 +150,8 @@
     <EmbeddedResource Include="Ingresar.resx">
       <DependentUpon>Ingresar.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Insert.resx">
-      <DependentUpon>Insert.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Modificar.resx">
       <DependentUpon>Modificar.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Modify.resx">
-      <DependentUpon>Modify.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -192,11 +159,8 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Remove.resx">
-      <DependentUpon>Remove.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Show.resx">
-      <DependentUpon>Show.vb</DependentUpon>
+    <EmbeddedResource Include="Tambo.resx">
+      <DependentUpon>Tambo.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

@@ -20,3 +20,18 @@ C:\Users\Usuario\Desktop\isu\Isu\Isu\obj\x86\Debug\WindowsApplication1.frmShow.r
 C:\Users\Usuario\Desktop\Gema\Proyecto\isu\Isu\Isu\obj\x86\Debug\Isu.exe
 C:\Users\Usuario\Desktop\Gema\Proyecto\isu\Isu\Isu\obj\x86\Debug\Isu.xml
 C:\Users\Usuario\Desktop\Gema\Proyecto\isu\Isu\Isu\obj\x86\Debug\Isu.pdb
+F:\ISU\ISU PROG\isu\Isu\Isu\obj\x86\Debug\Isu.exe
+F:\ISU\ISU PROG\isu\Isu\Isu\obj\x86\Debug\Isu.xml
+F:\ISU\ISU PROG\isu\Isu\Isu\obj\x86\Debug\Isu.pdb
+F:\ISU\ISU PROG\isu\Isu\Isu\bin\Debug\Isu.exe
+F:\ISU\ISU PROG\isu\Isu\Isu\bin\Debug\Isu.pdb
+F:\ISU\ISU PROG\isu\Isu\Isu\bin\Debug\Isu.xml
+F:\ISU\ISU PROG\isu\Isu\Isu\obj\x86\Debug\WindowsApplication1.frmISU.resources
+F:\ISU\ISU PROG\isu\Isu\Isu\obj\x86\Debug\WindowsApplication1.frmConsultar.resources
+F:\ISU\ISU PROG\isu\Isu\Isu\obj\x86\Debug\WindowsApplication1.frmEliminar.resources
+F:\ISU\ISU PROG\isu\Isu\Isu\obj\x86\Debug\WindowsApplication1.frmEnlistar.resources
+F:\ISU\ISU PROG\isu\Isu\Isu\obj\x86\Debug\WindowsApplication1.frmIngresar.resources
+F:\ISU\ISU PROG\isu\Isu\Isu\obj\x86\Debug\WindowsApplication1.frmModificar.resources
+F:\ISU\ISU PROG\isu\Isu\Isu\obj\x86\Debug\WindowsApplication1.Resources.resources
+F:\ISU\ISU PROG\isu\Isu\Isu\obj\x86\Debug\Isu.vbproj.GenerateResource.Cache
+F:\ISU\ISU PROG\isu\Isu\Isu\obj\x86\Debug\WindowsApplication1.frmTambo.resources

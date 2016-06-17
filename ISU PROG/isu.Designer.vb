@@ -30,14 +30,8 @@ Partial Class frmISU
         Me.PbxISU = New System.Windows.Forms.PictureBox()
         Me.lblUser = New System.Windows.Forms.Label()
         Me.cbxIdioma = New System.Windows.Forms.ComboBox()
-        Me.mspIngles = New System.Windows.Forms.MenuStrip()
-        Me.tsInsert = New System.Windows.Forms.ToolStripMenuItem()
-        Me.tsRemove = New System.Windows.Forms.ToolStripMenuItem()
-        Me.tsConsult = New System.Windows.Forms.ToolStripMenuItem()
-        Me.tsShow = New System.Windows.Forms.ToolStripMenuItem()
-        Me.tsModify = New System.Windows.Forms.ToolStripMenuItem()
-        Me.tsExit = New System.Windows.Forms.ToolStripMenuItem()
         Me.mspEspanol = New System.Windows.Forms.MenuStrip()
+        Me.tsTambo = New System.Windows.Forms.ToolStripMenuItem()
         Me.tsIngresar = New System.Windows.Forms.ToolStripMenuItem()
         Me.tsEliminar = New System.Windows.Forms.ToolStripMenuItem()
         Me.tsConsultar = New System.Windows.Forms.ToolStripMenuItem()
@@ -45,8 +39,8 @@ Partial Class frmISU
         Me.tsModificar = New System.Windows.Forms.ToolStripMenuItem()
         Me.tsSalir = New System.Windows.Forms.ToolStripMenuItem()
         Me.pnlInicio = New System.Windows.Forms.Panel()
+        Me.pnlBlue = New System.Windows.Forms.Panel()
         CType(Me.PbxISU, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.mspIngles.SuspendLayout()
         Me.mspEspanol.SuspendLayout()
         Me.pnlInicio.SuspendLayout()
         Me.SuspendLayout()
@@ -54,7 +48,7 @@ Partial Class frmISU
         'btnInicio
         '
         Me.btnInicio.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnInicio.Location = New System.Drawing.Point(982, 490)
+        Me.btnInicio.Location = New System.Drawing.Point(638, 462)
         Me.btnInicio.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnInicio.Name = "btnInicio"
         Me.btnInicio.Size = New System.Drawing.Size(112, 46)
@@ -64,7 +58,7 @@ Partial Class frmISU
         'tbxPass
         '
         Me.tbxPass.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbxPass.Location = New System.Drawing.Point(755, 535)
+        Me.tbxPass.Location = New System.Drawing.Point(449, 497)
         Me.tbxPass.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.tbxPass.Name = "tbxPass"
         Me.tbxPass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
@@ -74,7 +68,7 @@ Partial Class frmISU
         'tbxUser
         '
         Me.tbxUser.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbxUser.Location = New System.Drawing.Point(755, 462)
+        Me.tbxUser.Location = New System.Drawing.Point(449, 443)
         Me.tbxUser.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.tbxUser.Name = "tbxUser"
         Me.tbxUser.Size = New System.Drawing.Size(155, 32)
@@ -84,7 +78,7 @@ Partial Class frmISU
         '
         Me.Lblpass.AutoSize = True
         Me.Lblpass.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Lblpass.Location = New System.Drawing.Point(607, 535)
+        Me.Lblpass.Location = New System.Drawing.Point(282, 500)
         Me.Lblpass.Name = "Lblpass"
         Me.Lblpass.Size = New System.Drawing.Size(16, 24)
         Me.Lblpass.TabIndex = 3
@@ -93,7 +87,7 @@ Partial Class frmISU
         'PbxISU
         '
         Me.PbxISU.Image = CType(resources.GetObject("PbxISU.Image"), System.Drawing.Image)
-        Me.PbxISU.Location = New System.Drawing.Point(220, 4)
+        Me.PbxISU.Location = New System.Drawing.Point(28, 4)
         Me.PbxISU.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.PbxISU.Name = "PbxISU"
         Me.PbxISU.Size = New System.Drawing.Size(753, 423)
@@ -104,7 +98,7 @@ Partial Class frmISU
         '
         Me.lblUser.AutoSize = True
         Me.lblUser.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblUser.Location = New System.Drawing.Point(607, 454)
+        Me.lblUser.Location = New System.Drawing.Point(282, 446)
         Me.lblUser.Name = "lblUser"
         Me.lblUser.Size = New System.Drawing.Size(16, 24)
         Me.lblUser.TabIndex = 2
@@ -112,74 +106,33 @@ Partial Class frmISU
         '
         'cbxIdioma
         '
-        Me.cbxIdioma.AutoCompleteCustomSource.AddRange(New String() {"English"})
+        Me.cbxIdioma.AutoCompleteCustomSource.AddRange(New String() {"English", "Português"})
         Me.cbxIdioma.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbxIdioma.FormattingEnabled = True
-        Me.cbxIdioma.Items.AddRange(New Object() {"Español", "English"})
-        Me.cbxIdioma.Location = New System.Drawing.Point(170, 490)
+        Me.cbxIdioma.Items.AddRange(New Object() {"Español", "English", "Português"})
+        Me.cbxIdioma.Location = New System.Drawing.Point(28, 462)
         Me.cbxIdioma.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.cbxIdioma.Name = "cbxIdioma"
         Me.cbxIdioma.Size = New System.Drawing.Size(189, 32)
         Me.cbxIdioma.TabIndex = 0
         Me.cbxIdioma.Text = "Español"
         '
-        'mspIngles
-        '
-        Me.mspIngles.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.mspIngles.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsInsert, Me.tsRemove, Me.tsConsult, Me.tsShow, Me.tsModify, Me.tsExit})
-        Me.mspIngles.Location = New System.Drawing.Point(0, 25)
-        Me.mspIngles.Name = "mspIngles"
-        Me.mspIngles.Padding = New System.Windows.Forms.Padding(6, 3, 0, 3)
-        Me.mspIngles.Size = New System.Drawing.Size(1212, 25)
-        Me.mspIngles.TabIndex = 2
-        Me.mspIngles.Text = "MenuStrip1"
-        '
-        'tsInsert
-        '
-        Me.tsInsert.Name = "tsInsert"
-        Me.tsInsert.Size = New System.Drawing.Size(48, 19)
-        Me.tsInsert.Text = "Insert"
-        '
-        'tsRemove
-        '
-        Me.tsRemove.Name = "tsRemove"
-        Me.tsRemove.Size = New System.Drawing.Size(62, 19)
-        Me.tsRemove.Text = "Remove"
-        '
-        'tsConsult
-        '
-        Me.tsConsult.Name = "tsConsult"
-        Me.tsConsult.Size = New System.Drawing.Size(60, 19)
-        Me.tsConsult.Text = "Consult"
-        '
-        'tsShow
-        '
-        Me.tsShow.Name = "tsShow"
-        Me.tsShow.Size = New System.Drawing.Size(48, 19)
-        Me.tsShow.Text = "Show"
-        '
-        'tsModify
-        '
-        Me.tsModify.Name = "tsModify"
-        Me.tsModify.Size = New System.Drawing.Size(57, 19)
-        Me.tsModify.Text = "Modify"
-        '
-        'tsExit
-        '
-        Me.tsExit.Name = "tsExit"
-        Me.tsExit.Size = New System.Drawing.Size(37, 19)
-        Me.tsExit.Text = "Exit"
-        '
         'mspEspanol
         '
         Me.mspEspanol.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.mspEspanol.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsIngresar, Me.tsEliminar, Me.tsConsultar, Me.tsEnlistar, Me.tsModificar, Me.tsSalir})
+        Me.mspEspanol.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsTambo, Me.tsIngresar, Me.tsEliminar, Me.tsConsultar, Me.tsEnlistar, Me.tsModificar, Me.tsSalir})
         Me.mspEspanol.Location = New System.Drawing.Point(0, 0)
         Me.mspEspanol.Name = "mspEspanol"
         Me.mspEspanol.Padding = New System.Windows.Forms.Padding(6, 3, 0, 3)
-        Me.mspEspanol.Size = New System.Drawing.Size(1212, 25)
+        Me.mspEspanol.Size = New System.Drawing.Size(832, 25)
         Me.mspEspanol.TabIndex = 3
         Me.mspEspanol.Text = "MenuStrip2"
+        '
+        'tsTambo
+        '
+        Me.tsTambo.Name = "tsTambo"
+        Me.tsTambo.Size = New System.Drawing.Size(57, 19)
+        Me.tsTambo.Text = "Tambo"
         '
         'tsIngresar
         '
@@ -226,30 +179,36 @@ Partial Class frmISU
         Me.pnlInicio.Controls.Add(Me.cbxIdioma)
         Me.pnlInicio.Controls.Add(Me.Lblpass)
         Me.pnlInicio.Controls.Add(Me.lblUser)
-        Me.pnlInicio.Location = New System.Drawing.Point(0, 54)
+        Me.pnlInicio.Location = New System.Drawing.Point(0, 29)
         Me.pnlInicio.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.pnlInicio.Name = "pnlInicio"
-        Me.pnlInicio.Size = New System.Drawing.Size(1209, 609)
+        Me.pnlInicio.Size = New System.Drawing.Size(797, 542)
         Me.pnlInicio.TabIndex = 5
+        '
+        'pnlBlue
+        '
+        Me.pnlBlue.BackColor = System.Drawing.SystemColors.HotTrack
+        Me.pnlBlue.Location = New System.Drawing.Point(803, 0)
+        Me.pnlBlue.Name = "pnlBlue"
+        Me.pnlBlue.Size = New System.Drawing.Size(24, 750)
+        Me.pnlBlue.TabIndex = 48
+        Me.pnlBlue.Visible = False
         '
         'frmISU
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 14.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.ClientSize = New System.Drawing.Size(1212, 646)
+        Me.ClientSize = New System.Drawing.Size(832, 574)
+        Me.Controls.Add(Me.pnlBlue)
         Me.Controls.Add(Me.pnlInicio)
-        Me.Controls.Add(Me.mspIngles)
         Me.Controls.Add(Me.mspEspanol)
         Me.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.MainMenuStrip = Me.mspIngles
         Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Name = "frmISU"
         Me.Text = "ISU"
         CType(Me.PbxISU, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.mspIngles.ResumeLayout(False)
-        Me.mspIngles.PerformLayout()
         Me.mspEspanol.ResumeLayout(False)
         Me.mspEspanol.PerformLayout()
         Me.pnlInicio.ResumeLayout(False)
@@ -264,21 +223,16 @@ Partial Class frmISU
     Friend WithEvents tbxPass As System.Windows.Forms.TextBox
     Friend WithEvents tbxUser As System.Windows.Forms.TextBox
     Friend WithEvents btnInicio As System.Windows.Forms.Button
-    Friend WithEvents mspIngles As System.Windows.Forms.MenuStrip
     Friend WithEvents mspEspanol As System.Windows.Forms.MenuStrip
     Friend WithEvents PbxISU As System.Windows.Forms.PictureBox
     Friend WithEvents tsIngresar As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents tsInsert As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents tsEliminar As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents tsConsultar As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents tsEnlistar As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents tsModificar As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents tsSalir As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents tsRemove As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents tsConsult As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents tsShow As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents tsModify As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents tsExit As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents pnlInicio As System.Windows.Forms.Panel
+    Friend WithEvents tsTambo As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents pnlBlue As System.Windows.Forms.Panel
 
 End Class
