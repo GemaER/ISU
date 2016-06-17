@@ -46,8 +46,8 @@ Partial Class frmModificar
         Me.lblRaza = New System.Windows.Forms.Label()
         Me.lblEtapa = New System.Windows.Forms.Label()
         Me.lblLugar = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.lblAnestro = New System.Windows.Forms.Label()
+        Me.lblEdad = New System.Windows.Forms.Label()
+        Me.lblDivision = New System.Windows.Forms.Label()
         Me.gbxPrenada = New System.Windows.Forms.GroupBox()
         Me.rbnSip = New System.Windows.Forms.RadioButton()
         Me.rbnNop = New System.Windows.Forms.RadioButton()
@@ -55,13 +55,13 @@ Partial Class frmModificar
         Me.rbnSia = New System.Windows.Forms.RadioButton()
         Me.rbnNoa = New System.Windows.Forms.RadioButton()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.cbxAnestroh = New System.Windows.Forms.ComboBox()
+        Me.cbxDivisionh = New System.Windows.Forms.ComboBox()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.cbxEtapa = New System.Windows.Forms.ComboBox()
         Me.cbxTipo = New System.Windows.Forms.ComboBox()
         Me.tbxLugar = New System.Windows.Forms.TextBox()
         Me.tbxEdad = New System.Windows.Forms.TextBox()
-        Me.cbmAnestrom = New System.Windows.Forms.ComboBox()
+        Me.cbmDivisionm = New System.Windows.Forms.ComboBox()
         Me.btnModificar = New System.Windows.Forms.Button()
         Me.gbxLeche.SuspendLayout()
         Me.gbxPrenada.SuspendLayout()
@@ -317,27 +317,27 @@ Partial Class frmModificar
         Me.lblLugar.Text = "Lugar actual"
         Me.lblLugar.Visible = False
         '
-        'Label4
+        'lblEdad
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(12, 158)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(58, 24)
-        Me.Label4.TabIndex = 76
-        Me.Label4.Text = "Edad"
-        Me.Label4.Visible = False
+        Me.lblEdad.AutoSize = True
+        Me.lblEdad.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblEdad.Location = New System.Drawing.Point(12, 158)
+        Me.lblEdad.Name = "lblEdad"
+        Me.lblEdad.Size = New System.Drawing.Size(58, 24)
+        Me.lblEdad.TabIndex = 76
+        Me.lblEdad.Text = "Edad"
+        Me.lblEdad.Visible = False
         '
-        'lblAnestro
+        'lblDivision
         '
-        Me.lblAnestro.AutoSize = True
-        Me.lblAnestro.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblAnestro.Location = New System.Drawing.Point(12, 387)
-        Me.lblAnestro.Name = "lblAnestro"
-        Me.lblAnestro.Size = New System.Drawing.Size(82, 24)
-        Me.lblAnestro.TabIndex = 75
-        Me.lblAnestro.Text = "Anestro"
-        Me.lblAnestro.Visible = False
+        Me.lblDivision.AutoSize = True
+        Me.lblDivision.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDivision.Location = New System.Drawing.Point(12, 387)
+        Me.lblDivision.Name = "lblDivision"
+        Me.lblDivision.Size = New System.Drawing.Size(85, 24)
+        Me.lblDivision.TabIndex = 75
+        Me.lblDivision.Text = "Division"
+        Me.lblDivision.Visible = False
         '
         'gbxPrenada
         '
@@ -423,16 +423,16 @@ Partial Class frmModificar
         Me.TextBox1.TabIndex = 92
         Me.TextBox1.Visible = False
         '
-        'cbxAnestroh
+        'cbxDivisionh
         '
-        Me.cbxAnestroh.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cbxAnestroh.FormattingEnabled = True
-        Me.cbxAnestroh.Items.AddRange(New Object() {"Vaca", "Vaquillona"})
-        Me.cbxAnestroh.Location = New System.Drawing.Point(226, 384)
-        Me.cbxAnestroh.Name = "cbxAnestroh"
-        Me.cbxAnestroh.Size = New System.Drawing.Size(153, 32)
-        Me.cbxAnestroh.TabIndex = 91
-        Me.cbxAnestroh.Visible = False
+        Me.cbxDivisionh.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbxDivisionh.FormattingEnabled = True
+        Me.cbxDivisionh.Items.AddRange(New Object() {"Vaca", "Vaquillona"})
+        Me.cbxDivisionh.Location = New System.Drawing.Point(226, 384)
+        Me.cbxDivisionh.Name = "cbxDivisionh"
+        Me.cbxDivisionh.Size = New System.Drawing.Size(153, 32)
+        Me.cbxDivisionh.TabIndex = 91
+        Me.cbxDivisionh.Visible = False
         '
         'ComboBox1
         '
@@ -487,16 +487,16 @@ Partial Class frmModificar
         Me.tbxEdad.TabIndex = 86
         Me.tbxEdad.Visible = False
         '
-        'cbmAnestrom
+        'cbmDivisionm
         '
-        Me.cbmAnestrom.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cbmAnestrom.FormattingEnabled = True
-        Me.cbmAnestrom.Items.AddRange(New Object() {"Novillo", "Toro"})
-        Me.cbmAnestrom.Location = New System.Drawing.Point(258, 384)
-        Me.cbmAnestrom.Name = "cbmAnestrom"
-        Me.cbmAnestrom.Size = New System.Drawing.Size(121, 32)
-        Me.cbmAnestrom.TabIndex = 85
-        Me.cbmAnestrom.Visible = False
+        Me.cbmDivisionm.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbmDivisionm.FormattingEnabled = True
+        Me.cbmDivisionm.Items.AddRange(New Object() {"Novillo", "Toro"})
+        Me.cbmDivisionm.Location = New System.Drawing.Point(226, 384)
+        Me.cbmDivisionm.Name = "cbmDivisionm"
+        Me.cbmDivisionm.Size = New System.Drawing.Size(153, 32)
+        Me.cbmDivisionm.TabIndex = 85
+        Me.cbmDivisionm.Visible = False
         '
         'btnModificar
         '
@@ -518,13 +518,13 @@ Partial Class frmModificar
         Me.Controls.Add(Me.gbxPrenada)
         Me.Controls.Add(Me.gbxAntibiotico)
         Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.cbxAnestroh)
+        Me.Controls.Add(Me.cbxDivisionh)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.cbxEtapa)
         Me.Controls.Add(Me.cbxTipo)
         Me.Controls.Add(Me.tbxLugar)
         Me.Controls.Add(Me.tbxEdad)
-        Me.Controls.Add(Me.cbmAnestrom)
+        Me.Controls.Add(Me.cbmDivisionm)
         Me.Controls.Add(Me.gbxLeche)
         Me.Controls.Add(Me.lblPorcentajep)
         Me.Controls.Add(Me.lblAntibiotico)
@@ -533,8 +533,8 @@ Partial Class frmModificar
         Me.Controls.Add(Me.lblRaza)
         Me.Controls.Add(Me.lblEtapa)
         Me.Controls.Add(Me.lblLugar)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.lblAnestro)
+        Me.Controls.Add(Me.lblEdad)
+        Me.Controls.Add(Me.lblDivision)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.btnBuscar)
         Me.Controls.Add(Me.tbxNum)
@@ -575,8 +575,8 @@ Partial Class frmModificar
     Friend WithEvents lblRaza As System.Windows.Forms.Label
     Friend WithEvents lblEtapa As System.Windows.Forms.Label
     Friend WithEvents lblLugar As System.Windows.Forms.Label
-    Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents lblAnestro As System.Windows.Forms.Label
+    Friend WithEvents lblEdad As System.Windows.Forms.Label
+    Friend WithEvents lblDivision As System.Windows.Forms.Label
     Friend WithEvents gbxPrenada As System.Windows.Forms.GroupBox
     Friend WithEvents rbnSip As System.Windows.Forms.RadioButton
     Friend WithEvents rbnNop As System.Windows.Forms.RadioButton
@@ -584,12 +584,12 @@ Partial Class frmModificar
     Friend WithEvents rbnSia As System.Windows.Forms.RadioButton
     Friend WithEvents rbnNoa As System.Windows.Forms.RadioButton
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents cbxAnestroh As System.Windows.Forms.ComboBox
+    Friend WithEvents cbxDivisionh As System.Windows.Forms.ComboBox
     Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
     Friend WithEvents cbxEtapa As System.Windows.Forms.ComboBox
     Friend WithEvents cbxTipo As System.Windows.Forms.ComboBox
     Friend WithEvents tbxLugar As System.Windows.Forms.TextBox
     Friend WithEvents tbxEdad As System.Windows.Forms.TextBox
-    Friend WithEvents cbmAnestrom As System.Windows.Forms.ComboBox
+    Friend WithEvents cbmDivisionm As System.Windows.Forms.ComboBox
     Friend WithEvents btnModificar As System.Windows.Forms.Button
 End Class

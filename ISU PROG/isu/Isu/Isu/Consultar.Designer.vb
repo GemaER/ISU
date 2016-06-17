@@ -34,7 +34,7 @@ Partial Class frmConsultar
         Me.lblEtapar = New System.Windows.Forms.Label()
         Me.lblLugarr = New System.Windows.Forms.Label()
         Me.lblEdadr = New System.Windows.Forms.Label()
-        Me.lblAnestror = New System.Windows.Forms.Label()
+        Me.lblDivisionr = New System.Windows.Forms.Label()
         Me.gbxLeche = New System.Windows.Forms.GroupBox()
         Me.tbxGrasa = New System.Windows.Forms.TextBox()
         Me.lblGrasa = New System.Windows.Forms.Label()
@@ -55,8 +55,8 @@ Partial Class frmConsultar
         Me.lblRaza = New System.Windows.Forms.Label()
         Me.lblEtapa = New System.Windows.Forms.Label()
         Me.lblLugar = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.lblAnestro = New System.Windows.Forms.Label()
+        Me.lblEdad = New System.Windows.Forms.Label()
+        Me.lblDivision = New System.Windows.Forms.Label()
         Me.gbxLeche.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -185,16 +185,16 @@ Partial Class frmConsultar
         Me.lblEdadr.Text = " "
         Me.lblEdadr.Visible = False
         '
-        'lblAnestror
+        'lblDivisionr
         '
-        Me.lblAnestror.AutoSize = True
-        Me.lblAnestror.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblAnestror.Location = New System.Drawing.Point(226, 390)
-        Me.lblAnestror.Name = "lblAnestror"
-        Me.lblAnestror.Size = New System.Drawing.Size(16, 24)
-        Me.lblAnestror.TabIndex = 96
-        Me.lblAnestror.Text = " "
-        Me.lblAnestror.Visible = False
+        Me.lblDivisionr.AutoSize = True
+        Me.lblDivisionr.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDivisionr.Location = New System.Drawing.Point(226, 390)
+        Me.lblDivisionr.Name = "lblDivisionr"
+        Me.lblDivisionr.Size = New System.Drawing.Size(16, 24)
+        Me.lblDivisionr.TabIndex = 96
+        Me.lblDivisionr.Text = " "
+        Me.lblDivisionr.Visible = False
         '
         'gbxLeche
         '
@@ -408,27 +408,27 @@ Partial Class frmConsultar
         Me.lblLugar.Text = "Lugar actual"
         Me.lblLugar.Visible = False
         '
-        'Label4
+        'lblEdad
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(12, 161)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(58, 24)
-        Me.Label4.TabIndex = 87
-        Me.Label4.Text = "Edad"
-        Me.Label4.Visible = False
+        Me.lblEdad.AutoSize = True
+        Me.lblEdad.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblEdad.Location = New System.Drawing.Point(12, 161)
+        Me.lblEdad.Name = "lblEdad"
+        Me.lblEdad.Size = New System.Drawing.Size(58, 24)
+        Me.lblEdad.TabIndex = 87
+        Me.lblEdad.Text = "Edad"
+        Me.lblEdad.Visible = False
         '
-        'lblAnestro
+        'lblDivision
         '
-        Me.lblAnestro.AutoSize = True
-        Me.lblAnestro.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblAnestro.Location = New System.Drawing.Point(12, 390)
-        Me.lblAnestro.Name = "lblAnestro"
-        Me.lblAnestro.Size = New System.Drawing.Size(82, 24)
-        Me.lblAnestro.TabIndex = 86
-        Me.lblAnestro.Text = "Anestro"
-        Me.lblAnestro.Visible = False
+        Me.lblDivision.AutoSize = True
+        Me.lblDivision.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDivision.Location = New System.Drawing.Point(12, 390)
+        Me.lblDivision.Name = "lblDivision"
+        Me.lblDivision.Size = New System.Drawing.Size(85, 24)
+        Me.lblDivision.TabIndex = 86
+        Me.lblDivision.Text = "Division"
+        Me.lblDivision.Visible = False
         '
         'frmConsultar
         '
@@ -445,7 +445,7 @@ Partial Class frmConsultar
         Me.Controls.Add(Me.lblEtapar)
         Me.Controls.Add(Me.lblLugarr)
         Me.Controls.Add(Me.lblEdadr)
-        Me.Controls.Add(Me.lblAnestror)
+        Me.Controls.Add(Me.lblDivisionr)
         Me.Controls.Add(Me.gbxLeche)
         Me.Controls.Add(Me.lblPorcentajep)
         Me.Controls.Add(Me.lblAntibiotico)
@@ -454,8 +454,8 @@ Partial Class frmConsultar
         Me.Controls.Add(Me.lblRaza)
         Me.Controls.Add(Me.lblEtapa)
         Me.Controls.Add(Me.lblLugar)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.lblAnestro)
+        Me.Controls.Add(Me.lblEdad)
+        Me.Controls.Add(Me.lblDivision)
         Me.Controls.Add(Me.btnConsultar)
         Me.Controls.Add(Me.tbxNum)
         Me.Controls.Add(Me.lblNumero)
@@ -479,7 +479,7 @@ Partial Class frmConsultar
     Friend WithEvents lblEtapar As System.Windows.Forms.Label
     Friend WithEvents lblLugarr As System.Windows.Forms.Label
     Friend WithEvents lblEdadr As System.Windows.Forms.Label
-    Friend WithEvents lblAnestror As System.Windows.Forms.Label
+    Friend WithEvents lblDivisionr As System.Windows.Forms.Label
     Friend WithEvents gbxLeche As System.Windows.Forms.GroupBox
     Friend WithEvents tbxGrasa As System.Windows.Forms.TextBox
     Friend WithEvents lblGrasa As System.Windows.Forms.Label
@@ -500,6 +500,6 @@ Partial Class frmConsultar
     Friend WithEvents lblRaza As System.Windows.Forms.Label
     Friend WithEvents lblEtapa As System.Windows.Forms.Label
     Friend WithEvents lblLugar As System.Windows.Forms.Label
-    Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents lblAnestro As System.Windows.Forms.Label
+    Friend WithEvents lblEdad As System.Windows.Forms.Label
+    Friend WithEvents lblDivision As System.Windows.Forms.Label
 End Class

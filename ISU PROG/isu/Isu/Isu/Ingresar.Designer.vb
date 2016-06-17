@@ -22,9 +22,9 @@ Partial Class frmIngresar
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.cbxAnestrom = New System.Windows.Forms.ComboBox()
+        Me.cbxDivisionm = New System.Windows.Forms.ComboBox()
         Me.lblNumero = New System.Windows.Forms.Label()
-        Me.lblAnestro = New System.Windows.Forms.Label()
+        Me.lblDivision = New System.Windows.Forms.Label()
         Me.lblEdad = New System.Windows.Forms.Label()
         Me.lblLugar = New System.Windows.Forms.Label()
         Me.lblEtapa = New System.Windows.Forms.Label()
@@ -37,11 +37,11 @@ Partial Class frmIngresar
         Me.cbxEtapa = New System.Windows.Forms.ComboBox()
         Me.lblSexo = New System.Windows.Forms.Label()
         Me.cbxSexo = New System.Windows.Forms.ComboBox()
-        Me.cbxAnestroh = New System.Windows.Forms.ComboBox()
+        Me.cbxDivisionh = New System.Windows.Forms.ComboBox()
         Me.rbnNoa = New System.Windows.Forms.RadioButton()
         Me.rbnSia = New System.Windows.Forms.RadioButton()
         Me.lblAntibiotico = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.tbxPorcentajep = New System.Windows.Forms.TextBox()
         Me.lblPorcentajep = New System.Windows.Forms.Label()
         Me.gbxAntibiotico = New System.Windows.Forms.GroupBox()
         Me.gbxPrenada = New System.Windows.Forms.GroupBox()
@@ -69,15 +69,15 @@ Partial Class frmIngresar
         Me.gbxHembra.SuspendLayout()
         Me.SuspendLayout()
         '
-        'cbxAnestrom
+        'cbxDivisionm
         '
-        Me.cbxAnestrom.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cbxAnestrom.FormattingEnabled = True
-        Me.cbxAnestrom.Items.AddRange(New Object() {"Novillo", "Toro"})
-        Me.cbxAnestrom.Location = New System.Drawing.Point(229, 267)
-        Me.cbxAnestrom.Name = "cbxAnestrom"
-        Me.cbxAnestrom.Size = New System.Drawing.Size(145, 32)
-        Me.cbxAnestrom.TabIndex = 0
+        Me.cbxDivisionm.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbxDivisionm.FormattingEnabled = True
+        Me.cbxDivisionm.Items.AddRange(New Object() {"Novillo", "Toro", "Anestro"})
+        Me.cbxDivisionm.Location = New System.Drawing.Point(229, 267)
+        Me.cbxDivisionm.Name = "cbxDivisionm"
+        Me.cbxDivisionm.Size = New System.Drawing.Size(145, 32)
+        Me.cbxDivisionm.TabIndex = 0
         '
         'lblNumero
         '
@@ -89,15 +89,15 @@ Partial Class frmIngresar
         Me.lblNumero.TabIndex = 1
         Me.lblNumero.Text = "Numero"
         '
-        'lblAnestro
+        'lblDivision
         '
-        Me.lblAnestro.AutoSize = True
-        Me.lblAnestro.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblAnestro.Location = New System.Drawing.Point(22, 267)
-        Me.lblAnestro.Name = "lblAnestro"
-        Me.lblAnestro.Size = New System.Drawing.Size(82, 24)
-        Me.lblAnestro.TabIndex = 2
-        Me.lblAnestro.Text = "Anestro"
+        Me.lblDivision.AutoSize = True
+        Me.lblDivision.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDivision.Location = New System.Drawing.Point(22, 267)
+        Me.lblDivision.Name = "lblDivision"
+        Me.lblDivision.Size = New System.Drawing.Size(85, 24)
+        Me.lblDivision.TabIndex = 2
+        Me.lblDivision.Text = "División"
         '
         'lblEdad
         '
@@ -217,15 +217,15 @@ Partial Class frmIngresar
         Me.cbxSexo.Size = New System.Drawing.Size(145, 32)
         Me.cbxSexo.TabIndex = 36
         '
-        'cbxAnestroh
+        'cbxDivisionh
         '
-        Me.cbxAnestroh.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cbxAnestroh.FormattingEnabled = True
-        Me.cbxAnestroh.Items.AddRange(New Object() {"Vaca", "Vaquillona"})
-        Me.cbxAnestroh.Location = New System.Drawing.Point(230, 267)
-        Me.cbxAnestroh.Name = "cbxAnestroh"
-        Me.cbxAnestroh.Size = New System.Drawing.Size(144, 32)
-        Me.cbxAnestroh.TabIndex = 37
+        Me.cbxDivisionh.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbxDivisionh.FormattingEnabled = True
+        Me.cbxDivisionh.Items.AddRange(New Object() {"Vaca", "Vaquillona", "Anestro"})
+        Me.cbxDivisionh.Location = New System.Drawing.Point(230, 267)
+        Me.cbxDivisionh.Name = "cbxDivisionh"
+        Me.cbxDivisionh.Size = New System.Drawing.Size(144, 32)
+        Me.cbxDivisionh.TabIndex = 37
         '
         'rbnNoa
         '
@@ -261,14 +261,14 @@ Partial Class frmIngresar
         Me.lblAntibiotico.TabIndex = 38
         Me.lblAntibiotico.Text = "Antibiotico influyente"
         '
-        'TextBox1
+        'tbxPorcentajep
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(216, 65)
-        Me.TextBox1.MaxLength = 3
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(144, 32)
-        Me.TextBox1.TabIndex = 42
+        Me.tbxPorcentajep.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbxPorcentajep.Location = New System.Drawing.Point(216, 65)
+        Me.tbxPorcentajep.MaxLength = 3
+        Me.tbxPorcentajep.Name = "tbxPorcentajep"
+        Me.tbxPorcentajep.Size = New System.Drawing.Size(144, 32)
+        Me.tbxPorcentajep.TabIndex = 42
         '
         'lblPorcentajep
         '
@@ -474,7 +474,7 @@ Partial Class frmIngresar
         Me.gbxHembra.Controls.Add(Me.lblEtapa)
         Me.gbxHembra.Controls.Add(Me.gbxAntibiotico)
         Me.gbxHembra.Controls.Add(Me.lblPrenada)
-        Me.gbxHembra.Controls.Add(Me.TextBox1)
+        Me.gbxHembra.Controls.Add(Me.tbxPorcentajep)
         Me.gbxHembra.Controls.Add(Me.cbxEtapa)
         Me.gbxHembra.Controls.Add(Me.lblPorcentajep)
         Me.gbxHembra.Location = New System.Drawing.Point(14, 305)
@@ -501,16 +501,16 @@ Partial Class frmIngresar
         Me.ClientSize = New System.Drawing.Size(832, 536)
         Me.Controls.Add(Me.tbxEdad)
         Me.Controls.Add(Me.gbxHembra)
-        Me.Controls.Add(Me.cbxAnestrom)
+        Me.Controls.Add(Me.cbxDivisionm)
         Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.lblAnestro)
+        Me.Controls.Add(Me.lblDivision)
         Me.Controls.Add(Me.gbxLeche)
         Me.Controls.Add(Me.cbxSexo)
         Me.Controls.Add(Me.lblSexo)
         Me.Controls.Add(Me.cbxTipo)
         Me.Controls.Add(Me.btnIngresar)
         Me.Controls.Add(Me.tbxLugar)
-        Me.Controls.Add(Me.cbxAnestroh)
+        Me.Controls.Add(Me.cbxDivisionh)
         Me.Controls.Add(Me.tbxNum)
         Me.Controls.Add(Me.lblRaza)
         Me.Controls.Add(Me.lblLugar)
@@ -530,9 +530,9 @@ Partial Class frmIngresar
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents cbxAnestrom As System.Windows.Forms.ComboBox
+    Friend WithEvents cbxDivisionm As System.Windows.Forms.ComboBox
     Friend WithEvents lblNumero As System.Windows.Forms.Label
-    Friend WithEvents lblAnestro As System.Windows.Forms.Label
+    Friend WithEvents lblDivision As System.Windows.Forms.Label
     Friend WithEvents lblEdad As System.Windows.Forms.Label
     Friend WithEvents lblLugar As System.Windows.Forms.Label
     Friend WithEvents lblEtapa As System.Windows.Forms.Label
@@ -545,11 +545,11 @@ Partial Class frmIngresar
     Friend WithEvents cbxEtapa As System.Windows.Forms.ComboBox
     Friend WithEvents lblSexo As System.Windows.Forms.Label
     Friend WithEvents cbxSexo As System.Windows.Forms.ComboBox
-    Friend WithEvents cbxAnestroh As System.Windows.Forms.ComboBox
+    Friend WithEvents cbxDivisionh As System.Windows.Forms.ComboBox
     Friend WithEvents rbnNoa As System.Windows.Forms.RadioButton
     Friend WithEvents rbnSia As System.Windows.Forms.RadioButton
     Friend WithEvents lblAntibiotico As System.Windows.Forms.Label
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents tbxPorcentajep As System.Windows.Forms.TextBox
     Friend WithEvents lblPorcentajep As System.Windows.Forms.Label
     Friend WithEvents gbxAntibiotico As System.Windows.Forms.GroupBox
     Friend WithEvents gbxPrenada As System.Windows.Forms.GroupBox

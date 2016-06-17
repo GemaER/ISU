@@ -46,7 +46,7 @@ Partial Class frmEnlistar
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.lblPorcentajep = New System.Windows.Forms.Label()
         Me.lblAntibiotico = New System.Windows.Forms.Label()
-        Me.cbxAnestroh = New System.Windows.Forms.ComboBox()
+        Me.cbxDivisionh = New System.Windows.Forms.ComboBox()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.lblSexo = New System.Windows.Forms.Label()
         Me.cbxEtapa = New System.Windows.Forms.ComboBox()
@@ -58,8 +58,8 @@ Partial Class frmEnlistar
         Me.lblEtapa = New System.Windows.Forms.Label()
         Me.lblLugar = New System.Windows.Forms.Label()
         Me.lblEdad = New System.Windows.Forms.Label()
-        Me.lblAnestro = New System.Windows.Forms.Label()
-        Me.cbmAnestrom = New System.Windows.Forms.ComboBox()
+        Me.lblDivision = New System.Windows.Forms.Label()
+        Me.cbmDivisionm = New System.Windows.Forms.ComboBox()
         Me.gbxLeche.SuspendLayout()
         Me.gbxPrenada.SuspendLayout()
         Me.gbxAntibiotico.SuspendLayout()
@@ -324,16 +324,16 @@ Partial Class frmEnlistar
         Me.lblAntibiotico.Text = "Antibiotico influyente"
         Me.lblAntibiotico.Visible = False
         '
-        'cbxAnestroh
+        'cbxDivisionh
         '
-        Me.cbxAnestroh.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cbxAnestroh.FormattingEnabled = True
-        Me.cbxAnestroh.Items.AddRange(New Object() {"Vaca", "Vaquillona"})
-        Me.cbxAnestroh.Location = New System.Drawing.Point(229, 305)
-        Me.cbxAnestroh.Name = "cbxAnestroh"
-        Me.cbxAnestroh.Size = New System.Drawing.Size(133, 32)
-        Me.cbxAnestroh.TabIndex = 60
-        Me.cbxAnestroh.Visible = False
+        Me.cbxDivisionh.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbxDivisionh.FormattingEnabled = True
+        Me.cbxDivisionh.Items.AddRange(New Object() {"Vaca", "Vaquillona", "Anestro"})
+        Me.cbxDivisionh.Location = New System.Drawing.Point(229, 305)
+        Me.cbxDivisionh.Name = "cbxDivisionh"
+        Me.cbxDivisionh.Size = New System.Drawing.Size(133, 32)
+        Me.cbxDivisionh.TabIndex = 60
+        Me.cbxDivisionh.Visible = False
         '
         'ComboBox1
         '
@@ -446,27 +446,27 @@ Partial Class frmEnlistar
         Me.lblEdad.TabIndex = 49
         Me.lblEdad.Text = "Edad"
         '
-        'lblAnestro
+        'lblDivision
         '
-        Me.lblAnestro.AutoSize = True
-        Me.lblAnestro.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblAnestro.Location = New System.Drawing.Point(12, 308)
-        Me.lblAnestro.Name = "lblAnestro"
-        Me.lblAnestro.Size = New System.Drawing.Size(82, 24)
-        Me.lblAnestro.TabIndex = 48
-        Me.lblAnestro.Text = "Anestro"
-        Me.lblAnestro.Visible = False
+        Me.lblDivision.AutoSize = True
+        Me.lblDivision.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDivision.Location = New System.Drawing.Point(12, 308)
+        Me.lblDivision.Name = "lblDivision"
+        Me.lblDivision.Size = New System.Drawing.Size(85, 24)
+        Me.lblDivision.TabIndex = 48
+        Me.lblDivision.Text = "Division"
+        Me.lblDivision.Visible = False
         '
-        'cbmAnestrom
+        'cbmDivisionm
         '
-        Me.cbmAnestrom.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cbmAnestrom.FormattingEnabled = True
-        Me.cbmAnestrom.Items.AddRange(New Object() {"Novillo", "Toro"})
-        Me.cbmAnestrom.Location = New System.Drawing.Point(229, 305)
-        Me.cbmAnestrom.Name = "cbmAnestrom"
-        Me.cbmAnestrom.Size = New System.Drawing.Size(133, 32)
-        Me.cbmAnestrom.TabIndex = 47
-        Me.cbmAnestrom.Visible = False
+        Me.cbmDivisionm.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbmDivisionm.FormattingEnabled = True
+        Me.cbmDivisionm.Items.AddRange(New Object() {"Novillo", "Toro", "Anestro"})
+        Me.cbmDivisionm.Location = New System.Drawing.Point(229, 305)
+        Me.cbmDivisionm.Name = "cbmDivisionm"
+        Me.cbmDivisionm.Size = New System.Drawing.Size(133, 32)
+        Me.cbmDivisionm.TabIndex = 47
+        Me.cbmDivisionm.Visible = False
         '
         'frmEnlistar
         '
@@ -481,7 +481,7 @@ Partial Class frmEnlistar
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.lblPorcentajep)
         Me.Controls.Add(Me.lblAntibiotico)
-        Me.Controls.Add(Me.cbxAnestroh)
+        Me.Controls.Add(Me.cbxDivisionh)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.lblSexo)
         Me.Controls.Add(Me.cbxEtapa)
@@ -493,8 +493,8 @@ Partial Class frmEnlistar
         Me.Controls.Add(Me.lblEtapa)
         Me.Controls.Add(Me.lblLugar)
         Me.Controls.Add(Me.lblEdad)
-        Me.Controls.Add(Me.lblAnestro)
-        Me.Controls.Add(Me.cbmAnestrom)
+        Me.Controls.Add(Me.lblDivision)
+        Me.Controls.Add(Me.cbmDivisionm)
         Me.Controls.Add(Me.btnEnlistar)
         Me.Name = "frmEnlistar"
         Me.Text = "Enlistar"
@@ -532,7 +532,7 @@ Partial Class frmEnlistar
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents lblPorcentajep As System.Windows.Forms.Label
     Friend WithEvents lblAntibiotico As System.Windows.Forms.Label
-    Friend WithEvents cbxAnestroh As System.Windows.Forms.ComboBox
+    Friend WithEvents cbxDivisionh As System.Windows.Forms.ComboBox
     Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
     Friend WithEvents lblSexo As System.Windows.Forms.Label
     Friend WithEvents cbxEtapa As System.Windows.Forms.ComboBox
@@ -544,6 +544,6 @@ Partial Class frmEnlistar
     Friend WithEvents lblEtapa As System.Windows.Forms.Label
     Friend WithEvents lblLugar As System.Windows.Forms.Label
     Friend WithEvents lblEdad As System.Windows.Forms.Label
-    Friend WithEvents lblAnestro As System.Windows.Forms.Label
-    Friend WithEvents cbmAnestrom As System.Windows.Forms.ComboBox
+    Friend WithEvents lblDivision As System.Windows.Forms.Label
+    Friend WithEvents cbmDivisionm As System.Windows.Forms.ComboBox
 End Class

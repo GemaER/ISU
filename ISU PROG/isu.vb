@@ -108,4 +108,7 @@
         frmTambo.Show()
     End Sub
 
+    Private Sub pnlInicio_Paint(sender As System.Object, e As System.Windows.Forms.PaintEventArgs) Handles pnlInicio.Paint
+
+    End Sub
 End Class
