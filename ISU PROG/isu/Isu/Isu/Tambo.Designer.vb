@@ -35,8 +35,6 @@ Partial Class frmTambo
         Me.lblProducciond = New System.Windows.Forms.Label()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.lblOrdeñev = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.lblProduccion = New System.Windows.Forms.Label()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.lblExplotaciones = New System.Windows.Forms.Label()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
@@ -50,34 +48,36 @@ Partial Class frmTambo
         Me.TextBox9 = New System.Windows.Forms.TextBox()
         Me.lblPreñez = New System.Windows.Forms.Label()
         Me.gbxPrimer = New System.Windows.Forms.GroupBox()
+        Me.TextBox18 = New System.Windows.Forms.TextBox()
+        Me.TextBox17 = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.lblFinalp = New System.Windows.Forms.Label()
         Me.TextBox11 = New System.Windows.Forms.TextBox()
         Me.TextBox12 = New System.Windows.Forms.TextBox()
         Me.lblIniciop = New System.Windows.Forms.Label()
         Me.gbxSegundo = New System.Windows.Forms.GroupBox()
+        Me.TextBox20 = New System.Windows.Forms.TextBox()
+        Me.TextBox19 = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.lblFinals = New System.Windows.Forms.Label()
         Me.TextBox13 = New System.Windows.Forms.TextBox()
         Me.TextBox14 = New System.Windows.Forms.TextBox()
         Me.lblInicios = New System.Windows.Forms.Label()
         Me.gbxTercer = New System.Windows.Forms.GroupBox()
+        Me.TextBox22 = New System.Windows.Forms.TextBox()
+        Me.TextBox21 = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.lblp = New System.Windows.Forms.Label()
         Me.lblFinalt = New System.Windows.Forms.Label()
         Me.TextBox15 = New System.Windows.Forms.TextBox()
         Me.TextBox16 = New System.Windows.Forms.TextBox()
         Me.lblIniciot = New System.Windows.Forms.Label()
         Me.TextBox10 = New System.Windows.Forms.TextBox()
         Me.lblGanado = New System.Windows.Forms.Label()
-        Me.lblp = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox17 = New System.Windows.Forms.TextBox()
-        Me.TextBox18 = New System.Windows.Forms.TextBox()
-        Me.TextBox19 = New System.Windows.Forms.TextBox()
-        Me.TextBox20 = New System.Windows.Forms.TextBox()
-        Me.TextBox21 = New System.Windows.Forms.TextBox()
-        Me.TextBox22 = New System.Windows.Forms.TextBox()
+        Me.cbxTambo = New System.Windows.Forms.ComboBox()
+        Me.lblTambo = New System.Windows.Forms.Label()
         Me.gbxPrimer.SuspendLayout()
         Me.gbxSegundo.SuspendLayout()
         Me.gbxTercer.SuspendLayout()
@@ -95,7 +95,7 @@ Partial Class frmTambo
         '
         Me.lbOrdeñecant.AutoSize = True
         Me.lbOrdeñecant.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbOrdeñecant.Location = New System.Drawing.Point(12, 80)
+        Me.lbOrdeñecant.Location = New System.Drawing.Point(435, 29)
         Me.lbOrdeñecant.Name = "lbOrdeñecant"
         Me.lbOrdeñecant.Size = New System.Drawing.Size(204, 24)
         Me.lbOrdeñecant.TabIndex = 54
@@ -104,7 +104,7 @@ Partial Class frmTambo
         'tbxLugar
         '
         Me.tbxLugar.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbxLugar.Location = New System.Drawing.Point(270, 226)
+        Me.tbxLugar.Location = New System.Drawing.Point(270, 230)
         Me.tbxLugar.Name = "tbxLugar"
         Me.tbxLugar.Size = New System.Drawing.Size(121, 32)
         Me.tbxLugar.TabIndex = 53
@@ -112,7 +112,7 @@ Partial Class frmTambo
         'tbxEdad
         '
         Me.tbxEdad.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbxEdad.Location = New System.Drawing.Point(270, 188)
+        Me.tbxEdad.Location = New System.Drawing.Point(270, 192)
         Me.tbxEdad.MaxLength = 3
         Me.tbxEdad.Name = "tbxEdad"
         Me.tbxEdad.Size = New System.Drawing.Size(121, 32)
@@ -121,7 +121,7 @@ Partial Class frmTambo
         'tbxNum
         '
         Me.tbxNum.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbxNum.Location = New System.Drawing.Point(270, 32)
+        Me.tbxNum.Location = New System.Drawing.Point(270, 78)
         Me.tbxNum.Name = "tbxNum"
         Me.tbxNum.Size = New System.Drawing.Size(121, 32)
         Me.tbxNum.TabIndex = 51
@@ -130,7 +130,7 @@ Partial Class frmTambo
         '
         Me.lblHectareas.AutoSize = True
         Me.lblHectareas.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHectareas.Location = New System.Drawing.Point(12, 229)
+        Me.lblHectareas.Location = New System.Drawing.Point(12, 233)
         Me.lblHectareas.Name = "lblHectareas"
         Me.lblHectareas.Size = New System.Drawing.Size(107, 24)
         Me.lblHectareas.TabIndex = 50
@@ -140,7 +140,7 @@ Partial Class frmTambo
         '
         Me.lblReposicion.AutoSize = True
         Me.lblReposicion.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblReposicion.Location = New System.Drawing.Point(12, 191)
+        Me.lblReposicion.Location = New System.Drawing.Point(12, 195)
         Me.lblReposicion.Name = "lblReposicion"
         Me.lblReposicion.Size = New System.Drawing.Size(243, 24)
         Me.lblReposicion.TabIndex = 49
@@ -150,7 +150,7 @@ Partial Class frmTambo
         '
         Me.lblOrdeñet.AutoSize = True
         Me.lblOrdeñet.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblOrdeñet.Location = New System.Drawing.Point(12, 35)
+        Me.lblOrdeñet.Location = New System.Drawing.Point(12, 81)
         Me.lblOrdeñet.Name = "lblOrdeñet"
         Me.lblOrdeñet.Size = New System.Drawing.Size(149, 24)
         Me.lblOrdeñet.TabIndex = 48
@@ -161,7 +161,7 @@ Partial Class frmTambo
         Me.ComboBox1.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Items.AddRange(New Object() {"Uno", "Dos", "Tres"})
-        Me.ComboBox1.Location = New System.Drawing.Point(270, 72)
+        Me.ComboBox1.Location = New System.Drawing.Point(663, 24)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(121, 32)
         Me.ComboBox1.TabIndex = 55
@@ -169,7 +169,7 @@ Partial Class frmTambo
         'TextBox1
         '
         Me.TextBox1.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(663, 452)
+        Me.TextBox1.Location = New System.Drawing.Point(270, 495)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(121, 32)
         Me.TextBox1.TabIndex = 57
@@ -178,7 +178,7 @@ Partial Class frmTambo
         '
         Me.lblProducciond.AutoSize = True
         Me.lblProducciond.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblProducciond.Location = New System.Drawing.Point(405, 455)
+        Me.lblProducciond.Location = New System.Drawing.Point(12, 498)
         Me.lblProducciond.Name = "lblProducciond"
         Me.lblProducciond.Size = New System.Drawing.Size(173, 24)
         Me.lblProducciond.TabIndex = 56
@@ -187,7 +187,7 @@ Partial Class frmTambo
         'TextBox2
         '
         Me.TextBox2.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(270, 303)
+        Me.TextBox2.Location = New System.Drawing.Point(270, 306)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(121, 32)
         Me.TextBox2.TabIndex = 59
@@ -196,34 +196,16 @@ Partial Class frmTambo
         '
         Me.lblOrdeñev.AutoSize = True
         Me.lblOrdeñev.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblOrdeñev.Location = New System.Drawing.Point(12, 306)
+        Me.lblOrdeñev.Location = New System.Drawing.Point(12, 309)
         Me.lblOrdeñev.Name = "lblOrdeñev"
         Me.lblOrdeñev.Size = New System.Drawing.Size(167, 24)
         Me.lblOrdeñev.TabIndex = 58
         Me.lblOrdeñev.Text = "Vacas en ordeñe"
         '
-        'TextBox3
-        '
-        Me.TextBox3.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.Location = New System.Drawing.Point(663, 490)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(121, 32)
-        Me.TextBox3.TabIndex = 61
-        '
-        'lblProduccion
-        '
-        Me.lblProduccion.AutoSize = True
-        Me.lblProduccion.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblProduccion.Location = New System.Drawing.Point(405, 493)
-        Me.lblProduccion.Name = "lblProduccion"
-        Me.lblProduccion.Size = New System.Drawing.Size(244, 24)
-        Me.lblProduccion.TabIndex = 60
-        Me.lblProduccion.Text = "Produccion (grasa/leche)"
-        '
         'TextBox4
         '
         Me.TextBox4.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox4.Location = New System.Drawing.Point(270, 345)
+        Me.TextBox4.Location = New System.Drawing.Point(270, 344)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(121, 32)
         Me.TextBox4.TabIndex = 63
@@ -232,7 +214,7 @@ Partial Class frmTambo
         '
         Me.lblExplotaciones.AutoSize = True
         Me.lblExplotaciones.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblExplotaciones.Location = New System.Drawing.Point(12, 348)
+        Me.lblExplotaciones.Location = New System.Drawing.Point(12, 347)
         Me.lblExplotaciones.Name = "lblExplotaciones"
         Me.lblExplotaciones.Size = New System.Drawing.Size(141, 24)
         Me.lblExplotaciones.TabIndex = 62
@@ -241,7 +223,7 @@ Partial Class frmTambo
         'TextBox5
         '
         Me.TextBox5.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox5.Location = New System.Drawing.Point(270, 389)
+        Me.TextBox5.Location = New System.Drawing.Point(270, 382)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(121, 32)
         Me.TextBox5.TabIndex = 65
@@ -250,7 +232,7 @@ Partial Class frmTambo
         '
         Me.lblProducciont.AutoSize = True
         Me.lblProducciont.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblProducciont.Location = New System.Drawing.Point(12, 392)
+        Me.lblProducciont.Location = New System.Drawing.Point(12, 385)
         Me.lblProducciont.Name = "lblProducciont"
         Me.lblProducciont.Size = New System.Drawing.Size(161, 24)
         Me.lblProducciont.TabIndex = 64
@@ -259,7 +241,7 @@ Partial Class frmTambo
         'TextBox6
         '
         Me.TextBox6.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox6.Location = New System.Drawing.Point(270, 431)
+        Me.TextBox6.Location = New System.Drawing.Point(270, 419)
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.Size = New System.Drawing.Size(121, 32)
         Me.TextBox6.TabIndex = 67
@@ -268,7 +250,7 @@ Partial Class frmTambo
         '
         Me.lblPromedio.AutoSize = True
         Me.lblPromedio.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPromedio.Location = New System.Drawing.Point(12, 434)
+        Me.lblPromedio.Location = New System.Drawing.Point(12, 422)
         Me.lblPromedio.Name = "lblPromedio"
         Me.lblPromedio.Size = New System.Drawing.Size(251, 24)
         Me.lblPromedio.TabIndex = 66
@@ -277,7 +259,7 @@ Partial Class frmTambo
         'TextBox7
         '
         Me.TextBox7.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox7.Location = New System.Drawing.Point(270, 468)
+        Me.TextBox7.Location = New System.Drawing.Point(270, 457)
         Me.TextBox7.Name = "TextBox7"
         Me.TextBox7.Size = New System.Drawing.Size(121, 32)
         Me.TextBox7.TabIndex = 69
@@ -286,7 +268,7 @@ Partial Class frmTambo
         '
         Me.lblProducciona.AutoSize = True
         Me.lblProducciona.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblProducciona.Location = New System.Drawing.Point(12, 471)
+        Me.lblProducciona.Location = New System.Drawing.Point(12, 460)
         Me.lblProducciona.Name = "lblProducciona"
         Me.lblProducciona.Size = New System.Drawing.Size(171, 24)
         Me.lblProducciona.TabIndex = 68
@@ -295,7 +277,7 @@ Partial Class frmTambo
         'TextBox8
         '
         Me.TextBox8.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox8.Location = New System.Drawing.Point(270, 148)
+        Me.TextBox8.Location = New System.Drawing.Point(270, 154)
         Me.TextBox8.MaxLength = 3
         Me.TextBox8.Name = "TextBox8"
         Me.TextBox8.Size = New System.Drawing.Size(121, 32)
@@ -305,7 +287,7 @@ Partial Class frmTambo
         '
         Me.lblParicion.AutoSize = True
         Me.lblParicion.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblParicion.Location = New System.Drawing.Point(12, 151)
+        Me.lblParicion.Location = New System.Drawing.Point(12, 157)
         Me.lblParicion.Name = "lblParicion"
         Me.lblParicion.Size = New System.Drawing.Size(191, 24)
         Me.lblParicion.TabIndex = 70
@@ -314,7 +296,7 @@ Partial Class frmTambo
         'TextBox9
         '
         Me.TextBox9.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox9.Location = New System.Drawing.Point(270, 111)
+        Me.TextBox9.Location = New System.Drawing.Point(270, 116)
         Me.TextBox9.MaxLength = 3
         Me.TextBox9.Name = "TextBox9"
         Me.TextBox9.Size = New System.Drawing.Size(121, 32)
@@ -324,7 +306,7 @@ Partial Class frmTambo
         '
         Me.lblPreñez.AutoSize = True
         Me.lblPreñez.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPreñez.Location = New System.Drawing.Point(12, 114)
+        Me.lblPreñez.Location = New System.Drawing.Point(12, 117)
         Me.lblPreñez.Name = "lblPreñez"
         Me.lblPreñez.Size = New System.Drawing.Size(208, 24)
         Me.lblPreñez.TabIndex = 72
@@ -342,12 +324,48 @@ Partial Class frmTambo
         Me.gbxPrimer.Controls.Add(Me.lblIniciop)
         Me.gbxPrimer.Enabled = False
         Me.gbxPrimer.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.gbxPrimer.Location = New System.Drawing.Point(439, 17)
+        Me.gbxPrimer.Location = New System.Drawing.Point(439, 78)
         Me.gbxPrimer.Name = "gbxPrimer"
         Me.gbxPrimer.Size = New System.Drawing.Size(345, 136)
         Me.gbxPrimer.TabIndex = 74
         Me.gbxPrimer.TabStop = False
         Me.gbxPrimer.Text = "1er Ordeñe"
+        '
+        'TextBox18
+        '
+        Me.TextBox18.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox18.Location = New System.Drawing.Point(260, 74)
+        Me.TextBox18.Name = "TextBox18"
+        Me.TextBox18.Size = New System.Drawing.Size(41, 32)
+        Me.TextBox18.TabIndex = 73
+        '
+        'TextBox17
+        '
+        Me.TextBox17.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox17.Location = New System.Drawing.Point(260, 36)
+        Me.TextBox17.Name = "TextBox17"
+        Me.TextBox17.Size = New System.Drawing.Size(41, 32)
+        Me.TextBox17.TabIndex = 72
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(238, 78)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(16, 24)
+        Me.Label5.TabIndex = 71
+        Me.Label5.Text = ":"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(238, 39)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(16, 24)
+        Me.Label4.TabIndex = 70
+        Me.Label4.Text = ":"
         '
         'lblFinalp
         '
@@ -397,12 +415,48 @@ Partial Class frmTambo
         Me.gbxSegundo.Controls.Add(Me.lblInicios)
         Me.gbxSegundo.Enabled = False
         Me.gbxSegundo.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.gbxSegundo.Location = New System.Drawing.Point(439, 160)
+        Me.gbxSegundo.Location = New System.Drawing.Point(439, 233)
         Me.gbxSegundo.Name = "gbxSegundo"
         Me.gbxSegundo.Size = New System.Drawing.Size(345, 136)
         Me.gbxSegundo.TabIndex = 75
         Me.gbxSegundo.TabStop = False
         Me.gbxSegundo.Text = "2do Ordeñe"
+        '
+        'TextBox20
+        '
+        Me.TextBox20.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox20.Location = New System.Drawing.Point(260, 76)
+        Me.TextBox20.Name = "TextBox20"
+        Me.TextBox20.Size = New System.Drawing.Size(41, 32)
+        Me.TextBox20.TabIndex = 75
+        '
+        'TextBox19
+        '
+        Me.TextBox19.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox19.Location = New System.Drawing.Point(260, 38)
+        Me.TextBox19.Name = "TextBox19"
+        Me.TextBox19.Size = New System.Drawing.Size(41, 32)
+        Me.TextBox19.TabIndex = 74
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(238, 41)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(16, 24)
+        Me.Label3.TabIndex = 69
+        Me.Label3.Text = ":"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(238, 79)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(16, 24)
+        Me.Label2.TabIndex = 68
+        Me.Label2.Text = ":"
         '
         'lblFinals
         '
@@ -452,12 +506,48 @@ Partial Class frmTambo
         Me.gbxTercer.Controls.Add(Me.lblIniciot)
         Me.gbxTercer.Enabled = False
         Me.gbxTercer.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.gbxTercer.Location = New System.Drawing.Point(439, 305)
+        Me.gbxTercer.Location = New System.Drawing.Point(439, 388)
         Me.gbxTercer.Name = "gbxTercer"
         Me.gbxTercer.Size = New System.Drawing.Size(345, 136)
         Me.gbxTercer.TabIndex = 76
         Me.gbxTercer.TabStop = False
         Me.gbxTercer.Text = "3er Ordeñe"
+        '
+        'TextBox22
+        '
+        Me.TextBox22.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox22.Location = New System.Drawing.Point(260, 76)
+        Me.TextBox22.Name = "TextBox22"
+        Me.TextBox22.Size = New System.Drawing.Size(41, 32)
+        Me.TextBox22.TabIndex = 77
+        '
+        'TextBox21
+        '
+        Me.TextBox21.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox21.Location = New System.Drawing.Point(260, 38)
+        Me.TextBox21.Name = "TextBox21"
+        Me.TextBox21.Size = New System.Drawing.Size(41, 32)
+        Me.TextBox21.TabIndex = 76
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(238, 79)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(16, 24)
+        Me.Label1.TabIndex = 67
+        Me.Label1.Text = ":"
+        '
+        'lblp
+        '
+        Me.lblp.AutoSize = True
+        Me.lblp.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblp.Location = New System.Drawing.Point(238, 41)
+        Me.lblp.Name = "lblp"
+        Me.lblp.Size = New System.Drawing.Size(16, 24)
+        Me.lblp.TabIndex = 66
+        Me.lblp.Text = ":"
         '
         'lblFinalt
         '
@@ -498,7 +588,7 @@ Partial Class frmTambo
         'TextBox10
         '
         Me.TextBox10.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox10.Location = New System.Drawing.Point(270, 265)
+        Me.TextBox10.Location = New System.Drawing.Point(270, 268)
         Me.TextBox10.Name = "TextBox10"
         Me.TextBox10.Size = New System.Drawing.Size(121, 32)
         Me.TextBox10.TabIndex = 78
@@ -507,119 +597,31 @@ Partial Class frmTambo
         '
         Me.lblGanado.AutoSize = True
         Me.lblGanado.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblGanado.Location = New System.Drawing.Point(12, 268)
+        Me.lblGanado.Location = New System.Drawing.Point(12, 271)
         Me.lblGanado.Name = "lblGanado"
         Me.lblGanado.Size = New System.Drawing.Size(158, 24)
         Me.lblGanado.TabIndex = 77
         Me.lblGanado.Text = "Total de ganado"
         '
-        'lblp
+        'cbxTambo
         '
-        Me.lblp.AutoSize = True
-        Me.lblp.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblp.Location = New System.Drawing.Point(238, 41)
-        Me.lblp.Name = "lblp"
-        Me.lblp.Size = New System.Drawing.Size(16, 24)
-        Me.lblp.TabIndex = 66
-        Me.lblp.Text = ":"
+        Me.cbxTambo.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbxTambo.FormattingEnabled = True
+        Me.cbxTambo.Items.AddRange(New Object() {"Uno", "Dos", "Tres"})
+        Me.cbxTambo.Location = New System.Drawing.Point(270, 22)
+        Me.cbxTambo.Name = "cbxTambo"
+        Me.cbxTambo.Size = New System.Drawing.Size(121, 32)
+        Me.cbxTambo.TabIndex = 79
         '
-        'Label1
+        'lblTambo
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(238, 79)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(16, 24)
-        Me.Label1.TabIndex = 67
-        Me.Label1.Text = ":"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(238, 79)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(16, 24)
-        Me.Label2.TabIndex = 68
-        Me.Label2.Text = ":"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(238, 41)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(16, 24)
-        Me.Label3.TabIndex = 69
-        Me.Label3.Text = ":"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(238, 39)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(16, 24)
-        Me.Label4.TabIndex = 70
-        Me.Label4.Text = ":"
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(238, 78)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(16, 24)
-        Me.Label5.TabIndex = 71
-        Me.Label5.Text = ":"
-        '
-        'TextBox17
-        '
-        Me.TextBox17.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox17.Location = New System.Drawing.Point(260, 36)
-        Me.TextBox17.Name = "TextBox17"
-        Me.TextBox17.Size = New System.Drawing.Size(41, 32)
-        Me.TextBox17.TabIndex = 72
-        '
-        'TextBox18
-        '
-        Me.TextBox18.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox18.Location = New System.Drawing.Point(260, 74)
-        Me.TextBox18.Name = "TextBox18"
-        Me.TextBox18.Size = New System.Drawing.Size(41, 32)
-        Me.TextBox18.TabIndex = 73
-        '
-        'TextBox19
-        '
-        Me.TextBox19.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox19.Location = New System.Drawing.Point(260, 38)
-        Me.TextBox19.Name = "TextBox19"
-        Me.TextBox19.Size = New System.Drawing.Size(41, 32)
-        Me.TextBox19.TabIndex = 74
-        '
-        'TextBox20
-        '
-        Me.TextBox20.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox20.Location = New System.Drawing.Point(260, 76)
-        Me.TextBox20.Name = "TextBox20"
-        Me.TextBox20.Size = New System.Drawing.Size(41, 32)
-        Me.TextBox20.TabIndex = 75
-        '
-        'TextBox21
-        '
-        Me.TextBox21.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox21.Location = New System.Drawing.Point(260, 38)
-        Me.TextBox21.Name = "TextBox21"
-        Me.TextBox21.Size = New System.Drawing.Size(41, 32)
-        Me.TextBox21.TabIndex = 76
-        '
-        'TextBox22
-        '
-        Me.TextBox22.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox22.Location = New System.Drawing.Point(260, 76)
-        Me.TextBox22.Name = "TextBox22"
-        Me.TextBox22.Size = New System.Drawing.Size(41, 32)
-        Me.TextBox22.TabIndex = 77
+        Me.lblTambo.AutoSize = True
+        Me.lblTambo.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTambo.Location = New System.Drawing.Point(12, 27)
+        Me.lblTambo.Name = "lblTambo"
+        Me.lblTambo.Size = New System.Drawing.Size(71, 24)
+        Me.lblTambo.TabIndex = 80
+        Me.lblTambo.Text = "Tambo"
         '
         'frmTambo
         '
@@ -627,9 +629,9 @@ Partial Class frmTambo
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.ClientSize = New System.Drawing.Size(832, 536)
-        Me.Controls.Add(Me.lblProduccion)
+        Me.Controls.Add(Me.lblTambo)
+        Me.Controls.Add(Me.cbxTambo)
         Me.Controls.Add(Me.TextBox10)
-        Me.Controls.Add(Me.TextBox3)
         Me.Controls.Add(Me.lblGanado)
         Me.Controls.Add(Me.lblPreñez)
         Me.Controls.Add(Me.lblParicion)
@@ -684,8 +686,6 @@ Partial Class frmTambo
     Friend WithEvents lblProducciond As System.Windows.Forms.Label
     Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
     Friend WithEvents lblOrdeñev As System.Windows.Forms.Label
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
-    Friend WithEvents lblProduccion As System.Windows.Forms.Label
     Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
     Friend WithEvents lblExplotaciones As System.Windows.Forms.Label
     Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
@@ -727,4 +727,6 @@ Partial Class frmTambo
     Friend WithEvents TextBox21 As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents lblp As System.Windows.Forms.Label
+    Friend WithEvents cbxTambo As System.Windows.Forms.ComboBox
+    Friend WithEvents lblTambo As System.Windows.Forms.Label
 End Class

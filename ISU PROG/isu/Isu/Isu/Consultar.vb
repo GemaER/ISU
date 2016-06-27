@@ -2,34 +2,27 @@
 
     Private Sub frmConsultar_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
         If frmISU.tsModificar.Text() = "Modify" Then
-            Me.Text() = "Consult"
+            Me.Text() = "Insert"
             lblNumero.Text() = "Numer"
-            lblSexo.Text() = "Gender"
-            lblEdad.Text() = "Age"
-            lblLugar.Text() = "Actual Place"
-            lblRaza.Text() = "Race"
-            lblAntibiotico.Text() = "Influential antibiotic"
-            lblPorcentajep.Text() = "Pregnancy rate"
-            lblPrenada.Text() = "Pregnant"
-            lblEtapa.Text() = "Stage"
-            lblLitros.Text() = "Liters"
-            lblGrasa.Text() = "Grease"
-            lblProteina.Text() = "Protein"
-            lblRecuentobac.Text() = "Bacterial count"
-            lblRecuentoCel.Text() = "Somatic cell count"
-        ElseIf frmISU.tsModificar.Text() = "Mudança" Then
-            lblEdad.Text() = "Idade"
-            lblRaza.Text() = "Raça"
-            lblDivision.Text() = "Divisão"
-            lblAntibiotico.Text() = "antibiótico influente"
-            lblPorcentajep.Text() = "Taxa de prenhez"
-            lblPrenada.Text() = "Grávida"
-            lblGrasa.Text() = "Graxa"
-            lblUrea.Text() = "Uréia"
-            lblRecuentobac.Text() = "Contagem bacteriana"
-            lblRecuentoCel.Text() = "Contagem de células somáticas"
+        Else
+            Me.Text() = "Consultar"
+        End If
+        frmISU.Idioma_Load(frmISU.tsModificar, lblSexo, lblNacimiento, lblLugar, lblRaza, lblUrea, lblDivision, lblAntibiotico, lblPorcentajep, lblPrenada, lblEtapa, lblLitros, lblGrasa, lblProteina, lblRecuentobac, lblRecuentoCel)
+
+    End Sub
+
+    Private Sub btnConsultar_Click(sender As System.Object, e As System.EventArgs) Handles btnConsultar.Click
+        Dim acum As Integer
+        acum = 0
+        acum = frmISU.Acumulacion(tbxNum.Text(), acum)
+        acum = frmISU.Largo(tbxNum, acum)
+        If acum = 0 Then
+            MsgBox("Falta conexión a la base de datos", MsgBoxStyle.OkOnly, "ERROR")
+            'encuentra y muestra datos 
+            frmISU.lblAprecer(lblNacimiento, lblSexo, lblLugar, lblRaza, lblDivision, btnConsultar)
+        Else
+            MsgBox("Datos no válidos", MsgBoxStyle.OkOnly, "ERROR")
         End If
     End Sub
 
-  
 End Class

@@ -36,10 +36,35 @@ Partial Class frmISU
         Me.tsEliminar = New System.Windows.Forms.ToolStripMenuItem()
         Me.tsConsultar = New System.Windows.Forms.ToolStripMenuItem()
         Me.tsEnlistar = New System.Windows.Forms.ToolStripMenuItem()
+        Me.tsRaza = New System.Windows.Forms.ToolStripMenuItem()
+        Me.tsHolando = New System.Windows.Forms.ToolStripMenuItem()
+        Me.tsJersey = New System.Windows.Forms.ToolStripMenuItem()
+        Me.tsPrimerShow = New System.Windows.Forms.ToolStripMenuItem()
+        Me.tsDivision = New System.Windows.Forms.ToolStripMenuItem()
+        Me.tsVaca = New System.Windows.Forms.ToolStripMenuItem()
+        Me.tsVaquillona = New System.Windows.Forms.ToolStripMenuItem()
+        Me.tsToro = New System.Windows.Forms.ToolStripMenuItem()
+        Me.tsNovillo = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TsAnestro = New System.Windows.Forms.ToolStripMenuItem()
+        Me.tsCria = New System.Windows.Forms.ToolStripMenuItem()
+        Me.tsLugar = New System.Windows.Forms.ToolStripMenuItem()
+        Me.tsRodeo = New System.Windows.Forms.ToolStripMenuItem()
+        Me.tsCampo = New System.Windows.Forms.ToolStripMenuItem()
+        Me.tsTamboe = New System.Windows.Forms.ToolStripMenuItem()
+        Me.tsEtapa = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TsServicio = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Tsprenada = New System.Windows.Forms.ToolStripMenuItem()
+        Me.tsLactancia = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SexoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.tsHembraa = New System.Windows.Forms.ToolStripMenuItem()
+        Me.tsHembra = New System.Windows.Forms.ToolStripMenuItem()
+        Me.tsMacho = New System.Windows.Forms.ToolStripMenuItem()
+        Me.tsEdad = New System.Windows.Forms.ToolStripMenuItem()
         Me.tsModificar = New System.Windows.Forms.ToolStripMenuItem()
-        Me.tsSalir = New System.Windows.Forms.ToolStripMenuItem()
+        Me.tsSesion = New System.Windows.Forms.ToolStripMenuItem()
         Me.pnlInicio = New System.Windows.Forms.Panel()
         Me.pnlBlue = New System.Windows.Forms.Panel()
+        Me.tsSalir = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.PbxISU, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.mspEspanol.SuspendLayout()
         Me.pnlInicio.SuspendLayout()
@@ -60,9 +85,10 @@ Partial Class frmISU
         Me.tbxPass.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tbxPass.Location = New System.Drawing.Point(449, 497)
         Me.tbxPass.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.tbxPass.MaxLength = 13
         Me.tbxPass.Name = "tbxPass"
         Me.tbxPass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.tbxPass.Size = New System.Drawing.Size(155, 32)
+        Me.tbxPass.Size = New System.Drawing.Size(183, 32)
         Me.tbxPass.TabIndex = 5
         '
         'tbxUser
@@ -70,8 +96,9 @@ Partial Class frmISU
         Me.tbxUser.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tbxUser.Location = New System.Drawing.Point(449, 443)
         Me.tbxUser.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.tbxUser.MaxLength = 13
         Me.tbxUser.Name = "tbxUser"
-        Me.tbxUser.Size = New System.Drawing.Size(155, 32)
+        Me.tbxUser.Size = New System.Drawing.Size(183, 32)
         Me.tbxUser.TabIndex = 4
         '
         'Lblpass
@@ -120,7 +147,7 @@ Partial Class frmISU
         'mspEspanol
         '
         Me.mspEspanol.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.mspEspanol.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsTambo, Me.tsIngresar, Me.tsEliminar, Me.tsConsultar, Me.tsEnlistar, Me.tsModificar, Me.tsSalir})
+        Me.mspEspanol.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsTambo, Me.tsIngresar, Me.tsEliminar, Me.tsConsultar, Me.tsEnlistar, Me.tsModificar, Me.tsSesion, Me.tsSalir})
         Me.mspEspanol.Location = New System.Drawing.Point(0, 0)
         Me.mspEspanol.Name = "mspEspanol"
         Me.mspEspanol.Padding = New System.Windows.Forms.Padding(6, 3, 0, 3)
@@ -154,9 +181,159 @@ Partial Class frmISU
         '
         'tsEnlistar
         '
+        Me.tsEnlistar.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsRaza, Me.tsDivision, Me.tsLugar, Me.tsEtapa, Me.SexoToolStripMenuItem, Me.tsEdad})
         Me.tsEnlistar.Name = "tsEnlistar"
         Me.tsEnlistar.Size = New System.Drawing.Size(57, 19)
         Me.tsEnlistar.Text = "Enlistar"
+        '
+        'tsRaza
+        '
+        Me.tsRaza.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsHolando, Me.tsJersey, Me.tsPrimerShow})
+        Me.tsRaza.Name = "tsRaza"
+        Me.tsRaza.Size = New System.Drawing.Size(119, 22)
+        Me.tsRaza.Text = "Raza"
+        '
+        'tsHolando
+        '
+        Me.tsHolando.Name = "tsHolando"
+        Me.tsHolando.Size = New System.Drawing.Size(141, 22)
+        Me.tsHolando.Text = "Holando"
+        '
+        'tsJersey
+        '
+        Me.tsJersey.Name = "tsJersey"
+        Me.tsJersey.Size = New System.Drawing.Size(141, 22)
+        Me.tsJersey.Text = "Jersey"
+        '
+        'tsPrimerShow
+        '
+        Me.tsPrimerShow.Name = "tsPrimerShow"
+        Me.tsPrimerShow.Size = New System.Drawing.Size(141, 22)
+        Me.tsPrimerShow.Text = "Primer Show"
+        '
+        'tsDivision
+        '
+        Me.tsDivision.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsVaca, Me.tsVaquillona, Me.tsToro, Me.tsNovillo, Me.TsAnestro, Me.tsCria})
+        Me.tsDivision.Name = "tsDivision"
+        Me.tsDivision.Size = New System.Drawing.Size(119, 22)
+        Me.tsDivision.Text = "División "
+        '
+        'tsVaca
+        '
+        Me.tsVaca.Name = "tsVaca"
+        Me.tsVaca.Size = New System.Drawing.Size(130, 22)
+        Me.tsVaca.Text = "Vaca"
+        '
+        'tsVaquillona
+        '
+        Me.tsVaquillona.Name = "tsVaquillona"
+        Me.tsVaquillona.Size = New System.Drawing.Size(130, 22)
+        Me.tsVaquillona.Text = "Vaquillona"
+        '
+        'tsToro
+        '
+        Me.tsToro.Name = "tsToro"
+        Me.tsToro.Size = New System.Drawing.Size(130, 22)
+        Me.tsToro.Text = "Toro"
+        '
+        'tsNovillo
+        '
+        Me.tsNovillo.Name = "tsNovillo"
+        Me.tsNovillo.Size = New System.Drawing.Size(130, 22)
+        Me.tsNovillo.Text = "Novillo"
+        '
+        'TsAnestro
+        '
+        Me.TsAnestro.Name = "TsAnestro"
+        Me.TsAnestro.Size = New System.Drawing.Size(130, 22)
+        Me.TsAnestro.Text = "Anestro"
+        '
+        'tsCria
+        '
+        Me.tsCria.Name = "tsCria"
+        Me.tsCria.Size = New System.Drawing.Size(130, 22)
+        Me.tsCria.Text = "Cría"
+        '
+        'tsLugar
+        '
+        Me.tsLugar.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsRodeo, Me.tsCampo, Me.tsTamboe})
+        Me.tsLugar.Name = "tsLugar"
+        Me.tsLugar.Size = New System.Drawing.Size(119, 22)
+        Me.tsLugar.Text = "Lugar"
+        '
+        'tsRodeo
+        '
+        Me.tsRodeo.Name = "tsRodeo"
+        Me.tsRodeo.Size = New System.Drawing.Size(161, 22)
+        Me.tsRodeo.Text = "Rodeo de cría"
+        '
+        'tsCampo
+        '
+        Me.tsCampo.Name = "tsCampo"
+        Me.tsCampo.Size = New System.Drawing.Size(161, 22)
+        Me.tsCampo.Text = "Campo de recría"
+        '
+        'tsTamboe
+        '
+        Me.tsTamboe.Name = "tsTamboe"
+        Me.tsTamboe.Size = New System.Drawing.Size(161, 22)
+        Me.tsTamboe.Text = "Tambo"
+        '
+        'tsEtapa
+        '
+        Me.tsEtapa.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TsServicio, Me.Tsprenada, Me.tsLactancia})
+        Me.tsEtapa.Name = "tsEtapa"
+        Me.tsEtapa.Size = New System.Drawing.Size(119, 22)
+        Me.tsEtapa.Text = "Etapa"
+        '
+        'TsServicio
+        '
+        Me.TsServicio.Name = "TsServicio"
+        Me.TsServicio.Size = New System.Drawing.Size(124, 22)
+        Me.TsServicio.Text = "Servicio"
+        '
+        'Tsprenada
+        '
+        Me.Tsprenada.Name = "Tsprenada"
+        Me.Tsprenada.Size = New System.Drawing.Size(124, 22)
+        Me.Tsprenada.Text = "Preñada"
+        '
+        'tsLactancia
+        '
+        Me.tsLactancia.Name = "tsLactancia"
+        Me.tsLactancia.Size = New System.Drawing.Size(124, 22)
+        Me.tsLactancia.Text = "Lactancia"
+        '
+        'SexoToolStripMenuItem
+        '
+        Me.SexoToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsHembraa, Me.tsHembra, Me.tsMacho})
+        Me.SexoToolStripMenuItem.Name = "SexoToolStripMenuItem"
+        Me.SexoToolStripMenuItem.Size = New System.Drawing.Size(119, 22)
+        Me.SexoToolStripMenuItem.Text = "Sexo"
+        '
+        'tsHembraa
+        '
+        Me.tsHembraa.Name = "tsHembraa"
+        Me.tsHembraa.Size = New System.Drawing.Size(185, 22)
+        Me.tsHembraa.Text = "Hembra (antibiotico)"
+        '
+        'tsHembra
+        '
+        Me.tsHembra.Name = "tsHembra"
+        Me.tsHembra.Size = New System.Drawing.Size(185, 22)
+        Me.tsHembra.Text = "Hembra"
+        '
+        'tsMacho
+        '
+        Me.tsMacho.Name = "tsMacho"
+        Me.tsMacho.Size = New System.Drawing.Size(185, 22)
+        Me.tsMacho.Text = "Macho"
+        '
+        'tsEdad
+        '
+        Me.tsEdad.Name = "tsEdad"
+        Me.tsEdad.Size = New System.Drawing.Size(119, 22)
+        Me.tsEdad.Text = "Edad"
         '
         'tsModificar
         '
@@ -164,11 +341,11 @@ Partial Class frmISU
         Me.tsModificar.Size = New System.Drawing.Size(70, 19)
         Me.tsModificar.Text = "Modificar"
         '
-        'tsSalir
+        'tsSesion
         '
-        Me.tsSalir.Name = "tsSalir"
-        Me.tsSalir.Size = New System.Drawing.Size(44, 19)
-        Me.tsSalir.Text = "Sallir"
+        Me.tsSesion.Name = "tsSesion"
+        Me.tsSesion.Size = New System.Drawing.Size(87, 19)
+        Me.tsSesion.Text = "Cerrar sesion"
         '
         'pnlInicio
         '
@@ -193,6 +370,12 @@ Partial Class frmISU
         Me.pnlBlue.Size = New System.Drawing.Size(24, 750)
         Me.pnlBlue.TabIndex = 48
         Me.pnlBlue.Visible = False
+        '
+        'tsSalir
+        '
+        Me.tsSalir.Name = "tsSalir"
+        Me.tsSalir.Size = New System.Drawing.Size(41, 19)
+        Me.tsSalir.Text = "Salir"
         '
         'frmISU
         '
@@ -230,9 +413,34 @@ Partial Class frmISU
     Friend WithEvents tsConsultar As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents tsEnlistar As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents tsModificar As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents tsSalir As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents tsSesion As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents pnlInicio As System.Windows.Forms.Panel
     Friend WithEvents tsTambo As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents pnlBlue As System.Windows.Forms.Panel
+    Friend WithEvents tsRaza As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents tsEdad As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents tsDivision As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents tsHolando As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents tsJersey As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents tsPrimerShow As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents tsLugar As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents tsVaca As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents tsVaquillona As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents tsToro As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents tsNovillo As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents TsAnestro As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents tsCria As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents tsRodeo As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents tsCampo As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents tsTamboe As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents tsEtapa As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents TsServicio As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents Tsprenada As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents tsLactancia As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents SexoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents tsHembra As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents tsHembraa As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents tsMacho As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents tsSalir As System.Windows.Forms.ToolStripMenuItem
 
 End Class
