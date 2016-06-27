@@ -4,13 +4,13 @@ while [ DnMenu -eq 0 ]
 do
 	clear
 	tput cup 3 3; read -p "Ingrese la ci del usuario a modificar " ci
-	busqueda=$(cut -d: -f5  /etc/passwd | grep -n "$ci"|cut -d: -f1)  #Guardar la linea ¿es con -n?
+	busqueda=$(cut -d: -f5  /etc/passwd | grep -n "$ci"|cut -d: -f1) 
 	if [ -z $busqueda  ]
 	then
 		tput cup 2 3; read -p  "No existe usuario con esa CI " aux
 	else
 		clear
-		Logg=$(head -$busqueda /etc/passwd | tail -1 | cut -d: -f1 ) #Buscar el usuario en la linea $busqueda y lo guarda en $Logg
+		Logg=$(head -$busqueda /etc/passwd | tail -1 | cut -d: -f1 )
 		tput cup 3 3; echo "Dato a modificar de $Logg, ci: $ci"
 		tput cup 4 3; echo "1) Directorio de trabajo "
 		tput cup 5 3; echo "2) Cedula"
