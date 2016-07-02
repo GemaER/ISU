@@ -1,7 +1,7 @@
 ﻿Public Class frmISU
 
 
-    Private Sub Form1_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
+    Private Sub FrmISU_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
 
         tsIngresar.Enabled = False
         tsEnlistar.Enabled = False
@@ -100,11 +100,7 @@
     Private Sub tsSalir_Click(sender As System.Object, e As System.EventArgs) Handles tsSesion.Click
         pnlInicio.Show()
         pnlBlue.Hide()
-        Form1_Load(sender, e)
-    End Sub
-
-    Private Sub tsTambo_Click(sender As System.Object, e As System.EventArgs) Handles tsTambo.Click
-        frmTambo.Show()
+        FrmISU_Load(sender, e)
     End Sub
 
     Private Sub tsHolando_Click(sender As System.Object, e As System.EventArgs) Handles tsHolando.Click
@@ -203,8 +199,8 @@
         Enlistar_opcion = Texto_tsitem(tsEdad)
     End Sub
 
-    Public Sub Sexo_cambio(cbxSexo As ComboBox, lblDivision As Label, gbxHembra As GroupBox, gbxLeche As GroupBox, cbxDivision As ComboBox, rbnSia As RadioButton, rbnSip As RadioButton)
-        Dim anestro, toro, novillo, vaca, vaquillona, macho, hembra As String
+    Public Sub Sexo_cambio(cbxLugar As ComboBox, cbxSexo As ComboBox, lblDivision As Label, gbxHembra As GroupBox, gbxLeche As GroupBox, cbxDivision As ComboBox, rbnSia As RadioButton, rbnSip As RadioButton)
+        Dim anestro, toro, novillo, vaca, vaquillona, macho, hembra, campo, rodeo As String
         If tsModificar.Text() = "Modify" Then
             rbnSip.Text() = "Yes"
             rbnSia.Text() = rbnSip.Text()
@@ -214,6 +210,8 @@
             toro = "bull"
             macho = "male"
             hembra = "female"
+            campo = "field of breeding"
+            rodeo = ""
         ElseIf tsModificar.Text() = "Mudança" Then
             vaca = "vaca"
             vaquillona = "novilha"
@@ -221,6 +219,8 @@
             toro = "touro"
             macho = "macho"
             hembra = "fêmea"
+            campo = "campo da criaçâgo"
+            rodeo = ""
         Else
             vaca = "vaca"
             vaquillona = "vaquillona"
@@ -228,37 +228,39 @@
             toro = "toro"
             macho = "macho"
             hembra = "hembra"
+            campo = "campo de recria"
+            rodeo = ".. rodeo"
         End If
         cbxSexo.Items.Clear()
+        cbxLugar.Items.Clear()
+        cbxLugar.Items.Add("tambo")
+        cbxLugar.Items.Add(campo)
+        cbxLugar.Items.Add(rodeo)
         cbxSexo.Items.Add(macho)
         cbxSexo.Items.Add(hembra)
+
         'cbxDivision
         anestro = "anestro"
-        lblDivision.Show()
-        cbxDivision.Show()
         cbxDivision.Items.Clear()
         cbxDivision.Items.Add(anestro)
         If cbxSexo.Text() = hembra Then
-            gbxHembra.Show()
-            gbxLeche.Show()
+            gbxHembra.Enabled = True
+            gbxLeche.Enabled = True
             cbxDivision.Items.Add(vaca)
             cbxDivision.Items.Add(vaquillona)
         ElseIf cbxSexo.Text() = macho Then
-            gbxHembra.Hide()
-            gbxLeche.Hide()
+            gbxHembra.Enabled = False
+            gbxLeche.Enabled = False
             cbxDivision.Items.Add(toro)
             cbxDivision.Items.Add(novillo)
         End If
     End Sub
 
-    Function Validacion_Entera(tbxDd As TextBox, tbxAaaa As TextBox, tbxMm As TextBox, tbxLitros As TextBox, tbxrecuentobac As TextBox, tbxRecuentocel As TextBox, tbxPorcentajep As TextBox, tbxGrasa As TextBox, tbxProteina As TextBox, tbxUrea As TextBox) As Boolean
+    Function Validacion_Entera(tbxLitros As TextBox, tbxrecuentobac As TextBox, tbxRecuentocel As TextBox, tbxPorcentajep As TextBox, tbxGrasa As TextBox, tbxProteina As TextBox, tbxUrea As TextBox) As Integer
 
         Dim acum As Integer
         acum = 0
 
-        acum = Me.Acumulacion(tbxDd.Text(), acum)
-        acum = Me.Acumulacion(tbxAaaa.Text(), acum)
-        acum = Me.Acumulacion(tbxMm.Text(), acum)
         acum = Me.Acumulacion(tbxLitros.Text(), acum)
         acum = Me.Acumulacion(tbxrecuentobac.Text(), acum)
         acum = Me.Acumulacion(tbxRecuentocel.Text(), acum)
@@ -268,18 +270,11 @@
         acum = Me.Porcentaje(tbxProteina.Text(), acum)
         acum = Me.Porcentaje(tbxUrea.Text(), acum)
 
-
-        If acum = 0 Then
-            Return True
-        Else
-            MsgBox("Datos no válidos", MsgBoxStyle.OkOnly, "ERROR")
-            Return False
-
-        End If
+        Return acum
 
     End Function
 
-    Public Sub Idioma_Load(tsM As ToolStripMenuItem, lblS As Label, lblN As Label, lblL As Label, lblR As Label, lblU As Label, lblD As Label, lblA As Label, lblPp As Label, lblPa As Label, lblE As Label, lblLts As Label, lblG As Label, lblPna As Label, lblRb As Label, lblRc As Label)
+    Public Sub Idioma_Load(tsM As ToolStripMenuItem, lblS As Label, lblN As Label, lblL As Label, lblR As Label, lblU As Label, lblD As Label, lblA As Label, lblPp As Label, lblPa As Label, lblE As Label, lblLts As Label, lblG As Label, lblPna As Label, lblRb As Label, lblRc As Label, btngen As Button)
         If tsM.Text() = "Modify" Then
             Me.Text() = "Insert"
             lblS.Text() = "Gender"
@@ -295,6 +290,7 @@
             lblPna.Text() = "Protein"
             lblRb.Text() = "Bacterial count"
             lblRc.Text() = "Somatic cell count"
+            btngen.Text() = "Genealogy"
 
         ElseIf tsM.Text() = "Mudança" Then
             Me.Text() = "Depósito"
@@ -316,7 +312,7 @@
         Dim retorno As Integer
 
         If IsNumeric(valor) Then
-            If valor < 0 Then
+            If valor >= 0 Then
                 retorno = acum
             Else
                 retorno = acum + 1
@@ -331,7 +327,7 @@
         Dim retorno As Integer
 
         If IsNumeric(valor) Then
-            If valor <= 100 Then
+            If valor <= 100 And valor >= 0 Then
                 retorno = acum
             Else
                 retorno = acum + 1
@@ -352,17 +348,18 @@
         End If
         Return retorno
     End Function
-    Function Largo_dos(ByVal txtX As TextBox, txtY As TextBox, acum As Integer) As Integer
+    Function Largo_dos(ByVal tbxX As TextBox, tbxY As TextBox, acum As Integer) As Integer
         Dim retorno As Integer
-
-        If txtX.MaxLength() = txtX.TextLength() Then
-            retorno = acum
-        Else
-            retorno = acum + 1
-        End If
-        If txtY.MaxLength() = txtY.TextLength() Then
-            retorno = acum
-        Else
+        If IsNumeric(tbxX.Text()) And IsNumeric(tbxY.Text()) Then
+            If tbxX.MaxLength() = tbxX.TextLength() And tbxY.MaxLength() = tbxY.TextLength() Then
+                If tbxX.Text() < 32 And tbxY.Text() < 13 Then
+                    retorno = acum
+                Else
+                    retorno = acum + 1
+                End If
+            Else
+                retorno = acum + 1
+            End If
             retorno = acum + 1
         End If
 
@@ -388,26 +385,20 @@
         Return Enlistar_opcion
     End Function
 
-    Public Sub lblAprecer(lblNac As Label, lblSex As Label, lblLug As Label, lblRaz As Label, lblDiv As Label, btnX As Button)
-        btnX.Show()
-        lblNac.Show()
-        lblSex.Show()
-        lblLug.Show()
-        lblRaz.Show()
-        lblDiv.Show()
-    End Sub
-
-    Public Sub tbxAprecer(tbxA As TextBox, tbxD As TextBox, tbxM As TextBox, cbxSex As ComboBox, tbxLug As TextBox, cbxRaz As ComboBox, cbxdiv As ComboBox)
-        tbxA.Show()
-        tbxD.Show()
-        tbxM.Show()
-        cbxSex.Show()
-        tbxLug.Show()
-        cbxRaz.Show()
-        cbxdiv.Show()
-    End Sub
-
     Private Sub tsCerrar_Click(sender As System.Object, e As System.EventArgs) Handles tsSalir.Click
         Me.Close()
+    End Sub
+
+    Private Sub tsTamboIngresar_Click(sender As System.Object, e As System.EventArgs) Handles tsTamboIngresar.Click
+        frmTamboCambios.Show()
+    End Sub
+
+    Private Sub tsTamboModificar_Click(sender As System.Object, e As System.EventArgs) Handles tsTamboModificar.Click
+        frmTamboCambios.Show()
+        frmTamboCambios.btnModificar.Show()
+    End Sub
+
+    Private Sub tsTamoConsultar_Click(sender As System.Object, e As System.EventArgs) Handles tsTamoConsultar.Click
+        frmTamboConsultar.Show()
     End Sub
 End Class

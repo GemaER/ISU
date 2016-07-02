@@ -32,6 +32,9 @@ Partial Class frmISU
         Me.cbxIdioma = New System.Windows.Forms.ComboBox()
         Me.mspEspanol = New System.Windows.Forms.MenuStrip()
         Me.tsTambo = New System.Windows.Forms.ToolStripMenuItem()
+        Me.tsTamboIngresar = New System.Windows.Forms.ToolStripMenuItem()
+        Me.tsTamboModificar = New System.Windows.Forms.ToolStripMenuItem()
+        Me.tsTamoConsultar = New System.Windows.Forms.ToolStripMenuItem()
         Me.tsIngresar = New System.Windows.Forms.ToolStripMenuItem()
         Me.tsEliminar = New System.Windows.Forms.ToolStripMenuItem()
         Me.tsConsultar = New System.Windows.Forms.ToolStripMenuItem()
@@ -62,9 +65,13 @@ Partial Class frmISU
         Me.tsEdad = New System.Windows.Forms.ToolStripMenuItem()
         Me.tsModificar = New System.Windows.Forms.ToolStripMenuItem()
         Me.tsSesion = New System.Windows.Forms.ToolStripMenuItem()
+        Me.tsSalir = New System.Windows.Forms.ToolStripMenuItem()
         Me.pnlInicio = New System.Windows.Forms.Panel()
         Me.pnlBlue = New System.Windows.Forms.Panel()
-        Me.tsSalir = New System.Windows.Forms.ToolStripMenuItem()
+        Me.tsPersonal = New System.Windows.Forms.ToolStripMenuItem()
+        Me.tsPersonalIngresar = New System.Windows.Forms.ToolStripMenuItem()
+        Me.tsPersonalModificar = New System.Windows.Forms.ToolStripMenuItem()
+        Me.tsPersonalConsulltar = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.PbxISU, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.mspEspanol.SuspendLayout()
         Me.pnlInicio.SuspendLayout()
@@ -147,7 +154,7 @@ Partial Class frmISU
         'mspEspanol
         '
         Me.mspEspanol.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.mspEspanol.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsTambo, Me.tsIngresar, Me.tsEliminar, Me.tsConsultar, Me.tsEnlistar, Me.tsModificar, Me.tsSesion, Me.tsSalir})
+        Me.mspEspanol.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsTambo, Me.tsPersonal, Me.tsIngresar, Me.tsEliminar, Me.tsConsultar, Me.tsEnlistar, Me.tsModificar, Me.tsSesion, Me.tsSalir})
         Me.mspEspanol.Location = New System.Drawing.Point(0, 0)
         Me.mspEspanol.Name = "mspEspanol"
         Me.mspEspanol.Padding = New System.Windows.Forms.Padding(6, 3, 0, 3)
@@ -157,9 +164,28 @@ Partial Class frmISU
         '
         'tsTambo
         '
+        Me.tsTambo.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsTamboIngresar, Me.tsTamboModificar, Me.tsTamoConsultar})
         Me.tsTambo.Name = "tsTambo"
         Me.tsTambo.Size = New System.Drawing.Size(57, 19)
         Me.tsTambo.Text = "Tambo"
+        '
+        'tsTamboIngresar
+        '
+        Me.tsTamboIngresar.Name = "tsTamboIngresar"
+        Me.tsTamboIngresar.Size = New System.Drawing.Size(125, 22)
+        Me.tsTamboIngresar.Text = "Ingresar"
+        '
+        'tsTamboModificar
+        '
+        Me.tsTamboModificar.Name = "tsTamboModificar"
+        Me.tsTamboModificar.Size = New System.Drawing.Size(125, 22)
+        Me.tsTamboModificar.Text = "Modificar"
+        '
+        'tsTamoConsultar
+        '
+        Me.tsTamoConsultar.Name = "tsTamoConsultar"
+        Me.tsTamoConsultar.Size = New System.Drawing.Size(125, 22)
+        Me.tsTamoConsultar.Text = "Consultar"
         '
         'tsIngresar
         '
@@ -347,6 +373,12 @@ Partial Class frmISU
         Me.tsSesion.Size = New System.Drawing.Size(87, 19)
         Me.tsSesion.Text = "Cerrar sesion"
         '
+        'tsSalir
+        '
+        Me.tsSalir.Name = "tsSalir"
+        Me.tsSalir.Size = New System.Drawing.Size(41, 19)
+        Me.tsSalir.Text = "Salir"
+        '
         'pnlInicio
         '
         Me.pnlInicio.Controls.Add(Me.btnInicio)
@@ -371,11 +403,30 @@ Partial Class frmISU
         Me.pnlBlue.TabIndex = 48
         Me.pnlBlue.Visible = False
         '
-        'tsSalir
+        'tsPersonal
         '
-        Me.tsSalir.Name = "tsSalir"
-        Me.tsSalir.Size = New System.Drawing.Size(41, 19)
-        Me.tsSalir.Text = "Salir"
+        Me.tsPersonal.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsPersonalIngresar, Me.tsPersonalModificar, Me.tsPersonalConsulltar})
+        Me.tsPersonal.Name = "tsPersonal"
+        Me.tsPersonal.Size = New System.Drawing.Size(64, 19)
+        Me.tsPersonal.Text = "Personal"
+        '
+        'tsPersonalIngresar
+        '
+        Me.tsPersonalIngresar.Name = "tsPersonalIngresar"
+        Me.tsPersonalIngresar.Size = New System.Drawing.Size(152, 22)
+        Me.tsPersonalIngresar.Text = "Ingresar"
+        '
+        'tsPersonalModificar
+        '
+        Me.tsPersonalModificar.Name = "tsPersonalModificar"
+        Me.tsPersonalModificar.Size = New System.Drawing.Size(152, 22)
+        Me.tsPersonalModificar.Text = "Modificar"
+        '
+        'tsPersonalConsulltar
+        '
+        Me.tsPersonalConsulltar.Name = "tsPersonalConsulltar"
+        Me.tsPersonalConsulltar.Size = New System.Drawing.Size(152, 22)
+        Me.tsPersonalConsulltar.Text = "Consultar"
         '
         'frmISU
         '
@@ -442,5 +493,12 @@ Partial Class frmISU
     Friend WithEvents tsHembraa As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents tsMacho As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents tsSalir As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents tsTamboIngresar As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents tsTamboModificar As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents tsTamoConsultar As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents tsPersonal As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents tsPersonalIngresar As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents tsPersonalModificar As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents tsPersonalConsulltar As System.Windows.Forms.ToolStripMenuItem
 
 End Class

@@ -25,12 +25,23 @@ Partial Class frmModificar
         Me.btnBuscar = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.btnModificar = New System.Windows.Forms.Button()
+        Me.tbxNum = New System.Windows.Forms.TextBox()
+        Me.lblNumero = New System.Windows.Forms.Label()
+        Me.btnGenealogia = New System.Windows.Forms.Button()
+        Me.gbxBasico = New System.Windows.Forms.GroupBox()
+        Me.cbxLugar = New System.Windows.Forms.ComboBox()
         Me.tbxAaaa = New System.Windows.Forms.TextBox()
         Me.tbxMm = New System.Windows.Forms.TextBox()
         Me.tbxDd = New System.Windows.Forms.TextBox()
         Me.lblNacimiento = New System.Windows.Forms.Label()
+        Me.lblDivision = New System.Windows.Forms.Label()
+        Me.cbxSexo = New System.Windows.Forms.ComboBox()
+        Me.lblSexo = New System.Windows.Forms.Label()
+        Me.cbxRaza = New System.Windows.Forms.ComboBox()
+        Me.cbxDivision = New System.Windows.Forms.ComboBox()
+        Me.lblRaza = New System.Windows.Forms.Label()
+        Me.lblLugar = New System.Windows.Forms.Label()
         Me.gbxHembra = New System.Windows.Forms.GroupBox()
-        Me.cbxEtapa = New System.Windows.Forms.ComboBox()
         Me.lblAntibiotico = New System.Windows.Forms.Label()
         Me.gbxPrenada = New System.Windows.Forms.GroupBox()
         Me.rbnSip = New System.Windows.Forms.RadioButton()
@@ -42,7 +53,7 @@ Partial Class frmModificar
         Me.lblPrenada = New System.Windows.Forms.Label()
         Me.tbxPorcentajep = New System.Windows.Forms.TextBox()
         Me.lblPorcentajep = New System.Windows.Forms.Label()
-        Me.lblDivision = New System.Windows.Forms.Label()
+        Me.cbxEtapa = New System.Windows.Forms.ComboBox()
         Me.gbxLeche = New System.Windows.Forms.GroupBox()
         Me.tbxGrasa = New System.Windows.Forms.TextBox()
         Me.lblGrasa = New System.Windows.Forms.Label()
@@ -56,25 +67,31 @@ Partial Class frmModificar
         Me.lblLitros = New System.Windows.Forms.Label()
         Me.lblRecuentobac = New System.Windows.Forms.Label()
         Me.tbxLitros = New System.Windows.Forms.TextBox()
-        Me.cbxSexo = New System.Windows.Forms.ComboBox()
-        Me.lblSexo = New System.Windows.Forms.Label()
-        Me.cbxRaza = New System.Windows.Forms.ComboBox()
-        Me.tbxLugar = New System.Windows.Forms.TextBox()
-        Me.cbxDivision = New System.Windows.Forms.ComboBox()
-        Me.tbxNum = New System.Windows.Forms.TextBox()
-        Me.lblRaza = New System.Windows.Forms.Label()
-        Me.lblLugar = New System.Windows.Forms.Label()
-        Me.lblNumero = New System.Windows.Forms.Label()
+        Me.gbxPrenadaS = New System.Windows.Forms.GroupBox()
+        Me.tbxaaaarv = New System.Windows.Forms.TextBox()
+        Me.tbxmmrv = New System.Windows.Forms.TextBox()
+        Me.lblRecriavuelta = New System.Windows.Forms.Label()
+        Me.tbxddrv = New System.Windows.Forms.TextBox()
+        Me.tbxaaaaRI = New System.Windows.Forms.TextBox()
+        Me.tbxmmri = New System.Windows.Forms.TextBox()
+        Me.lblRecriaIda = New System.Windows.Forms.Label()
+        Me.tbxddri = New System.Windows.Forms.TextBox()
+        Me.tbxaaap = New System.Windows.Forms.TextBox()
+        Me.tbxmmp = New System.Windows.Forms.TextBox()
+        Me.lblFechaP = New System.Windows.Forms.Label()
+        Me.tbxddP = New System.Windows.Forms.TextBox()
+        Me.gbxBasico.SuspendLayout()
         Me.gbxHembra.SuspendLayout()
         Me.gbxPrenada.SuspendLayout()
         Me.gbxAntibiotico.SuspendLayout()
         Me.gbxLeche.SuspendLayout()
+        Me.gbxPrenadaS.SuspendLayout()
         Me.SuspendLayout()
         '
         'btnBuscar
         '
         Me.btnBuscar.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBuscar.Location = New System.Drawing.Point(448, 22)
+        Me.btnBuscar.Location = New System.Drawing.Point(405, 22)
         Me.btnBuscar.Name = "btnBuscar"
         Me.btnBuscar.Size = New System.Drawing.Size(118, 42)
         Me.btnBuscar.TabIndex = 28
@@ -92,63 +109,189 @@ Partial Class frmModificar
         'btnModificar
         '
         Me.btnModificar.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnModificar.Location = New System.Drawing.Point(629, 22)
+        Me.btnModificar.Location = New System.Drawing.Point(529, 22)
         Me.btnModificar.Name = "btnModificar"
         Me.btnModificar.Size = New System.Drawing.Size(118, 42)
         Me.btnModificar.TabIndex = 95
         Me.btnModificar.Text = "Modificar"
         Me.btnModificar.UseVisualStyleBackColor = True
         '
+        'tbxNum
+        '
+        Me.tbxNum.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbxNum.Location = New System.Drawing.Point(230, 28)
+        Me.tbxNum.MaxLength = 9
+        Me.tbxNum.Name = "tbxNum"
+        Me.tbxNum.Size = New System.Drawing.Size(145, 32)
+        Me.tbxNum.TabIndex = 101
+        Me.tbxNum.Text = "000000000"
+        '
+        'lblNumero
+        '
+        Me.lblNumero.AutoSize = True
+        Me.lblNumero.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblNumero.Location = New System.Drawing.Point(22, 31)
+        Me.lblNumero.Name = "lblNumero"
+        Me.lblNumero.Size = New System.Drawing.Size(82, 24)
+        Me.lblNumero.TabIndex = 97
+        Me.lblNumero.Text = "Numero"
+        '
+        'btnGenealogia
+        '
+        Me.btnGenealogia.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnGenealogia.Location = New System.Drawing.Point(653, 22)
+        Me.btnGenealogia.Name = "btnGenealogia"
+        Me.btnGenealogia.Size = New System.Drawing.Size(141, 42)
+        Me.btnGenealogia.TabIndex = 113
+        Me.btnGenealogia.Text = "Genealogia"
+        Me.btnGenealogia.UseVisualStyleBackColor = True
+        Me.btnGenealogia.Visible = False
+        '
+        'gbxBasico
+        '
+        Me.gbxBasico.Controls.Add(Me.cbxLugar)
+        Me.gbxBasico.Controls.Add(Me.tbxAaaa)
+        Me.gbxBasico.Controls.Add(Me.tbxMm)
+        Me.gbxBasico.Controls.Add(Me.tbxDd)
+        Me.gbxBasico.Controls.Add(Me.lblNacimiento)
+        Me.gbxBasico.Controls.Add(Me.lblDivision)
+        Me.gbxBasico.Controls.Add(Me.cbxSexo)
+        Me.gbxBasico.Controls.Add(Me.lblSexo)
+        Me.gbxBasico.Controls.Add(Me.cbxRaza)
+        Me.gbxBasico.Controls.Add(Me.cbxDivision)
+        Me.gbxBasico.Controls.Add(Me.lblRaza)
+        Me.gbxBasico.Controls.Add(Me.lblLugar)
+        Me.gbxBasico.Enabled = False
+        Me.gbxBasico.Location = New System.Drawing.Point(14, 66)
+        Me.gbxBasico.Name = "gbxBasico"
+        Me.gbxBasico.Size = New System.Drawing.Size(374, 240)
+        Me.gbxBasico.TabIndex = 114
+        Me.gbxBasico.TabStop = False
+        '
+        'cbxLugar
+        '
+        Me.cbxLugar.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbxLugar.FormattingEnabled = True
+        Me.cbxLugar.Items.AddRange(New Object() {"Holando", "Jersey", "Primer show"})
+        Me.cbxLugar.Location = New System.Drawing.Point(214, 106)
+        Me.cbxLugar.Name = "cbxLugar"
+        Me.cbxLugar.Size = New System.Drawing.Size(145, 32)
+        Me.cbxLugar.TabIndex = 54
+        '
         'tbxAaaa
         '
         Me.tbxAaaa.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbxAaaa.Location = New System.Drawing.Point(321, 129)
+        Me.tbxAaaa.Location = New System.Drawing.Point(305, 56)
         Me.tbxAaaa.MaxLength = 3
         Me.tbxAaaa.Name = "tbxAaaa"
         Me.tbxAaaa.Size = New System.Drawing.Size(54, 32)
-        Me.tbxAaaa.TabIndex = 112
+        Me.tbxAaaa.TabIndex = 52
         Me.tbxAaaa.Text = "aaaa"
         Me.tbxAaaa.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.tbxAaaa.Visible = False
         '
         'tbxMm
         '
         Me.tbxMm.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbxMm.Location = New System.Drawing.Point(275, 129)
+        Me.tbxMm.Location = New System.Drawing.Point(259, 56)
         Me.tbxMm.MaxLength = 3
         Me.tbxMm.Name = "tbxMm"
         Me.tbxMm.Size = New System.Drawing.Size(40, 32)
-        Me.tbxMm.TabIndex = 111
+        Me.tbxMm.TabIndex = 51
         Me.tbxMm.Text = "mm"
         Me.tbxMm.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.tbxMm.Visible = False
         '
         'tbxDd
         '
         Me.tbxDd.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbxDd.Location = New System.Drawing.Point(232, 129)
+        Me.tbxDd.Location = New System.Drawing.Point(216, 56)
         Me.tbxDd.MaxLength = 3
         Me.tbxDd.Name = "tbxDd"
         Me.tbxDd.Size = New System.Drawing.Size(37, 32)
-        Me.tbxDd.TabIndex = 110
+        Me.tbxDd.TabIndex = 50
         Me.tbxDd.Text = "dd"
         Me.tbxDd.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.tbxDd.Visible = False
         '
         'lblNacimiento
         '
         Me.lblNacimiento.AutoSize = True
         Me.lblNacimiento.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblNacimiento.Location = New System.Drawing.Point(23, 132)
+        Me.lblNacimiento.Location = New System.Drawing.Point(7, 59)
         Me.lblNacimiento.Name = "lblNacimiento"
         Me.lblNacimiento.Size = New System.Drawing.Size(114, 24)
-        Me.lblNacimiento.TabIndex = 109
+        Me.lblNacimiento.TabIndex = 49
         Me.lblNacimiento.Text = "Nacimiento"
-        Me.lblNacimiento.Visible = False
+        '
+        'lblDivision
+        '
+        Me.lblDivision.AutoSize = True
+        Me.lblDivision.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDivision.Location = New System.Drawing.Point(7, 197)
+        Me.lblDivision.Name = "lblDivision"
+        Me.lblDivision.Size = New System.Drawing.Size(85, 24)
+        Me.lblDivision.TabIndex = 2
+        Me.lblDivision.Text = "División"
+        '
+        'cbxSexo
+        '
+        Me.cbxSexo.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbxSexo.FormattingEnabled = True
+        Me.cbxSexo.Items.AddRange(New Object() {"Macho", "Hembra"})
+        Me.cbxSexo.Location = New System.Drawing.Point(215, 15)
+        Me.cbxSexo.Name = "cbxSexo"
+        Me.cbxSexo.Size = New System.Drawing.Size(145, 32)
+        Me.cbxSexo.TabIndex = 36
+        '
+        'lblSexo
+        '
+        Me.lblSexo.AutoSize = True
+        Me.lblSexo.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblSexo.Location = New System.Drawing.Point(7, 18)
+        Me.lblSexo.Name = "lblSexo"
+        Me.lblSexo.Size = New System.Drawing.Size(58, 24)
+        Me.lblSexo.TabIndex = 35
+        Me.lblSexo.Text = "Sexo"
+        '
+        'cbxRaza
+        '
+        Me.cbxRaza.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbxRaza.FormattingEnabled = True
+        Me.cbxRaza.Items.AddRange(New Object() {"Holando", "Jersey", "Primer show"})
+        Me.cbxRaza.Location = New System.Drawing.Point(213, 153)
+        Me.cbxRaza.Name = "cbxRaza"
+        Me.cbxRaza.Size = New System.Drawing.Size(145, 32)
+        Me.cbxRaza.TabIndex = 31
+        '
+        'cbxDivision
+        '
+        Me.cbxDivision.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbxDivision.FormattingEnabled = True
+        Me.cbxDivision.Location = New System.Drawing.Point(215, 197)
+        Me.cbxDivision.Name = "cbxDivision"
+        Me.cbxDivision.Size = New System.Drawing.Size(144, 32)
+        Me.cbxDivision.TabIndex = 37
+        '
+        'lblRaza
+        '
+        Me.lblRaza.AutoSize = True
+        Me.lblRaza.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblRaza.Location = New System.Drawing.Point(6, 156)
+        Me.lblRaza.Name = "lblRaza"
+        Me.lblRaza.Size = New System.Drawing.Size(58, 24)
+        Me.lblRaza.TabIndex = 6
+        Me.lblRaza.Text = "Raza"
+        '
+        'lblLugar
+        '
+        Me.lblLugar.AutoSize = True
+        Me.lblLugar.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblLugar.Location = New System.Drawing.Point(6, 109)
+        Me.lblLugar.Name = "lblLugar"
+        Me.lblLugar.Size = New System.Drawing.Size(125, 24)
+        Me.lblLugar.TabIndex = 4
+        Me.lblLugar.Text = "Lugar actual"
         '
         'gbxHembra
         '
-        Me.gbxHembra.Controls.Add(Me.cbxEtapa)
         Me.gbxHembra.Controls.Add(Me.lblAntibiotico)
         Me.gbxHembra.Controls.Add(Me.gbxPrenada)
         Me.gbxHembra.Controls.Add(Me.lblEtapa)
@@ -156,28 +299,19 @@ Partial Class frmModificar
         Me.gbxHembra.Controls.Add(Me.lblPrenada)
         Me.gbxHembra.Controls.Add(Me.tbxPorcentajep)
         Me.gbxHembra.Controls.Add(Me.lblPorcentajep)
-        Me.gbxHembra.Location = New System.Drawing.Point(14, 308)
+        Me.gbxHembra.Controls.Add(Me.cbxEtapa)
+        Me.gbxHembra.Enabled = False
+        Me.gbxHembra.Location = New System.Drawing.Point(13, 314)
         Me.gbxHembra.Name = "gbxHembra"
         Me.gbxHembra.Size = New System.Drawing.Size(376, 194)
-        Me.gbxHembra.TabIndex = 108
+        Me.gbxHembra.TabIndex = 58
         Me.gbxHembra.TabStop = False
-        Me.gbxHembra.Visible = False
-        '
-        'cbxEtapa
-        '
-        Me.cbxEtapa.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cbxEtapa.FormattingEnabled = True
-        Me.cbxEtapa.Items.AddRange(New Object() {"Ninguno", "Servicio", "Preñada", "Lactancia"})
-        Me.cbxEtapa.Location = New System.Drawing.Point(216, 150)
-        Me.cbxEtapa.Name = "cbxEtapa"
-        Me.cbxEtapa.Size = New System.Drawing.Size(144, 32)
-        Me.cbxEtapa.TabIndex = 45
         '
         'lblAntibiotico
         '
         Me.lblAntibiotico.AutoSize = True
         Me.lblAntibiotico.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblAntibiotico.Location = New System.Drawing.Point(8, 26)
+        Me.lblAntibiotico.Location = New System.Drawing.Point(8, 65)
         Me.lblAntibiotico.Name = "lblAntibiotico"
         Me.lblAntibiotico.Size = New System.Drawing.Size(202, 24)
         Me.lblAntibiotico.TabIndex = 38
@@ -187,7 +321,7 @@ Partial Class frmModificar
         '
         Me.gbxPrenada.Controls.Add(Me.rbnSip)
         Me.gbxPrenada.Controls.Add(Me.rbnNop)
-        Me.gbxPrenada.Location = New System.Drawing.Point(216, 103)
+        Me.gbxPrenada.Location = New System.Drawing.Point(215, 104)
         Me.gbxPrenada.Name = "gbxPrenada"
         Me.gbxPrenada.Size = New System.Drawing.Size(144, 39)
         Me.gbxPrenada.TabIndex = 44
@@ -221,7 +355,7 @@ Partial Class frmModificar
         '
         Me.lblEtapa.AutoSize = True
         Me.lblEtapa.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblEtapa.Location = New System.Drawing.Point(8, 153)
+        Me.lblEtapa.Location = New System.Drawing.Point(8, 25)
         Me.lblEtapa.Name = "lblEtapa"
         Me.lblEtapa.Size = New System.Drawing.Size(65, 24)
         Me.lblEtapa.TabIndex = 5
@@ -231,7 +365,7 @@ Partial Class frmModificar
         '
         Me.gbxAntibiotico.Controls.Add(Me.rbnSia)
         Me.gbxAntibiotico.Controls.Add(Me.rbnNoa)
-        Me.gbxAntibiotico.Location = New System.Drawing.Point(216, 19)
+        Me.gbxAntibiotico.Location = New System.Drawing.Point(216, 58)
         Me.gbxAntibiotico.Name = "gbxAntibiotico"
         Me.gbxAntibiotico.Size = New System.Drawing.Size(144, 40)
         Me.gbxAntibiotico.TabIndex = 43
@@ -265,7 +399,7 @@ Partial Class frmModificar
         '
         Me.lblPrenada.AutoSize = True
         Me.lblPrenada.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrenada.Location = New System.Drawing.Point(8, 110)
+        Me.lblPrenada.Location = New System.Drawing.Point(7, 111)
         Me.lblPrenada.Name = "lblPrenada"
         Me.lblPrenada.Size = New System.Drawing.Size(89, 24)
         Me.lblPrenada.TabIndex = 7
@@ -274,7 +408,7 @@ Partial Class frmModificar
         'tbxPorcentajep
         '
         Me.tbxPorcentajep.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbxPorcentajep.Location = New System.Drawing.Point(216, 65)
+        Me.tbxPorcentajep.Location = New System.Drawing.Point(215, 150)
         Me.tbxPorcentajep.MaxLength = 3
         Me.tbxPorcentajep.Name = "tbxPorcentajep"
         Me.tbxPorcentajep.Size = New System.Drawing.Size(144, 32)
@@ -285,22 +419,21 @@ Partial Class frmModificar
         '
         Me.lblPorcentajep.AutoSize = True
         Me.lblPorcentajep.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPorcentajep.Location = New System.Drawing.Point(8, 68)
+        Me.lblPorcentajep.Location = New System.Drawing.Point(6, 153)
         Me.lblPorcentajep.Name = "lblPorcentajep"
         Me.lblPorcentajep.Size = New System.Drawing.Size(208, 24)
         Me.lblPorcentajep.TabIndex = 41
         Me.lblPorcentajep.Text = "Porcentaje de preñez"
         '
-        'lblDivision
+        'cbxEtapa
         '
-        Me.lblDivision.AutoSize = True
-        Me.lblDivision.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblDivision.Location = New System.Drawing.Point(23, 270)
-        Me.lblDivision.Name = "lblDivision"
-        Me.lblDivision.Size = New System.Drawing.Size(85, 24)
-        Me.lblDivision.TabIndex = 98
-        Me.lblDivision.Text = "División"
-        Me.lblDivision.Visible = False
+        Me.cbxEtapa.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbxEtapa.FormattingEnabled = True
+        Me.cbxEtapa.Items.AddRange(New Object() {"Ninguno", "Servicio", "Preñada", "Lactancia"})
+        Me.cbxEtapa.Location = New System.Drawing.Point(215, 22)
+        Me.cbxEtapa.Name = "cbxEtapa"
+        Me.cbxEtapa.Size = New System.Drawing.Size(144, 32)
+        Me.cbxEtapa.TabIndex = 34
         '
         'gbxLeche
         '
@@ -316,18 +449,18 @@ Partial Class frmModificar
         Me.gbxLeche.Controls.Add(Me.lblLitros)
         Me.gbxLeche.Controls.Add(Me.lblRecuentobac)
         Me.gbxLeche.Controls.Add(Me.tbxLitros)
-        Me.gbxLeche.Location = New System.Drawing.Point(405, 118)
+        Me.gbxLeche.Enabled = False
+        Me.gbxLeche.Location = New System.Drawing.Point(398, 72)
         Me.gbxLeche.Name = "gbxLeche"
-        Me.gbxLeche.Size = New System.Drawing.Size(389, 384)
-        Me.gbxLeche.TabIndex = 107
+        Me.gbxLeche.Size = New System.Drawing.Size(396, 282)
+        Me.gbxLeche.TabIndex = 57
         Me.gbxLeche.TabStop = False
         Me.gbxLeche.Text = "Lactancia"
-        Me.gbxLeche.Visible = False
         '
         'tbxGrasa
         '
         Me.tbxGrasa.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbxGrasa.Location = New System.Drawing.Point(241, 112)
+        Me.tbxGrasa.Location = New System.Drawing.Point(251, 57)
         Me.tbxGrasa.MaxLength = 3
         Me.tbxGrasa.Name = "tbxGrasa"
         Me.tbxGrasa.Size = New System.Drawing.Size(142, 32)
@@ -338,7 +471,7 @@ Partial Class frmModificar
         '
         Me.lblGrasa.AutoSize = True
         Me.lblGrasa.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblGrasa.Location = New System.Drawing.Point(6, 115)
+        Me.lblGrasa.Location = New System.Drawing.Point(6, 60)
         Me.lblGrasa.Name = "lblGrasa"
         Me.lblGrasa.Size = New System.Drawing.Size(199, 24)
         Me.lblGrasa.TabIndex = 56
@@ -347,7 +480,7 @@ Partial Class frmModificar
         'tbxProteina
         '
         Me.tbxProteina.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbxProteina.Location = New System.Drawing.Point(241, 155)
+        Me.tbxProteina.Location = New System.Drawing.Point(251, 100)
         Me.tbxProteina.MaxLength = 3
         Me.tbxProteina.Name = "tbxProteina"
         Me.tbxProteina.Size = New System.Drawing.Size(142, 32)
@@ -358,7 +491,7 @@ Partial Class frmModificar
         '
         Me.lblProteina.AutoSize = True
         Me.lblProteina.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblProteina.Location = New System.Drawing.Point(6, 158)
+        Me.lblProteina.Location = New System.Drawing.Point(6, 103)
         Me.lblProteina.Name = "lblProteina"
         Me.lblProteina.Size = New System.Drawing.Size(222, 24)
         Me.lblProteina.TabIndex = 54
@@ -367,7 +500,7 @@ Partial Class frmModificar
         'tbxUrea
         '
         Me.tbxUrea.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbxUrea.Location = New System.Drawing.Point(241, 202)
+        Me.tbxUrea.Location = New System.Drawing.Point(251, 147)
         Me.tbxUrea.MaxLength = 3
         Me.tbxUrea.Name = "tbxUrea"
         Me.tbxUrea.Size = New System.Drawing.Size(142, 32)
@@ -378,7 +511,7 @@ Partial Class frmModificar
         '
         Me.lblUrea.AutoSize = True
         Me.lblUrea.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblUrea.Location = New System.Drawing.Point(6, 205)
+        Me.lblUrea.Location = New System.Drawing.Point(6, 150)
         Me.lblUrea.Name = "lblUrea"
         Me.lblUrea.Size = New System.Drawing.Size(188, 24)
         Me.lblUrea.TabIndex = 52
@@ -387,7 +520,7 @@ Partial Class frmModificar
         'tbxRecuentocel
         '
         Me.tbxRecuentocel.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbxRecuentocel.Location = New System.Drawing.Point(241, 320)
+        Me.tbxRecuentocel.Location = New System.Drawing.Point(251, 224)
         Me.tbxRecuentocel.MaxLength = 11
         Me.tbxRecuentocel.Name = "tbxRecuentocel"
         Me.tbxRecuentocel.Size = New System.Drawing.Size(142, 32)
@@ -398,7 +531,7 @@ Partial Class frmModificar
         '
         Me.lblRecuentoCel.AutoSize = True
         Me.lblRecuentoCel.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblRecuentoCel.Location = New System.Drawing.Point(6, 320)
+        Me.lblRecuentoCel.Location = New System.Drawing.Point(6, 224)
         Me.lblRecuentoCel.Name = "lblRecuentoCel"
         Me.lblRecuentoCel.Size = New System.Drawing.Size(200, 48)
         Me.lblRecuentoCel.TabIndex = 50
@@ -407,7 +540,7 @@ Partial Class frmModificar
         'tbxRecuentobac
         '
         Me.tbxRecuentobac.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbxRecuentobac.Location = New System.Drawing.Point(241, 281)
+        Me.tbxRecuentobac.Location = New System.Drawing.Point(251, 185)
         Me.tbxRecuentobac.MaxLength = 11
         Me.tbxRecuentobac.Name = "tbxRecuentobac"
         Me.tbxRecuentobac.Size = New System.Drawing.Size(142, 32)
@@ -428,7 +561,7 @@ Partial Class frmModificar
         '
         Me.lblRecuentobac.AutoSize = True
         Me.lblRecuentobac.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblRecuentobac.Location = New System.Drawing.Point(6, 284)
+        Me.lblRecuentobac.Location = New System.Drawing.Point(6, 188)
         Me.lblRecuentobac.Name = "lblRecuentobac"
         Me.lblRecuentobac.Size = New System.Drawing.Size(205, 24)
         Me.lblRecuentobac.TabIndex = 48
@@ -437,107 +570,162 @@ Partial Class frmModificar
         'tbxLitros
         '
         Me.tbxLitros.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbxLitros.Location = New System.Drawing.Point(241, 19)
+        Me.tbxLitros.Location = New System.Drawing.Point(251, 19)
         Me.tbxLitros.MaxLength = 11
         Me.tbxLitros.Name = "tbxLitros"
         Me.tbxLitros.Size = New System.Drawing.Size(142, 32)
         Me.tbxLitros.TabIndex = 47
         Me.tbxLitros.Text = "00000000000"
         '
-        'cbxSexo
+        'gbxPrenadaS
         '
-        Me.cbxSexo.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cbxSexo.FormattingEnabled = True
-        Me.cbxSexo.Items.AddRange(New Object() {"Macho", "Hembra"})
-        Me.cbxSexo.Location = New System.Drawing.Point(231, 88)
-        Me.cbxSexo.Name = "cbxSexo"
-        Me.cbxSexo.Size = New System.Drawing.Size(145, 32)
-        Me.cbxSexo.TabIndex = 105
-        Me.cbxSexo.Visible = False
+        Me.gbxPrenadaS.Controls.Add(Me.tbxaaaarv)
+        Me.gbxPrenadaS.Controls.Add(Me.tbxmmrv)
+        Me.gbxPrenadaS.Controls.Add(Me.lblRecriavuelta)
+        Me.gbxPrenadaS.Controls.Add(Me.tbxddrv)
+        Me.gbxPrenadaS.Controls.Add(Me.tbxaaaaRI)
+        Me.gbxPrenadaS.Controls.Add(Me.tbxmmri)
+        Me.gbxPrenadaS.Controls.Add(Me.lblRecriaIda)
+        Me.gbxPrenadaS.Controls.Add(Me.tbxddri)
+        Me.gbxPrenadaS.Controls.Add(Me.tbxaaap)
+        Me.gbxPrenadaS.Controls.Add(Me.tbxmmp)
+        Me.gbxPrenadaS.Controls.Add(Me.lblFechaP)
+        Me.gbxPrenadaS.Controls.Add(Me.tbxddP)
+        Me.gbxPrenadaS.Enabled = False
+        Me.gbxPrenadaS.Location = New System.Drawing.Point(398, 364)
+        Me.gbxPrenadaS.Name = "gbxPrenadaS"
+        Me.gbxPrenadaS.Size = New System.Drawing.Size(399, 144)
+        Me.gbxPrenadaS.TabIndex = 57
+        Me.gbxPrenadaS.TabStop = False
         '
-        'lblSexo
+        'tbxaaaarv
         '
-        Me.lblSexo.AutoSize = True
-        Me.lblSexo.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblSexo.Location = New System.Drawing.Point(23, 91)
-        Me.lblSexo.Name = "lblSexo"
-        Me.lblSexo.Size = New System.Drawing.Size(58, 24)
-        Me.lblSexo.TabIndex = 104
-        Me.lblSexo.Text = "Sexo"
-        Me.lblSexo.Visible = False
+        Me.tbxaaaarv.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbxaaaarv.Location = New System.Drawing.Point(340, 101)
+        Me.tbxaaaarv.MaxLength = 3
+        Me.tbxaaaarv.Name = "tbxaaaarv"
+        Me.tbxaaaarv.Size = New System.Drawing.Size(54, 32)
+        Me.tbxaaaarv.TabIndex = 64
+        Me.tbxaaaarv.Text = "aaaa"
+        Me.tbxaaaarv.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'cbxRaza
+        'tbxmmrv
         '
-        Me.cbxRaza.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cbxRaza.FormattingEnabled = True
-        Me.cbxRaza.Items.AddRange(New Object() {"Holando", "Jersey", "Primer show"})
-        Me.cbxRaza.Location = New System.Drawing.Point(230, 226)
-        Me.cbxRaza.Name = "cbxRaza"
-        Me.cbxRaza.Size = New System.Drawing.Size(145, 32)
-        Me.cbxRaza.TabIndex = 103
-        Me.cbxRaza.Visible = False
+        Me.tbxmmrv.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbxmmrv.Location = New System.Drawing.Point(294, 101)
+        Me.tbxmmrv.MaxLength = 3
+        Me.tbxmmrv.Name = "tbxmmrv"
+        Me.tbxmmrv.Size = New System.Drawing.Size(40, 32)
+        Me.tbxmmrv.TabIndex = 63
+        Me.tbxmmrv.Text = "mm"
+        Me.tbxmmrv.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'tbxLugar
+        'lblRecriavuelta
         '
-        Me.tbxLugar.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbxLugar.Location = New System.Drawing.Point(230, 179)
-        Me.tbxLugar.MaxLength = 11
-        Me.tbxLugar.Name = "tbxLugar"
-        Me.tbxLugar.Size = New System.Drawing.Size(145, 32)
-        Me.tbxLugar.TabIndex = 102
-        Me.tbxLugar.Visible = False
+        Me.lblRecriavuelta.AutoSize = True
+        Me.lblRecriavuelta.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblRecriavuelta.Location = New System.Drawing.Point(6, 104)
+        Me.lblRecriavuelta.Name = "lblRecriavuelta"
+        Me.lblRecriavuelta.Size = New System.Drawing.Size(241, 24)
+        Me.lblRecriavuelta.TabIndex = 61
+        Me.lblRecriavuelta.Text = "Campo de recria (vuelta)"
         '
-        'cbxDivision
+        'tbxddrv
         '
-        Me.cbxDivision.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cbxDivision.FormattingEnabled = True
-        Me.cbxDivision.Location = New System.Drawing.Point(231, 270)
-        Me.cbxDivision.Name = "cbxDivision"
-        Me.cbxDivision.Size = New System.Drawing.Size(144, 32)
-        Me.cbxDivision.TabIndex = 106
-        Me.cbxDivision.Visible = False
+        Me.tbxddrv.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbxddrv.Location = New System.Drawing.Point(251, 101)
+        Me.tbxddrv.MaxLength = 3
+        Me.tbxddrv.Name = "tbxddrv"
+        Me.tbxddrv.Size = New System.Drawing.Size(37, 32)
+        Me.tbxddrv.TabIndex = 62
+        Me.tbxddrv.Text = "dd"
+        Me.tbxddrv.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'tbxNum
+        'tbxaaaaRI
         '
-        Me.tbxNum.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbxNum.Location = New System.Drawing.Point(230, 28)
-        Me.tbxNum.MaxLength = 9
-        Me.tbxNum.Name = "tbxNum"
-        Me.tbxNum.Size = New System.Drawing.Size(145, 32)
-        Me.tbxNum.TabIndex = 101
-        Me.tbxNum.Text = "000000000"
+        Me.tbxaaaaRI.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbxaaaaRI.Location = New System.Drawing.Point(340, 63)
+        Me.tbxaaaaRI.MaxLength = 3
+        Me.tbxaaaaRI.Name = "tbxaaaaRI"
+        Me.tbxaaaaRI.Size = New System.Drawing.Size(54, 32)
+        Me.tbxaaaaRI.TabIndex = 60
+        Me.tbxaaaaRI.Text = "aaaa"
+        Me.tbxaaaaRI.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'lblRaza
+        'tbxmmri
         '
-        Me.lblRaza.AutoSize = True
-        Me.lblRaza.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblRaza.Location = New System.Drawing.Point(22, 229)
-        Me.lblRaza.Name = "lblRaza"
-        Me.lblRaza.Size = New System.Drawing.Size(58, 24)
-        Me.lblRaza.TabIndex = 100
-        Me.lblRaza.Text = "Raza"
-        Me.lblRaza.Visible = False
+        Me.tbxmmri.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbxmmri.Location = New System.Drawing.Point(294, 63)
+        Me.tbxmmri.MaxLength = 3
+        Me.tbxmmri.Name = "tbxmmri"
+        Me.tbxmmri.Size = New System.Drawing.Size(40, 32)
+        Me.tbxmmri.TabIndex = 59
+        Me.tbxmmri.Text = "mm"
+        Me.tbxmmri.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'lblLugar
+        'lblRecriaIda
         '
-        Me.lblLugar.AutoSize = True
-        Me.lblLugar.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblLugar.Location = New System.Drawing.Point(22, 182)
-        Me.lblLugar.Name = "lblLugar"
-        Me.lblLugar.Size = New System.Drawing.Size(125, 24)
-        Me.lblLugar.TabIndex = 99
-        Me.lblLugar.Text = "Lugar actual"
-        Me.lblLugar.Visible = False
+        Me.lblRecriaIda.AutoSize = True
+        Me.lblRecriaIda.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblRecriaIda.Location = New System.Drawing.Point(6, 66)
+        Me.lblRecriaIda.Name = "lblRecriaIda"
+        Me.lblRecriaIda.Size = New System.Drawing.Size(213, 24)
+        Me.lblRecriaIda.TabIndex = 57
+        Me.lblRecriaIda.Text = "Campo de recria (ida)"
         '
-        'lblNumero
+        'tbxddri
         '
-        Me.lblNumero.AutoSize = True
-        Me.lblNumero.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblNumero.Location = New System.Drawing.Point(22, 31)
-        Me.lblNumero.Name = "lblNumero"
-        Me.lblNumero.Size = New System.Drawing.Size(82, 24)
-        Me.lblNumero.TabIndex = 97
-        Me.lblNumero.Text = "Numero"
+        Me.tbxddri.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbxddri.Location = New System.Drawing.Point(251, 63)
+        Me.tbxddri.MaxLength = 3
+        Me.tbxddri.Name = "tbxddri"
+        Me.tbxddri.Size = New System.Drawing.Size(37, 32)
+        Me.tbxddri.TabIndex = 58
+        Me.tbxddri.Text = "dd"
+        Me.tbxddri.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'tbxaaap
+        '
+        Me.tbxaaap.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbxaaap.Location = New System.Drawing.Point(340, 19)
+        Me.tbxaaap.MaxLength = 3
+        Me.tbxaaap.Name = "tbxaaap"
+        Me.tbxaaap.Size = New System.Drawing.Size(54, 32)
+        Me.tbxaaap.TabIndex = 56
+        Me.tbxaaap.Text = "aaaa"
+        Me.tbxaaap.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'tbxmmp
+        '
+        Me.tbxmmp.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbxmmp.Location = New System.Drawing.Point(294, 19)
+        Me.tbxmmp.MaxLength = 3
+        Me.tbxmmp.Name = "tbxmmp"
+        Me.tbxmmp.Size = New System.Drawing.Size(40, 32)
+        Me.tbxmmp.TabIndex = 55
+        Me.tbxmmp.Text = "mm"
+        Me.tbxmmp.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'lblFechaP
+        '
+        Me.lblFechaP.AutoSize = True
+        Me.lblFechaP.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblFechaP.Location = New System.Drawing.Point(6, 22)
+        Me.lblFechaP.Name = "lblFechaP"
+        Me.lblFechaP.Size = New System.Drawing.Size(137, 24)
+        Me.lblFechaP.TabIndex = 47
+        Me.lblFechaP.Text = "Fecha preñez"
+        '
+        'tbxddP
+        '
+        Me.tbxddP.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbxddP.Location = New System.Drawing.Point(251, 19)
+        Me.tbxddP.MaxLength = 3
+        Me.tbxddP.Name = "tbxddP"
+        Me.tbxddP.Size = New System.Drawing.Size(37, 32)
+        Me.tbxddP.TabIndex = 54
+        Me.tbxddP.Text = "dd"
+        Me.tbxddP.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'frmModificar
         '
@@ -545,27 +733,20 @@ Partial Class frmModificar
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.ClientSize = New System.Drawing.Size(832, 536)
-        Me.Controls.Add(Me.tbxAaaa)
-        Me.Controls.Add(Me.tbxMm)
-        Me.Controls.Add(Me.tbxDd)
-        Me.Controls.Add(Me.lblNacimiento)
+        Me.Controls.Add(Me.gbxPrenadaS)
         Me.Controls.Add(Me.gbxHembra)
-        Me.Controls.Add(Me.lblDivision)
+        Me.Controls.Add(Me.gbxBasico)
         Me.Controls.Add(Me.gbxLeche)
-        Me.Controls.Add(Me.cbxSexo)
-        Me.Controls.Add(Me.lblSexo)
-        Me.Controls.Add(Me.cbxRaza)
-        Me.Controls.Add(Me.tbxLugar)
-        Me.Controls.Add(Me.cbxDivision)
+        Me.Controls.Add(Me.btnGenealogia)
         Me.Controls.Add(Me.tbxNum)
-        Me.Controls.Add(Me.lblRaza)
-        Me.Controls.Add(Me.lblLugar)
         Me.Controls.Add(Me.lblNumero)
         Me.Controls.Add(Me.btnModificar)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.btnBuscar)
         Me.Name = "frmModificar"
         Me.Text = "Modificar"
+        Me.gbxBasico.ResumeLayout(False)
+        Me.gbxBasico.PerformLayout()
         Me.gbxHembra.ResumeLayout(False)
         Me.gbxHembra.PerformLayout()
         Me.gbxPrenada.ResumeLayout(False)
@@ -574,17 +755,30 @@ Partial Class frmModificar
         Me.gbxAntibiotico.PerformLayout()
         Me.gbxLeche.ResumeLayout(False)
         Me.gbxLeche.PerformLayout()
+        Me.gbxPrenadaS.ResumeLayout(False)
+        Me.gbxPrenadaS.PerformLayout()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
+        Me.PerformLayout
 
-    End Sub
+End Sub
     Friend WithEvents btnBuscar As System.Windows.Forms.Button
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents btnModificar As System.Windows.Forms.Button
+    Friend WithEvents tbxNum As System.Windows.Forms.TextBox
+    Friend WithEvents lblNumero As System.Windows.Forms.Label
+    Friend WithEvents btnGenealogia As System.Windows.Forms.Button
+    Friend WithEvents gbxBasico As System.Windows.Forms.GroupBox
     Friend WithEvents tbxAaaa As System.Windows.Forms.TextBox
     Friend WithEvents tbxMm As System.Windows.Forms.TextBox
     Friend WithEvents tbxDd As System.Windows.Forms.TextBox
     Friend WithEvents lblNacimiento As System.Windows.Forms.Label
+    Friend WithEvents lblDivision As System.Windows.Forms.Label
+    Friend WithEvents cbxSexo As System.Windows.Forms.ComboBox
+    Friend WithEvents lblSexo As System.Windows.Forms.Label
+    Friend WithEvents cbxRaza As System.Windows.Forms.ComboBox
+    Friend WithEvents cbxDivision As System.Windows.Forms.ComboBox
+    Friend WithEvents lblRaza As System.Windows.Forms.Label
+    Friend WithEvents lblLugar As System.Windows.Forms.Label
     Friend WithEvents gbxHembra As System.Windows.Forms.GroupBox
     Friend WithEvents lblAntibiotico As System.Windows.Forms.Label
     Friend WithEvents gbxPrenada As System.Windows.Forms.GroupBox
@@ -597,7 +791,7 @@ Partial Class frmModificar
     Friend WithEvents lblPrenada As System.Windows.Forms.Label
     Friend WithEvents tbxPorcentajep As System.Windows.Forms.TextBox
     Friend WithEvents lblPorcentajep As System.Windows.Forms.Label
-    Friend WithEvents lblDivision As System.Windows.Forms.Label
+    Friend WithEvents cbxEtapa As System.Windows.Forms.ComboBox
     Friend WithEvents gbxLeche As System.Windows.Forms.GroupBox
     Friend WithEvents tbxGrasa As System.Windows.Forms.TextBox
     Friend WithEvents lblGrasa As System.Windows.Forms.Label
@@ -611,14 +805,18 @@ Partial Class frmModificar
     Friend WithEvents lblLitros As System.Windows.Forms.Label
     Friend WithEvents lblRecuentobac As System.Windows.Forms.Label
     Friend WithEvents tbxLitros As System.Windows.Forms.TextBox
-    Friend WithEvents cbxSexo As System.Windows.Forms.ComboBox
-    Friend WithEvents lblSexo As System.Windows.Forms.Label
-    Friend WithEvents cbxRaza As System.Windows.Forms.ComboBox
-    Friend WithEvents tbxLugar As System.Windows.Forms.TextBox
-    Friend WithEvents cbxDivision As System.Windows.Forms.ComboBox
-    Friend WithEvents tbxNum As System.Windows.Forms.TextBox
-    Friend WithEvents lblRaza As System.Windows.Forms.Label
-    Friend WithEvents lblLugar As System.Windows.Forms.Label
-    Friend WithEvents lblNumero As System.Windows.Forms.Label
-    Friend WithEvents cbxEtapa As System.Windows.Forms.ComboBox
+    Friend WithEvents cbxLugar As System.Windows.Forms.ComboBox
+    Friend WithEvents gbxPrenadaS As System.Windows.Forms.GroupBox
+    Friend WithEvents tbxaaaarv As System.Windows.Forms.TextBox
+    Friend WithEvents tbxmmrv As System.Windows.Forms.TextBox
+    Friend WithEvents lblRecriavuelta As System.Windows.Forms.Label
+    Friend WithEvents tbxddrv As System.Windows.Forms.TextBox
+    Friend WithEvents tbxaaaaRI As System.Windows.Forms.TextBox
+    Friend WithEvents tbxmmri As System.Windows.Forms.TextBox
+    Friend WithEvents lblRecriaIda As System.Windows.Forms.Label
+    Friend WithEvents tbxddri As System.Windows.Forms.TextBox
+    Friend WithEvents tbxaaap As System.Windows.Forms.TextBox
+    Friend WithEvents tbxmmp As System.Windows.Forms.TextBox
+    Friend WithEvents lblFechaP As System.Windows.Forms.Label
+    Friend WithEvents tbxddP As System.Windows.Forms.TextBox
 End Class

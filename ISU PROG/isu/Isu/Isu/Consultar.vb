@@ -1,13 +1,17 @@
 ﻿Public Class frmConsultar
 
     Private Sub frmConsultar_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
+        gbxLeche.Enabled = False
+        gbxBasico.Enabled = False
+        gbxHembra.Enabled = False
+        btnGenealogia.Enabled = False
         If frmISU.tsModificar.Text() = "Modify" Then
             Me.Text() = "Insert"
             lblNumero.Text() = "Numer"
         Else
             Me.Text() = "Consultar"
         End If
-        frmISU.Idioma_Load(frmISU.tsModificar, lblSexo, lblNacimiento, lblLugar, lblRaza, lblUrea, lblDivision, lblAntibiotico, lblPorcentajep, lblPrenada, lblEtapa, lblLitros, lblGrasa, lblProteina, lblRecuentobac, lblRecuentoCel)
+        frmISU.Idioma_Load(frmISU.tsModificar, lblSexo, lblNacimiento, lblLugar, lblRaza, lblUrea, lblDivision, lblAntibiotico, lblPorcentajep, lblPrenada, lblEtapa, lblLitros, lblGrasa, lblProteina, lblRecuentobac, lblRecuentoCel, btnGenealogia)
 
     End Sub
 
@@ -19,10 +23,14 @@
         If acum = 0 Then
             MsgBox("Falta conexión a la base de datos", MsgBoxStyle.OkOnly, "ERROR")
             'encuentra y muestra datos 
-            frmISU.lblAprecer(lblNacimiento, lblSexo, lblLugar, lblRaza, lblDivision, btnConsultar)
+            gbxBasico.Enabled = True
+            btnGenealogia.Enabled = False
         Else
             MsgBox("Datos no válidos", MsgBoxStyle.OkOnly, "ERROR")
         End If
     End Sub
 
+    Private Sub btnGenealogia_Click(sender As System.Object, e As System.EventArgs) Handles btnGenealogia.Click
+        frmGenealogia.Show()
+    End Sub
 End Class

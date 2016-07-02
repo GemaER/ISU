@@ -100,6 +100,12 @@
     <Compile Include="Enlistar.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Genealogia.Designer.vb">
+      <DependentUpon>Genealogia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Genealogia.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Ingresar.Designer.vb">
       <DependentUpon>Ingresar.vb</DependentUpon>
     </Compile>
@@ -127,10 +133,22 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Tambo.Designer.vb">
-      <DependentUpon>Tambo.vb</DependentUpon>
+    <Compile Include="Personal.Designer.vb">
+      <DependentUpon>Personal.vb</DependentUpon>
     </Compile>
-    <Compile Include="Tambo.vb">
+    <Compile Include="Personal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TamboCambios.Designer.vb">
+      <DependentUpon>TamboCambios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TamboCambios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TamboConsultar.Designer.vb">
+      <DependentUpon>TamboConsultar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TamboConsultar.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
@@ -147,6 +165,9 @@
     <EmbeddedResource Include="Enlistar.resx">
       <DependentUpon>Enlistar.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Genealogia.resx">
+      <DependentUpon>Genealogia.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ingresar.resx">
       <DependentUpon>Ingresar.vb</DependentUpon>
     </EmbeddedResource>
@@ -159,8 +180,14 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Tambo.resx">
-      <DependentUpon>Tambo.vb</DependentUpon>
+    <EmbeddedResource Include="Personal.resx">
+      <DependentUpon>Personal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TamboCambios.resx">
+      <DependentUpon>TamboCambios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TamboConsultar.resx">
+      <DependentUpon>TamboConsultar.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
