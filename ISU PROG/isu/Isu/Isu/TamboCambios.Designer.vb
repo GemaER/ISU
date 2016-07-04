@@ -23,7 +23,7 @@ Partial Class frmTamboCambios
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.lblTambo = New System.Windows.Forms.Label()
-        Me.TextBox10 = New System.Windows.Forms.TextBox()
+        Me.tbxGanado = New System.Windows.Forms.TextBox()
         Me.lblGanado = New System.Windows.Forms.Label()
         Me.gbxTercer = New System.Windows.Forms.GroupBox()
         Me.TextBox22 = New System.Windows.Forms.TextBox()
@@ -52,12 +52,12 @@ Partial Class frmTamboCambios
         Me.TextBox11 = New System.Windows.Forms.TextBox()
         Me.TextBox12 = New System.Windows.Forms.TextBox()
         Me.lblIniciop = New System.Windows.Forms.Label()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.tbxExploaciones = New System.Windows.Forms.TextBox()
         Me.lblExplotaciones = New System.Windows.Forms.Label()
         Me.cbxCantidad = New System.Windows.Forms.ComboBox()
-        Me.lbOrdeñecant = New System.Windows.Forms.Label()
-        Me.tbxLugar = New System.Windows.Forms.TextBox()
-        Me.tbxNum = New System.Windows.Forms.TextBox()
+        Me.lblOrdeñecant = New System.Windows.Forms.Label()
+        Me.tbxHectareas = New System.Windows.Forms.TextBox()
+        Me.tbxTipoO = New System.Windows.Forms.TextBox()
         Me.lblHectareas = New System.Windows.Forms.Label()
         Me.lblOrdeñet = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
@@ -82,13 +82,13 @@ Partial Class frmTamboCambios
         Me.lblTambo.TabIndex = 111
         Me.lblTambo.Text = "Tambo"
         '
-        'TextBox10
+        'tbxGanado
         '
-        Me.TextBox10.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox10.Location = New System.Drawing.Point(267, 153)
-        Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.Size = New System.Drawing.Size(121, 32)
-        Me.TextBox10.TabIndex = 109
+        Me.tbxGanado.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbxGanado.Location = New System.Drawing.Point(267, 153)
+        Me.tbxGanado.Name = "tbxGanado"
+        Me.tbxGanado.Size = New System.Drawing.Size(121, 32)
+        Me.tbxGanado.TabIndex = 109
         '
         'lblGanado
         '
@@ -118,23 +118,26 @@ Partial Class frmTamboCambios
         Me.gbxTercer.TabIndex = 107
         Me.gbxTercer.TabStop = False
         Me.gbxTercer.Text = "3er Ordeñe"
-        Me.gbxTercer.Visible = False
         '
         'TextBox22
         '
         Me.TextBox22.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox22.Location = New System.Drawing.Point(260, 76)
+        Me.TextBox22.MaxLength = 2
         Me.TextBox22.Name = "TextBox22"
         Me.TextBox22.Size = New System.Drawing.Size(41, 32)
         Me.TextBox22.TabIndex = 77
+        Me.TextBox22.Text = "00"
         '
         'TextBox21
         '
         Me.TextBox21.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox21.Location = New System.Drawing.Point(260, 38)
+        Me.TextBox21.MaxLength = 2
         Me.TextBox21.Name = "TextBox21"
         Me.TextBox21.Size = New System.Drawing.Size(41, 32)
         Me.TextBox21.TabIndex = 76
+        Me.TextBox21.Text = "00"
         '
         'Label1
         '
@@ -170,17 +173,21 @@ Partial Class frmTamboCambios
         '
         Me.TextBox15.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox15.Location = New System.Drawing.Point(191, 76)
+        Me.TextBox15.MaxLength = 2
         Me.TextBox15.Name = "TextBox15"
         Me.TextBox15.Size = New System.Drawing.Size(41, 32)
         Me.TextBox15.TabIndex = 65
+        Me.TextBox15.Text = "00"
         '
         'TextBox16
         '
         Me.TextBox16.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox16.Location = New System.Drawing.Point(191, 38)
+        Me.TextBox16.MaxLength = 2
         Me.TextBox16.Name = "TextBox16"
         Me.TextBox16.Size = New System.Drawing.Size(41, 32)
         Me.TextBox16.TabIndex = 63
+        Me.TextBox16.Text = "00"
         '
         'lblIniciot
         '
@@ -210,23 +217,26 @@ Partial Class frmTamboCambios
         Me.gbxSegundo.TabIndex = 106
         Me.gbxSegundo.TabStop = False
         Me.gbxSegundo.Text = "2do Ordeñe"
-        Me.gbxSegundo.Visible = False
         '
         'TextBox20
         '
         Me.TextBox20.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox20.Location = New System.Drawing.Point(260, 76)
+        Me.TextBox20.MaxLength = 2
         Me.TextBox20.Name = "TextBox20"
         Me.TextBox20.Size = New System.Drawing.Size(41, 32)
         Me.TextBox20.TabIndex = 75
+        Me.TextBox20.Text = "00"
         '
         'TextBox19
         '
         Me.TextBox19.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox19.Location = New System.Drawing.Point(260, 38)
+        Me.TextBox19.MaxLength = 2
         Me.TextBox19.Name = "TextBox19"
         Me.TextBox19.Size = New System.Drawing.Size(41, 32)
         Me.TextBox19.TabIndex = 74
+        Me.TextBox19.Text = "00"
         '
         'Label3
         '
@@ -262,17 +272,21 @@ Partial Class frmTamboCambios
         '
         Me.TextBox13.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox13.Location = New System.Drawing.Point(191, 76)
+        Me.TextBox13.MaxLength = 2
         Me.TextBox13.Name = "TextBox13"
         Me.TextBox13.Size = New System.Drawing.Size(41, 32)
         Me.TextBox13.TabIndex = 65
+        Me.TextBox13.Text = "00"
         '
         'TextBox14
         '
         Me.TextBox14.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox14.Location = New System.Drawing.Point(191, 38)
+        Me.TextBox14.MaxLength = 2
         Me.TextBox14.Name = "TextBox14"
         Me.TextBox14.Size = New System.Drawing.Size(41, 32)
         Me.TextBox14.TabIndex = 63
+        Me.TextBox14.Text = "00"
         '
         'lblInicios
         '
@@ -302,23 +316,26 @@ Partial Class frmTamboCambios
         Me.gbxPrimer.TabIndex = 105
         Me.gbxPrimer.TabStop = False
         Me.gbxPrimer.Text = "1er Ordeñe"
-        Me.gbxPrimer.Visible = False
         '
         'TextBox18
         '
         Me.TextBox18.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox18.Location = New System.Drawing.Point(260, 74)
+        Me.TextBox18.MaxLength = 2
         Me.TextBox18.Name = "TextBox18"
         Me.TextBox18.Size = New System.Drawing.Size(41, 32)
         Me.TextBox18.TabIndex = 73
+        Me.TextBox18.Text = "00"
         '
         'TextBox17
         '
         Me.TextBox17.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox17.Location = New System.Drawing.Point(260, 36)
+        Me.TextBox17.MaxLength = 2
         Me.TextBox17.Name = "TextBox17"
         Me.TextBox17.Size = New System.Drawing.Size(41, 32)
         Me.TextBox17.TabIndex = 72
+        Me.TextBox17.Text = "00"
         '
         'Label5
         '
@@ -354,17 +371,21 @@ Partial Class frmTamboCambios
         '
         Me.TextBox11.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox11.Location = New System.Drawing.Point(191, 74)
+        Me.TextBox11.MaxLength = 2
         Me.TextBox11.Name = "TextBox11"
         Me.TextBox11.Size = New System.Drawing.Size(41, 32)
         Me.TextBox11.TabIndex = 65
+        Me.TextBox11.Text = "00"
         '
         'TextBox12
         '
         Me.TextBox12.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox12.Location = New System.Drawing.Point(191, 36)
+        Me.TextBox12.MaxLength = 2
         Me.TextBox12.Name = "TextBox12"
         Me.TextBox12.Size = New System.Drawing.Size(41, 32)
         Me.TextBox12.TabIndex = 63
+        Me.TextBox12.Text = "00"
         '
         'lblIniciop
         '
@@ -376,13 +397,13 @@ Partial Class frmTamboCambios
         Me.lblIniciop.TabIndex = 62
         Me.lblIniciop.Text = "Hora inicio"
         '
-        'TextBox4
+        'tbxExploaciones
         '
-        Me.TextBox4.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox4.Location = New System.Drawing.Point(267, 218)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(121, 32)
-        Me.TextBox4.TabIndex = 94
+        Me.tbxExploaciones.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbxExploaciones.Location = New System.Drawing.Point(267, 218)
+        Me.tbxExploaciones.Name = "tbxExploaciones"
+        Me.tbxExploaciones.Size = New System.Drawing.Size(121, 32)
+        Me.tbxExploaciones.TabIndex = 94
         '
         'lblExplotaciones
         '
@@ -398,37 +419,37 @@ Partial Class frmTamboCambios
         '
         Me.cbxCantidad.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbxCantidad.FormattingEnabled = True
-        Me.cbxCantidad.Items.AddRange(New Object() {"Uno", "Dos", "Tres"})
+        Me.cbxCantidad.Items.AddRange(New Object() {"1", "2", "3"})
         Me.cbxCantidad.Location = New System.Drawing.Point(267, 280)
         Me.cbxCantidad.Name = "cbxCantidad"
         Me.cbxCantidad.Size = New System.Drawing.Size(121, 32)
         Me.cbxCantidad.TabIndex = 88
         '
-        'lbOrdeñecant
+        'lblOrdeñecant
         '
-        Me.lbOrdeñecant.AutoSize = True
-        Me.lbOrdeñecant.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbOrdeñecant.Location = New System.Drawing.Point(9, 283)
-        Me.lbOrdeñecant.Name = "lbOrdeñecant"
-        Me.lbOrdeñecant.Size = New System.Drawing.Size(204, 24)
-        Me.lbOrdeñecant.TabIndex = 87
-        Me.lbOrdeñecant.Text = "Cantidad de ordeñes"
+        Me.lblOrdeñecant.AutoSize = True
+        Me.lblOrdeñecant.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblOrdeñecant.Location = New System.Drawing.Point(9, 283)
+        Me.lblOrdeñecant.Name = "lblOrdeñecant"
+        Me.lblOrdeñecant.Size = New System.Drawing.Size(204, 24)
+        Me.lblOrdeñecant.TabIndex = 87
+        Me.lblOrdeñecant.Text = "Cantidad de ordeñes"
         '
-        'tbxLugar
+        'tbxHectareas
         '
-        Me.tbxLugar.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbxLugar.Location = New System.Drawing.Point(267, 87)
-        Me.tbxLugar.Name = "tbxLugar"
-        Me.tbxLugar.Size = New System.Drawing.Size(121, 32)
-        Me.tbxLugar.TabIndex = 86
+        Me.tbxHectareas.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbxHectareas.Location = New System.Drawing.Point(267, 87)
+        Me.tbxHectareas.Name = "tbxHectareas"
+        Me.tbxHectareas.Size = New System.Drawing.Size(121, 32)
+        Me.tbxHectareas.TabIndex = 86
         '
-        'tbxNum
+        'tbxTipoO
         '
-        Me.tbxNum.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbxNum.Location = New System.Drawing.Point(267, 18)
-        Me.tbxNum.Name = "tbxNum"
-        Me.tbxNum.Size = New System.Drawing.Size(121, 32)
-        Me.tbxNum.TabIndex = 84
+        Me.tbxTipoO.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbxTipoO.Location = New System.Drawing.Point(267, 18)
+        Me.tbxTipoO.Name = "tbxTipoO"
+        Me.tbxTipoO.Size = New System.Drawing.Size(121, 32)
+        Me.tbxTipoO.TabIndex = 84
         '
         'lblHectareas
         '
@@ -468,6 +489,7 @@ Partial Class frmTamboCambios
         '
         'btnIngresar
         '
+        Me.btnIngresar.Enabled = False
         Me.btnIngresar.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnIngresar.Location = New System.Drawing.Point(546, 12)
         Me.btnIngresar.Name = "btnIngresar"
@@ -479,6 +501,7 @@ Partial Class frmTamboCambios
         '
         'btnModificar
         '
+        Me.btnModificar.Enabled = False
         Me.btnModificar.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnModificar.Location = New System.Drawing.Point(670, 12)
         Me.btnModificar.Name = "btnModificar"
@@ -500,22 +523,22 @@ Partial Class frmTamboCambios
         '
         'gbxDatos
         '
-        Me.gbxDatos.Controls.Add(Me.TextBox10)
+        Me.gbxDatos.Controls.Add(Me.tbxGanado)
         Me.gbxDatos.Controls.Add(Me.lblGanado)
-        Me.gbxDatos.Controls.Add(Me.TextBox4)
+        Me.gbxDatos.Controls.Add(Me.tbxExploaciones)
         Me.gbxDatos.Controls.Add(Me.lblExplotaciones)
         Me.gbxDatos.Controls.Add(Me.cbxCantidad)
-        Me.gbxDatos.Controls.Add(Me.lbOrdeñecant)
-        Me.gbxDatos.Controls.Add(Me.tbxLugar)
-        Me.gbxDatos.Controls.Add(Me.tbxNum)
+        Me.gbxDatos.Controls.Add(Me.lblOrdeñecant)
+        Me.gbxDatos.Controls.Add(Me.tbxHectareas)
+        Me.gbxDatos.Controls.Add(Me.tbxTipoO)
         Me.gbxDatos.Controls.Add(Me.lblHectareas)
         Me.gbxDatos.Controls.Add(Me.lblOrdeñet)
+        Me.gbxDatos.Enabled = False
         Me.gbxDatos.Location = New System.Drawing.Point(10, 120)
         Me.gbxDatos.Name = "gbxDatos"
         Me.gbxDatos.Size = New System.Drawing.Size(408, 341)
         Me.gbxDatos.TabIndex = 116
         Me.gbxDatos.TabStop = False
-        Me.gbxDatos.Visible = False
         '
         'frmTamboCambios
         '
@@ -534,7 +557,7 @@ Partial Class frmTamboCambios
         Me.Controls.Add(Me.gbxSegundo)
         Me.Controls.Add(Me.gbxPrimer)
         Me.Name = "frmTamboCambios"
-        Me.Text = "Tambo, ingresar o modificar"
+        Me.Text = "Tambo, "
         Me.gbxTercer.ResumeLayout(False)
         Me.gbxTercer.PerformLayout()
         Me.gbxSegundo.ResumeLayout(False)
@@ -548,7 +571,7 @@ Partial Class frmTamboCambios
 
     End Sub
     Friend WithEvents lblTambo As System.Windows.Forms.Label
-    Friend WithEvents TextBox10 As System.Windows.Forms.TextBox
+    Friend WithEvents tbxGanado As System.Windows.Forms.TextBox
     Friend WithEvents lblGanado As System.Windows.Forms.Label
     Friend WithEvents gbxTercer As System.Windows.Forms.GroupBox
     Friend WithEvents TextBox22 As System.Windows.Forms.TextBox
@@ -577,12 +600,12 @@ Partial Class frmTamboCambios
     Friend WithEvents TextBox11 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox12 As System.Windows.Forms.TextBox
     Friend WithEvents lblIniciop As System.Windows.Forms.Label
-    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
+    Friend WithEvents tbxExploaciones As System.Windows.Forms.TextBox
     Friend WithEvents lblExplotaciones As System.Windows.Forms.Label
     Friend WithEvents cbxCantidad As System.Windows.Forms.ComboBox
-    Friend WithEvents lbOrdeñecant As System.Windows.Forms.Label
-    Friend WithEvents tbxLugar As System.Windows.Forms.TextBox
-    Friend WithEvents tbxNum As System.Windows.Forms.TextBox
+    Friend WithEvents lblOrdeñecant As System.Windows.Forms.Label
+    Friend WithEvents tbxHectareas As System.Windows.Forms.TextBox
+    Friend WithEvents tbxTipoO As System.Windows.Forms.TextBox
     Friend WithEvents lblHectareas As System.Windows.Forms.Label
     Friend WithEvents lblOrdeñet As System.Windows.Forms.Label
     Friend WithEvents Panel1 As System.Windows.Forms.Panel

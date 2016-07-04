@@ -52,9 +52,17 @@ Partial Class frmEliminar
         Me.lblNumero = New System.Windows.Forms.Label()
         Me.tbxNum = New System.Windows.Forms.TextBox()
         Me.gbxPrenadaS = New System.Windows.Forms.GroupBox()
+        Me.lblaaaarv = New System.Windows.Forms.Label()
+        Me.lblmmrv = New System.Windows.Forms.Label()
+        Me.lblddrv = New System.Windows.Forms.Label()
+        Me.lblaaaari = New System.Windows.Forms.Label()
+        Me.lblmmri = New System.Windows.Forms.Label()
+        Me.lblddri = New System.Windows.Forms.Label()
+        Me.lblRecriavuelta = New System.Windows.Forms.Label()
+        Me.lblRecriaIda = New System.Windows.Forms.Label()
         Me.lblmmp = New System.Windows.Forms.Label()
         Me.lblddp = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
+        Me.lblFechaP = New System.Windows.Forms.Label()
         Me.lblaaaap = New System.Windows.Forms.Label()
         Me.gbxLeche = New System.Windows.Forms.GroupBox()
         Me.lblGrasar = New System.Windows.Forms.Label()
@@ -69,14 +77,6 @@ Partial Class frmEliminar
         Me.lblRecuentoCel = New System.Windows.Forms.Label()
         Me.lblLitros = New System.Windows.Forms.Label()
         Me.lblRecuentobac = New System.Windows.Forms.Label()
-        Me.lblRecriavuelta = New System.Windows.Forms.Label()
-        Me.lblRecriaIda = New System.Windows.Forms.Label()
-        Me.lblaaaari = New System.Windows.Forms.Label()
-        Me.lblmmri = New System.Windows.Forms.Label()
-        Me.lblddri = New System.Windows.Forms.Label()
-        Me.lblaaaarv = New System.Windows.Forms.Label()
-        Me.lblmmrv = New System.Windows.Forms.Label()
-        Me.lblddrv = New System.Windows.Forms.Label()
         Me.gbxHembra.SuspendLayout()
         Me.gbxBasico.SuspendLayout()
         Me.gbxPrenadaS.SuspendLayout()
@@ -85,6 +85,7 @@ Partial Class frmEliminar
         '
         'btnEliminar
         '
+        Me.btnEliminar.Enabled = False
         Me.btnEliminar.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnEliminar.Location = New System.Drawing.Point(524, 33)
         Me.btnEliminar.Name = "btnEliminar"
@@ -219,6 +220,7 @@ Partial Class frmEliminar
         '
         'btnGenealogia
         '
+        Me.btnGenealogia.Enabled = False
         Me.btnGenealogia.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnGenealogia.Location = New System.Drawing.Point(648, 33)
         Me.btnGenealogia.Name = "btnGenealogia"
@@ -401,7 +403,7 @@ Partial Class frmEliminar
         Me.gbxPrenadaS.Controls.Add(Me.lblRecriaIda)
         Me.gbxPrenadaS.Controls.Add(Me.lblmmp)
         Me.gbxPrenadaS.Controls.Add(Me.lblddp)
-        Me.gbxPrenadaS.Controls.Add(Me.Label3)
+        Me.gbxPrenadaS.Controls.Add(Me.lblFechaP)
         Me.gbxPrenadaS.Controls.Add(Me.lblaaaap)
         Me.gbxPrenadaS.Enabled = False
         Me.gbxPrenadaS.Location = New System.Drawing.Point(400, 378)
@@ -409,6 +411,86 @@ Partial Class frmEliminar
         Me.gbxPrenadaS.Size = New System.Drawing.Size(389, 136)
         Me.gbxPrenadaS.TabIndex = 127
         Me.gbxPrenadaS.TabStop = False
+        '
+        'lblaaaarv
+        '
+        Me.lblaaaarv.AutoSize = True
+        Me.lblaaaarv.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblaaaarv.Location = New System.Drawing.Point(360, 104)
+        Me.lblaaaarv.Name = "lblaaaarv"
+        Me.lblaaaarv.Size = New System.Drawing.Size(16, 24)
+        Me.lblaaaarv.TabIndex = 118
+        Me.lblaaaarv.Text = " "
+        '
+        'lblmmrv
+        '
+        Me.lblmmrv.AutoSize = True
+        Me.lblmmrv.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblmmrv.Location = New System.Drawing.Point(314, 104)
+        Me.lblmmrv.Name = "lblmmrv"
+        Me.lblmmrv.Size = New System.Drawing.Size(16, 24)
+        Me.lblmmrv.TabIndex = 117
+        Me.lblmmrv.Text = " "
+        '
+        'lblddrv
+        '
+        Me.lblddrv.AutoSize = True
+        Me.lblddrv.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblddrv.Location = New System.Drawing.Point(272, 104)
+        Me.lblddrv.Name = "lblddrv"
+        Me.lblddrv.Size = New System.Drawing.Size(16, 24)
+        Me.lblddrv.TabIndex = 116
+        Me.lblddrv.Text = " "
+        '
+        'lblaaaari
+        '
+        Me.lblaaaari.AutoSize = True
+        Me.lblaaaari.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblaaaari.Location = New System.Drawing.Point(360, 66)
+        Me.lblaaaari.Name = "lblaaaari"
+        Me.lblaaaari.Size = New System.Drawing.Size(16, 24)
+        Me.lblaaaari.TabIndex = 115
+        Me.lblaaaari.Text = " "
+        '
+        'lblmmri
+        '
+        Me.lblmmri.AutoSize = True
+        Me.lblmmri.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblmmri.Location = New System.Drawing.Point(314, 66)
+        Me.lblmmri.Name = "lblmmri"
+        Me.lblmmri.Size = New System.Drawing.Size(16, 24)
+        Me.lblmmri.TabIndex = 114
+        Me.lblmmri.Text = " "
+        '
+        'lblddri
+        '
+        Me.lblddri.AutoSize = True
+        Me.lblddri.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblddri.Location = New System.Drawing.Point(272, 66)
+        Me.lblddri.Name = "lblddri"
+        Me.lblddri.Size = New System.Drawing.Size(16, 24)
+        Me.lblddri.TabIndex = 113
+        Me.lblddri.Text = " "
+        '
+        'lblRecriavuelta
+        '
+        Me.lblRecriavuelta.AutoSize = True
+        Me.lblRecriavuelta.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblRecriavuelta.Location = New System.Drawing.Point(6, 104)
+        Me.lblRecriavuelta.Name = "lblRecriavuelta"
+        Me.lblRecriavuelta.Size = New System.Drawing.Size(241, 24)
+        Me.lblRecriavuelta.TabIndex = 112
+        Me.lblRecriavuelta.Text = "Campo de recria (vuelta)"
+        '
+        'lblRecriaIda
+        '
+        Me.lblRecriaIda.AutoSize = True
+        Me.lblRecriaIda.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblRecriaIda.Location = New System.Drawing.Point(6, 66)
+        Me.lblRecriaIda.Name = "lblRecriaIda"
+        Me.lblRecriaIda.Size = New System.Drawing.Size(213, 24)
+        Me.lblRecriaIda.TabIndex = 111
+        Me.lblRecriaIda.Text = "Campo de recria (ida)"
         '
         'lblmmp
         '
@@ -430,15 +512,15 @@ Partial Class frmEliminar
         Me.lblddp.TabIndex = 109
         Me.lblddp.Text = " "
         '
-        'Label3
+        'lblFechaP
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(6, 16)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(137, 24)
-        Me.Label3.TabIndex = 47
-        Me.Label3.Text = "Fecha preñez"
+        Me.lblFechaP.AutoSize = True
+        Me.lblFechaP.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblFechaP.Location = New System.Drawing.Point(6, 16)
+        Me.lblFechaP.Name = "lblFechaP"
+        Me.lblFechaP.Size = New System.Drawing.Size(137, 24)
+        Me.lblFechaP.TabIndex = 47
+        Me.lblFechaP.Text = "Fecha preñez"
         '
         'lblaaaap
         '
@@ -592,86 +674,6 @@ Partial Class frmEliminar
         Me.lblRecuentobac.TabIndex = 48
         Me.lblRecuentobac.Text = "Recuento bacteriano"
         '
-        'lblRecriavuelta
-        '
-        Me.lblRecriavuelta.AutoSize = True
-        Me.lblRecriavuelta.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblRecriavuelta.Location = New System.Drawing.Point(6, 104)
-        Me.lblRecriavuelta.Name = "lblRecriavuelta"
-        Me.lblRecriavuelta.Size = New System.Drawing.Size(241, 24)
-        Me.lblRecriavuelta.TabIndex = 112
-        Me.lblRecriavuelta.Text = "Campo de recria (vuelta)"
-        '
-        'lblRecriaIda
-        '
-        Me.lblRecriaIda.AutoSize = True
-        Me.lblRecriaIda.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblRecriaIda.Location = New System.Drawing.Point(6, 66)
-        Me.lblRecriaIda.Name = "lblRecriaIda"
-        Me.lblRecriaIda.Size = New System.Drawing.Size(213, 24)
-        Me.lblRecriaIda.TabIndex = 111
-        Me.lblRecriaIda.Text = "Campo de recria (ida)"
-        '
-        'lblaaaari
-        '
-        Me.lblaaaari.AutoSize = True
-        Me.lblaaaari.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblaaaari.Location = New System.Drawing.Point(360, 66)
-        Me.lblaaaari.Name = "lblaaaari"
-        Me.lblaaaari.Size = New System.Drawing.Size(16, 24)
-        Me.lblaaaari.TabIndex = 115
-        Me.lblaaaari.Text = " "
-        '
-        'lblmmri
-        '
-        Me.lblmmri.AutoSize = True
-        Me.lblmmri.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblmmri.Location = New System.Drawing.Point(314, 66)
-        Me.lblmmri.Name = "lblmmri"
-        Me.lblmmri.Size = New System.Drawing.Size(16, 24)
-        Me.lblmmri.TabIndex = 114
-        Me.lblmmri.Text = " "
-        '
-        'lblddri
-        '
-        Me.lblddri.AutoSize = True
-        Me.lblddri.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblddri.Location = New System.Drawing.Point(272, 66)
-        Me.lblddri.Name = "lblddri"
-        Me.lblddri.Size = New System.Drawing.Size(16, 24)
-        Me.lblddri.TabIndex = 113
-        Me.lblddri.Text = " "
-        '
-        'lblaaaarv
-        '
-        Me.lblaaaarv.AutoSize = True
-        Me.lblaaaarv.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblaaaarv.Location = New System.Drawing.Point(360, 104)
-        Me.lblaaaarv.Name = "lblaaaarv"
-        Me.lblaaaarv.Size = New System.Drawing.Size(16, 24)
-        Me.lblaaaarv.TabIndex = 118
-        Me.lblaaaarv.Text = " "
-        '
-        'lblmmrv
-        '
-        Me.lblmmrv.AutoSize = True
-        Me.lblmmrv.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblmmrv.Location = New System.Drawing.Point(314, 104)
-        Me.lblmmrv.Name = "lblmmrv"
-        Me.lblmmrv.Size = New System.Drawing.Size(16, 24)
-        Me.lblmmrv.TabIndex = 117
-        Me.lblmmrv.Text = " "
-        '
-        'lblddrv
-        '
-        Me.lblddrv.AutoSize = True
-        Me.lblddrv.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblddrv.Location = New System.Drawing.Point(272, 104)
-        Me.lblddrv.Name = "lblddrv"
-        Me.lblddrv.Size = New System.Drawing.Size(16, 24)
-        Me.lblddrv.TabIndex = 116
-        Me.lblddrv.Text = " "
-        '
         'frmEliminar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -735,7 +737,7 @@ Partial Class frmEliminar
     Friend WithEvents gbxPrenadaS As System.Windows.Forms.GroupBox
     Friend WithEvents lblmmp As System.Windows.Forms.Label
     Friend WithEvents lblddp As System.Windows.Forms.Label
-    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents lblFechaP As System.Windows.Forms.Label
     Friend WithEvents lblaaaap As System.Windows.Forms.Label
     Friend WithEvents gbxLeche As System.Windows.Forms.GroupBox
     Friend WithEvents lblGrasar As System.Windows.Forms.Label

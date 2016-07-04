@@ -1,19 +1,15 @@
 ﻿Public Class frmModificar
 
     Private Sub frmModificar_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
-        gbxLeche.Enabled = False
-        gbxBasico.Enabled = False
-        gbxHembra.Enabled = False
-        btnGenealogia.Enabled = False
-        btnModificar.Enabled = False
-        If frmISU.tsModificar.Text() = "Modify" Then
-            Me.Text() = "Modify"
-            lblNumero.Text() = "Numer"
-        ElseIf frmISU.tsModificar.Text = "Mudança" = True Then
-            Me.Text() = "Mudança"
-        End If
-        btnModificar.Hide()
-        frmISU.Idioma_Load(frmISU.tsModificar, lblSexo, lblNacimiento, lblLugar, lblRaza, lblUrea, lblDivision, lblAntibiotico, lblPorcentajep, lblPrenada, lblEtapa, lblLitros, lblGrasa, lblProteina, lblRecuentobac, lblRecuentoCel, btnGenealogia)
+        Me.Text() = frmISU.tsModificar.Text()
+        btnModificar.Text() = Me.Text()
+        btnGenealogia.Text() = frmISU.gen
+        btnBuscar.Text() = frmISU.buscar
+        frmISU.Idioma_Lugar(cbxLugar)
+        frmISU.Etapa_Idioma(cbxEtapa)
+        frmISU.Idioma_Division(cbxSexo, rbnSia, rbnSip, rbnNoa, rbnNop)
+        frmISU.Idioma_Load(frmISU.tsModificar, lblNumero, lblSexo, lblNacimiento, lblLugar, lblRaza, lblUrea, lblDivision, lblAntibiotico, lblPorcentajep, lblPrenada, lblEtapa, lblLitros, lblGrasa, lblProteina, lblRecuentobac, lblRecuentoCel, btnGenealogia, lblFechaP, lblRecriaIda, lblRecriavuelta)
+        frmISU.Sexo_Cambio(cbxSexo, lblDivision, gbxHembra, gbxLeche, cbxDivision)
     End Sub
 
 
@@ -32,26 +28,43 @@
     End Sub
 
     Private Sub btnModificar_Click(sender As System.Object, e As System.EventArgs) Handles btnModificar.Click
-        Dim validacion As Boolean
-        validacion = frmISU.Validacion_Entera(tbxLitros, tbxRecuentobac, tbxRecuentocel, tbxPorcentajep, tbxGrasa, tbxProteina, tbxUrea)
+        Dim validacion As Integer
+        If cbxRaza.Text() = frmISU.hembra Then
+            validacion = frmISU.Validacion_Entera(tbxLitros, tbxRecuentobac, tbxRecuentocel, tbxPorcentajep, tbxGrasa, tbxProteina, tbxUrea)
+        End If
         validacion = frmISU.Largo_dos(tbxDd, tbxMm, validacion)
         validacion = frmISU.Largo_cuatro(tbxAaaa, validacion)
-        If validacion Then
-            MsgBox("Falta conexión a la base de datos", MsgBoxStyle.OkOnly, "ERROR")
-            'compara los resultados guardados con los actuales
+
+        If lblFechaP.Enabled = True Then
+            validacion = frmISU.Largo_dos(tbxddP, tbxmmp, validacion)
+            validacion = frmISU.Largo_cuatro(tbxaaaap, validacion)
         End If
-
-    End Sub
-
-    Private Sub cbxSexo_SelectedIndexChanged(sender As System.Object, e As System.EventArgs)
-        frmISU.Sexo_cambio(cbxLugar, cbxSexo, lblDivision, gbxHembra, gbxLeche, cbxDivision, rbnSia, rbnSip)
-    End Sub
-
-    Private Sub cbxRaza_SelectedIndexChanged(sender As System.Object, e As System.EventArgs)
-        frmISU.Sexo_cambio(cbxLugar, cbxSexo, lblDivision, gbxHembra, gbxLeche, cbxDivision, rbnSia, rbnSip)
+        If lblRecriaIda.Enabled = True Then
+            validacion = frmISU.Largo_dos(tbxddri, tbxmmri, validacion)
+            validacion = frmISU.Largo_dos(tbxddrv, tbxmmrv, validacion)
+            validacion = frmISU.Largo_cuatro(tbxaaaaRI, validacion)
+            validacion = frmISU.Largo_cuatro(tbxaaaarv, validacion)
+            validacion = frmISU.Fechas(tbxddri, tbxddrv, tbxmmri, tbxmmrv, tbxaaaaRI, tbxaaaarv, validacion)
+        End If
+        If validacion = 0 Then
+            MsgBox("Falta conexión a la base de datos", MsgBoxStyle.OkOnly, "ERROR")
+        Else
+            MsgBox("Datos no válidos", MsgBoxStyle.OkOnly, "ERROR")
+        End If
     End Sub
 
     Private Sub btnGenealogia_Click(sender As System.Object, e As System.EventArgs) Handles btnGenealogia.Click
         frmGenealogia.Show()
+    End Sub
+
+    Private Sub cbxSexo_SelectedIndexChanged(sender As System.Object, e As System.EventArgs) Handles cbxSexo.SelectedIndexChanged
+        frmISU.Sexo_Cambio(cbxSexo, lblDivision, gbxHembra, gbxLeche, cbxDivision)
+    End Sub
+
+    Private Sub rbnSip_CheckedChanged(sender As System.Object, e As System.EventArgs) Handles rbnSip.CheckedChanged
+        tbxddP.Enabled = True
+        tbxmmp.Enabled = True
+        tbxaaaap.Enabled = True
+        lblFechaP.Enabled = True
     End Sub
 End Class

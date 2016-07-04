@@ -1,18 +1,10 @@
 ﻿Public Class frmConsultar
 
     Private Sub frmConsultar_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
-        gbxLeche.Enabled = False
-        gbxBasico.Enabled = False
-        gbxHembra.Enabled = False
-        btnGenealogia.Enabled = False
-        If frmISU.tsModificar.Text() = "Modify" Then
-            Me.Text() = "Insert"
-            lblNumero.Text() = "Numer"
-        Else
-            Me.Text() = "Consultar"
-        End If
-        frmISU.Idioma_Load(frmISU.tsModificar, lblSexo, lblNacimiento, lblLugar, lblRaza, lblUrea, lblDivision, lblAntibiotico, lblPorcentajep, lblPrenada, lblEtapa, lblLitros, lblGrasa, lblProteina, lblRecuentobac, lblRecuentoCel, btnGenealogia)
-
+        Me.Text() = frmISU.tsConsultar.Text()
+        btnConsultar.Text() = Me.Text()
+        btnGenealogia.Text() = frmISU.gen
+        frmISU.Idioma_Load(frmISU.tsModificar, lblNumero, lblSexo, lblNacimiento, lblLugar, lblRaza, lblUrea, lblDivision, lblAntibiotico, lblPorcentajep, lblPrenada, lblEtapa, lblLitros, lblGrasa, lblProteina, lblRecuentobac, lblRecuentoCel, btnGenealogia, lblFechaP, lblRecriaIda, lblRecriavuelta)
     End Sub
 
     Private Sub btnConsultar_Click(sender As System.Object, e As System.EventArgs) Handles btnConsultar.Click

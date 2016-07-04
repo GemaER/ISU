@@ -24,33 +24,33 @@ Partial Class frmGenealogia
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.gbxMH = New System.Windows.Forms.GroupBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
+        Me.lblnumMH = New System.Windows.Forms.Label()
+        Me.lblSexoMH = New System.Windows.Forms.Label()
+        Me.lblRazaMH = New System.Windows.Forms.Label()
         Me.gbxMM = New System.Windows.Forms.GroupBox()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
+        Me.lblNumMM = New System.Windows.Forms.Label()
+        Me.lblSexoMM = New System.Windows.Forms.Label()
+        Me.lblRazaMM = New System.Windows.Forms.Label()
         Me.gbxHM = New System.Windows.Forms.GroupBox()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
+        Me.lblNumHM = New System.Windows.Forms.Label()
+        Me.lblSexoHM = New System.Windows.Forms.Label()
+        Me.lblRazaHM = New System.Windows.Forms.Label()
         Me.gbxHH = New System.Windows.Forms.GroupBox()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
+        Me.lblNumHH = New System.Windows.Forms.Label()
+        Me.lblSexoHH = New System.Windows.Forms.Label()
+        Me.lblRazaHH = New System.Windows.Forms.Label()
         Me.gbxM = New System.Windows.Forms.GroupBox()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.Label15 = New System.Windows.Forms.Label()
+        Me.lblNumM = New System.Windows.Forms.Label()
+        Me.lblSexoM = New System.Windows.Forms.Label()
+        Me.lblRazaM = New System.Windows.Forms.Label()
         Me.gbxH = New System.Windows.Forms.GroupBox()
-        Me.Label16 = New System.Windows.Forms.Label()
-        Me.Label17 = New System.Windows.Forms.Label()
-        Me.Label18 = New System.Windows.Forms.Label()
+        Me.lblNumH = New System.Windows.Forms.Label()
+        Me.lblSexoH = New System.Windows.Forms.Label()
+        Me.lblRazaH = New System.Windows.Forms.Label()
         Me.gbxY = New System.Windows.Forms.GroupBox()
-        Me.Label19 = New System.Windows.Forms.Label()
-        Me.Label20 = New System.Windows.Forms.Label()
-        Me.Label21 = New System.Windows.Forms.Label()
+        Me.lblNum = New System.Windows.Forms.Label()
+        Me.lblSexo = New System.Windows.Forms.Label()
+        Me.lblRaza = New System.Windows.Forms.Label()
         Me.gbxMH.SuspendLayout()
         Me.gbxMM.SuspendLayout()
         Me.gbxHM.SuspendLayout()
@@ -71,296 +71,296 @@ Partial Class frmGenealogia
         'gbxMH
         '
         Me.gbxMH.BackColor = System.Drawing.Color.LightSteelBlue
-        Me.gbxMH.Controls.Add(Me.Label1)
-        Me.gbxMH.Controls.Add(Me.Label2)
-        Me.gbxMH.Controls.Add(Me.Label3)
+        Me.gbxMH.Controls.Add(Me.lblnumMH)
+        Me.gbxMH.Controls.Add(Me.lblSexoMH)
+        Me.gbxMH.Controls.Add(Me.lblRazaMH)
         Me.gbxMH.Location = New System.Drawing.Point(216, 91)
         Me.gbxMH.Name = "gbxMH"
         Me.gbxMH.Size = New System.Drawing.Size(172, 94)
         Me.gbxMH.TabIndex = 53
         Me.gbxMH.TabStop = False
         '
-        'Label1
+        'lblnumMH
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(6, 16)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(82, 24)
-        Me.Label1.TabIndex = 49
-        Me.Label1.Text = "Numero"
+        Me.lblnumMH.AutoSize = True
+        Me.lblnumMH.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblnumMH.Location = New System.Drawing.Point(6, 16)
+        Me.lblnumMH.Name = "lblnumMH"
+        Me.lblnumMH.Size = New System.Drawing.Size(82, 24)
+        Me.lblnumMH.TabIndex = 49
+        Me.lblnumMH.Text = "Numero"
         '
-        'Label2
+        'lblSexoMH
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(6, 40)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(58, 24)
-        Me.Label2.TabIndex = 51
-        Me.Label2.Text = "Sexo"
+        Me.lblSexoMH.AutoSize = True
+        Me.lblSexoMH.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblSexoMH.Location = New System.Drawing.Point(6, 40)
+        Me.lblSexoMH.Name = "lblSexoMH"
+        Me.lblSexoMH.Size = New System.Drawing.Size(58, 24)
+        Me.lblSexoMH.TabIndex = 51
+        Me.lblSexoMH.Text = "Sexo"
         '
-        'Label3
+        'lblRazaMH
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(6, 64)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(58, 24)
-        Me.Label3.TabIndex = 50
-        Me.Label3.Text = "Raza"
+        Me.lblRazaMH.AutoSize = True
+        Me.lblRazaMH.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblRazaMH.Location = New System.Drawing.Point(6, 64)
+        Me.lblRazaMH.Name = "lblRazaMH"
+        Me.lblRazaMH.Size = New System.Drawing.Size(58, 24)
+        Me.lblRazaMH.TabIndex = 50
+        Me.lblRazaMH.Text = "Raza"
         '
         'gbxMM
         '
         Me.gbxMM.BackColor = System.Drawing.Color.LightSteelBlue
-        Me.gbxMM.Controls.Add(Me.Label4)
-        Me.gbxMM.Controls.Add(Me.Label5)
-        Me.gbxMM.Controls.Add(Me.Label6)
+        Me.gbxMM.Controls.Add(Me.lblNumMM)
+        Me.gbxMM.Controls.Add(Me.lblSexoMM)
+        Me.gbxMM.Controls.Add(Me.lblRazaMM)
         Me.gbxMM.Location = New System.Drawing.Point(38, 91)
         Me.gbxMM.Name = "gbxMM"
         Me.gbxMM.Size = New System.Drawing.Size(172, 94)
         Me.gbxMM.TabIndex = 54
         Me.gbxMM.TabStop = False
         '
-        'Label4
+        'lblNumMM
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(6, 16)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(82, 24)
-        Me.Label4.TabIndex = 49
-        Me.Label4.Text = "Numero"
+        Me.lblNumMM.AutoSize = True
+        Me.lblNumMM.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblNumMM.Location = New System.Drawing.Point(6, 16)
+        Me.lblNumMM.Name = "lblNumMM"
+        Me.lblNumMM.Size = New System.Drawing.Size(82, 24)
+        Me.lblNumMM.TabIndex = 49
+        Me.lblNumMM.Text = "Numero"
         '
-        'Label5
+        'lblSexoMM
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(6, 40)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(58, 24)
-        Me.Label5.TabIndex = 51
-        Me.Label5.Text = "Sexo"
+        Me.lblSexoMM.AutoSize = True
+        Me.lblSexoMM.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblSexoMM.Location = New System.Drawing.Point(6, 40)
+        Me.lblSexoMM.Name = "lblSexoMM"
+        Me.lblSexoMM.Size = New System.Drawing.Size(58, 24)
+        Me.lblSexoMM.TabIndex = 51
+        Me.lblSexoMM.Text = "Sexo"
         '
-        'Label6
+        'lblRazaMM
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(6, 64)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(58, 24)
-        Me.Label6.TabIndex = 50
-        Me.Label6.Text = "Raza"
+        Me.lblRazaMM.AutoSize = True
+        Me.lblRazaMM.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblRazaMM.Location = New System.Drawing.Point(6, 64)
+        Me.lblRazaMM.Name = "lblRazaMM"
+        Me.lblRazaMM.Size = New System.Drawing.Size(58, 24)
+        Me.lblRazaMM.TabIndex = 50
+        Me.lblRazaMM.Text = "Raza"
         '
         'gbxHM
         '
         Me.gbxHM.BackColor = System.Drawing.Color.Bisque
-        Me.gbxHM.Controls.Add(Me.Label7)
-        Me.gbxHM.Controls.Add(Me.Label8)
-        Me.gbxHM.Controls.Add(Me.Label9)
+        Me.gbxHM.Controls.Add(Me.lblNumHM)
+        Me.gbxHM.Controls.Add(Me.lblSexoHM)
+        Me.gbxHM.Controls.Add(Me.lblRazaHM)
         Me.gbxHM.Location = New System.Drawing.Point(394, 91)
         Me.gbxHM.Name = "gbxHM"
         Me.gbxHM.Size = New System.Drawing.Size(172, 94)
         Me.gbxHM.TabIndex = 55
         Me.gbxHM.TabStop = False
         '
-        'Label7
+        'lblNumHM
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(6, 16)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(82, 24)
-        Me.Label7.TabIndex = 49
-        Me.Label7.Text = "Numero"
+        Me.lblNumHM.AutoSize = True
+        Me.lblNumHM.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblNumHM.Location = New System.Drawing.Point(6, 16)
+        Me.lblNumHM.Name = "lblNumHM"
+        Me.lblNumHM.Size = New System.Drawing.Size(82, 24)
+        Me.lblNumHM.TabIndex = 49
+        Me.lblNumHM.Text = "Numero"
         '
-        'Label8
+        'lblSexoHM
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(6, 40)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(58, 24)
-        Me.Label8.TabIndex = 51
-        Me.Label8.Text = "Sexo"
+        Me.lblSexoHM.AutoSize = True
+        Me.lblSexoHM.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblSexoHM.Location = New System.Drawing.Point(6, 40)
+        Me.lblSexoHM.Name = "lblSexoHM"
+        Me.lblSexoHM.Size = New System.Drawing.Size(58, 24)
+        Me.lblSexoHM.TabIndex = 51
+        Me.lblSexoHM.Text = "Sexo"
         '
-        'Label9
+        'lblRazaHM
         '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(6, 64)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(58, 24)
-        Me.Label9.TabIndex = 50
-        Me.Label9.Text = "Raza"
+        Me.lblRazaHM.AutoSize = True
+        Me.lblRazaHM.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblRazaHM.Location = New System.Drawing.Point(6, 64)
+        Me.lblRazaHM.Name = "lblRazaHM"
+        Me.lblRazaHM.Size = New System.Drawing.Size(58, 24)
+        Me.lblRazaHM.TabIndex = 50
+        Me.lblRazaHM.Text = "Raza"
         '
         'gbxHH
         '
         Me.gbxHH.BackColor = System.Drawing.Color.Bisque
-        Me.gbxHH.Controls.Add(Me.Label10)
-        Me.gbxHH.Controls.Add(Me.Label11)
-        Me.gbxHH.Controls.Add(Me.Label12)
+        Me.gbxHH.Controls.Add(Me.lblNumHH)
+        Me.gbxHH.Controls.Add(Me.lblSexoHH)
+        Me.gbxHH.Controls.Add(Me.lblRazaHH)
         Me.gbxHH.Location = New System.Drawing.Point(572, 91)
         Me.gbxHH.Name = "gbxHH"
         Me.gbxHH.Size = New System.Drawing.Size(172, 94)
         Me.gbxHH.TabIndex = 54
         Me.gbxHH.TabStop = False
         '
-        'Label10
+        'lblNumHH
         '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(6, 16)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(82, 24)
-        Me.Label10.TabIndex = 49
-        Me.Label10.Text = "Numero"
+        Me.lblNumHH.AutoSize = True
+        Me.lblNumHH.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblNumHH.Location = New System.Drawing.Point(6, 16)
+        Me.lblNumHH.Name = "lblNumHH"
+        Me.lblNumHH.Size = New System.Drawing.Size(82, 24)
+        Me.lblNumHH.TabIndex = 49
+        Me.lblNumHH.Text = "Numero"
         '
-        'Label11
+        'lblSexoHH
         '
-        Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(6, 40)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(58, 24)
-        Me.Label11.TabIndex = 51
-        Me.Label11.Text = "Sexo"
+        Me.lblSexoHH.AutoSize = True
+        Me.lblSexoHH.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblSexoHH.Location = New System.Drawing.Point(6, 40)
+        Me.lblSexoHH.Name = "lblSexoHH"
+        Me.lblSexoHH.Size = New System.Drawing.Size(58, 24)
+        Me.lblSexoHH.TabIndex = 51
+        Me.lblSexoHH.Text = "Sexo"
         '
-        'Label12
+        'lblRazaHH
         '
-        Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(6, 64)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(58, 24)
-        Me.Label12.TabIndex = 50
-        Me.Label12.Text = "Raza"
+        Me.lblRazaHH.AutoSize = True
+        Me.lblRazaHH.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblRazaHH.Location = New System.Drawing.Point(6, 64)
+        Me.lblRazaHH.Name = "lblRazaHH"
+        Me.lblRazaHH.Size = New System.Drawing.Size(58, 24)
+        Me.lblRazaHH.TabIndex = 50
+        Me.lblRazaHH.Text = "Raza"
         '
         'gbxM
         '
         Me.gbxM.BackColor = System.Drawing.Color.LightSteelBlue
-        Me.gbxM.Controls.Add(Me.Label13)
-        Me.gbxM.Controls.Add(Me.Label14)
-        Me.gbxM.Controls.Add(Me.Label15)
+        Me.gbxM.Controls.Add(Me.lblNumM)
+        Me.gbxM.Controls.Add(Me.lblSexoM)
+        Me.gbxM.Controls.Add(Me.lblRazaM)
         Me.gbxM.Location = New System.Drawing.Point(132, 214)
         Me.gbxM.Name = "gbxM"
         Me.gbxM.Size = New System.Drawing.Size(172, 94)
         Me.gbxM.TabIndex = 56
         Me.gbxM.TabStop = False
         '
-        'Label13
+        'lblNumM
         '
-        Me.Label13.AutoSize = True
-        Me.Label13.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(6, 16)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(82, 24)
-        Me.Label13.TabIndex = 49
-        Me.Label13.Text = "Numero"
+        Me.lblNumM.AutoSize = True
+        Me.lblNumM.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblNumM.Location = New System.Drawing.Point(6, 16)
+        Me.lblNumM.Name = "lblNumM"
+        Me.lblNumM.Size = New System.Drawing.Size(82, 24)
+        Me.lblNumM.TabIndex = 49
+        Me.lblNumM.Text = "Numero"
         '
-        'Label14
+        'lblSexoM
         '
-        Me.Label14.AutoSize = True
-        Me.Label14.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.Location = New System.Drawing.Point(6, 40)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(58, 24)
-        Me.Label14.TabIndex = 51
-        Me.Label14.Text = "Sexo"
+        Me.lblSexoM.AutoSize = True
+        Me.lblSexoM.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblSexoM.Location = New System.Drawing.Point(6, 40)
+        Me.lblSexoM.Name = "lblSexoM"
+        Me.lblSexoM.Size = New System.Drawing.Size(58, 24)
+        Me.lblSexoM.TabIndex = 51
+        Me.lblSexoM.Text = "Sexo"
         '
-        'Label15
+        'lblRazaM
         '
-        Me.Label15.AutoSize = True
-        Me.Label15.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.Location = New System.Drawing.Point(6, 64)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(58, 24)
-        Me.Label15.TabIndex = 50
-        Me.Label15.Text = "Raza"
+        Me.lblRazaM.AutoSize = True
+        Me.lblRazaM.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblRazaM.Location = New System.Drawing.Point(6, 64)
+        Me.lblRazaM.Name = "lblRazaM"
+        Me.lblRazaM.Size = New System.Drawing.Size(58, 24)
+        Me.lblRazaM.TabIndex = 50
+        Me.lblRazaM.Text = "Raza"
         '
         'gbxH
         '
         Me.gbxH.BackColor = System.Drawing.Color.Bisque
-        Me.gbxH.Controls.Add(Me.Label16)
-        Me.gbxH.Controls.Add(Me.Label17)
-        Me.gbxH.Controls.Add(Me.Label18)
+        Me.gbxH.Controls.Add(Me.lblNumH)
+        Me.gbxH.Controls.Add(Me.lblSexoH)
+        Me.gbxH.Controls.Add(Me.lblRazaH)
         Me.gbxH.Location = New System.Drawing.Point(488, 214)
         Me.gbxH.Name = "gbxH"
         Me.gbxH.Size = New System.Drawing.Size(172, 94)
         Me.gbxH.TabIndex = 55
         Me.gbxH.TabStop = False
         '
-        'Label16
+        'lblNumH
         '
-        Me.Label16.AutoSize = True
-        Me.Label16.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.Location = New System.Drawing.Point(6, 16)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(82, 24)
-        Me.Label16.TabIndex = 49
-        Me.Label16.Text = "Numero"
+        Me.lblNumH.AutoSize = True
+        Me.lblNumH.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblNumH.Location = New System.Drawing.Point(6, 16)
+        Me.lblNumH.Name = "lblNumH"
+        Me.lblNumH.Size = New System.Drawing.Size(82, 24)
+        Me.lblNumH.TabIndex = 49
+        Me.lblNumH.Text = "Numero"
         '
-        'Label17
+        'lblSexoH
         '
-        Me.Label17.AutoSize = True
-        Me.Label17.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.Location = New System.Drawing.Point(6, 40)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(58, 24)
-        Me.Label17.TabIndex = 51
-        Me.Label17.Text = "Sexo"
+        Me.lblSexoH.AutoSize = True
+        Me.lblSexoH.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblSexoH.Location = New System.Drawing.Point(6, 40)
+        Me.lblSexoH.Name = "lblSexoH"
+        Me.lblSexoH.Size = New System.Drawing.Size(58, 24)
+        Me.lblSexoH.TabIndex = 51
+        Me.lblSexoH.Text = "Sexo"
         '
-        'Label18
+        'lblRazaH
         '
-        Me.Label18.AutoSize = True
-        Me.Label18.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label18.Location = New System.Drawing.Point(6, 64)
-        Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(58, 24)
-        Me.Label18.TabIndex = 50
-        Me.Label18.Text = "Raza"
+        Me.lblRazaH.AutoSize = True
+        Me.lblRazaH.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblRazaH.Location = New System.Drawing.Point(6, 64)
+        Me.lblRazaH.Name = "lblRazaH"
+        Me.lblRazaH.Size = New System.Drawing.Size(58, 24)
+        Me.lblRazaH.TabIndex = 50
+        Me.lblRazaH.Text = "Raza"
         '
         'gbxY
         '
         Me.gbxY.BackColor = System.Drawing.Color.Thistle
-        Me.gbxY.Controls.Add(Me.Label19)
-        Me.gbxY.Controls.Add(Me.Label20)
-        Me.gbxY.Controls.Add(Me.Label21)
+        Me.gbxY.Controls.Add(Me.lblNum)
+        Me.gbxY.Controls.Add(Me.lblSexo)
+        Me.gbxY.Controls.Add(Me.lblRaza)
         Me.gbxY.Location = New System.Drawing.Point(310, 355)
         Me.gbxY.Name = "gbxY"
         Me.gbxY.Size = New System.Drawing.Size(172, 94)
         Me.gbxY.TabIndex = 57
         Me.gbxY.TabStop = False
         '
-        'Label19
+        'lblNum
         '
-        Me.Label19.AutoSize = True
-        Me.Label19.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label19.Location = New System.Drawing.Point(6, 16)
-        Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(82, 24)
-        Me.Label19.TabIndex = 49
-        Me.Label19.Text = "Numero"
+        Me.lblNum.AutoSize = True
+        Me.lblNum.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblNum.Location = New System.Drawing.Point(6, 16)
+        Me.lblNum.Name = "lblNum"
+        Me.lblNum.Size = New System.Drawing.Size(82, 24)
+        Me.lblNum.TabIndex = 49
+        Me.lblNum.Text = "Numero"
         '
-        'Label20
+        'lblSexo
         '
-        Me.Label20.AutoSize = True
-        Me.Label20.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label20.Location = New System.Drawing.Point(6, 40)
-        Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(58, 24)
-        Me.Label20.TabIndex = 51
-        Me.Label20.Text = "Sexo"
+        Me.lblSexo.AutoSize = True
+        Me.lblSexo.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblSexo.Location = New System.Drawing.Point(6, 40)
+        Me.lblSexo.Name = "lblSexo"
+        Me.lblSexo.Size = New System.Drawing.Size(58, 24)
+        Me.lblSexo.TabIndex = 51
+        Me.lblSexo.Text = "Sexo"
         '
-        'Label21
+        'lblRaza
         '
-        Me.Label21.AutoSize = True
-        Me.Label21.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label21.Location = New System.Drawing.Point(6, 64)
-        Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(58, 24)
-        Me.Label21.TabIndex = 50
-        Me.Label21.Text = "Raza"
+        Me.lblRaza.AutoSize = True
+        Me.lblRaza.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblRaza.Location = New System.Drawing.Point(6, 64)
+        Me.lblRaza.Name = "lblRaza"
+        Me.lblRaza.Size = New System.Drawing.Size(58, 24)
+        Me.lblRaza.TabIndex = 50
+        Me.lblRaza.Text = "Raza"
         '
         'frmGenealogia
         '
@@ -397,31 +397,31 @@ Partial Class frmGenealogia
     End Sub
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents gbxMH As System.Windows.Forms.GroupBox
-    Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents lblnumMH As System.Windows.Forms.Label
+    Friend WithEvents lblSexoMH As System.Windows.Forms.Label
+    Friend WithEvents lblRazaMH As System.Windows.Forms.Label
     Friend WithEvents gbxMM As System.Windows.Forms.GroupBox
-    Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents lblNumMM As System.Windows.Forms.Label
+    Friend WithEvents lblSexoMM As System.Windows.Forms.Label
+    Friend WithEvents lblRazaMM As System.Windows.Forms.Label
     Friend WithEvents gbxHM As System.Windows.Forms.GroupBox
-    Friend WithEvents Label7 As System.Windows.Forms.Label
-    Friend WithEvents Label8 As System.Windows.Forms.Label
-    Friend WithEvents Label9 As System.Windows.Forms.Label
+    Friend WithEvents lblNumHM As System.Windows.Forms.Label
+    Friend WithEvents lblSexoHM As System.Windows.Forms.Label
+    Friend WithEvents lblRazaHM As System.Windows.Forms.Label
     Friend WithEvents gbxHH As System.Windows.Forms.GroupBox
-    Friend WithEvents Label10 As System.Windows.Forms.Label
-    Friend WithEvents Label11 As System.Windows.Forms.Label
-    Friend WithEvents Label12 As System.Windows.Forms.Label
+    Friend WithEvents lblNumHH As System.Windows.Forms.Label
+    Friend WithEvents lblSexoHH As System.Windows.Forms.Label
+    Friend WithEvents lblRazaHH As System.Windows.Forms.Label
     Friend WithEvents gbxM As System.Windows.Forms.GroupBox
-    Friend WithEvents Label13 As System.Windows.Forms.Label
-    Friend WithEvents Label14 As System.Windows.Forms.Label
-    Friend WithEvents Label15 As System.Windows.Forms.Label
+    Friend WithEvents lblNumM As System.Windows.Forms.Label
+    Friend WithEvents lblSexoM As System.Windows.Forms.Label
+    Friend WithEvents lblRazaM As System.Windows.Forms.Label
     Friend WithEvents gbxH As System.Windows.Forms.GroupBox
-    Friend WithEvents Label16 As System.Windows.Forms.Label
-    Friend WithEvents Label17 As System.Windows.Forms.Label
-    Friend WithEvents Label18 As System.Windows.Forms.Label
+    Friend WithEvents lblNumH As System.Windows.Forms.Label
+    Friend WithEvents lblSexoH As System.Windows.Forms.Label
+    Friend WithEvents lblRazaH As System.Windows.Forms.Label
     Friend WithEvents gbxY As System.Windows.Forms.GroupBox
-    Friend WithEvents Label19 As System.Windows.Forms.Label
-    Friend WithEvents Label20 As System.Windows.Forms.Label
-    Friend WithEvents Label21 As System.Windows.Forms.Label
+    Friend WithEvents lblNum As System.Windows.Forms.Label
+    Friend WithEvents lblSexo As System.Windows.Forms.Label
+    Friend WithEvents lblRaza As System.Windows.Forms.Label
 End Class

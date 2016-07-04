@@ -1,18 +1,11 @@
 ﻿Public Class frmEliminar
 
     Private Sub frmEliminar_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
-        gbxLeche.Enabled = False
-        gbxBasico.Enabled = False
-        gbxHembra.Enabled = False
-        btnGenealogia.Enabled = False
-        btnEliminar.Enabled = False
-        If frmISU.tsModificar.Text() = "Modify" Then
-            Me.Text() = "Insert"
-            lblNumero.Text() = "Numer"
-        ElseIf frmISU.tsModificar.Text() = "Mudança" Then
-            Me.Text() = "Remover"
-        End If
-        frmISU.Idioma_Load(frmISU.tsModificar, lblSexo, lblNacimiento, lblLugar, lblRaza, lblUrea, lblDivision, lblAntibiotico, lblPorcentajep, lblPrenada, lblEtapa, lblLitros, lblGrasa, lblProteina, lblRecuentobac, lblRecuentoCel, btnGenealogia)
+        Me.Text() = frmISU.tsEliminar.Text()
+        btnEliminar.Text() = Me.Text()
+        btnGenealogia.Text() = frmISU.gen
+        btnBuscar.Text() = frmISU.buscar
+        frmISU.Idioma_Load(frmISU.tsModificar, lblNumero, lblSexo, lblNacimiento, lblLugar, lblRaza, lblUrea, lblDivision, lblAntibiotico, lblPorcentajep, lblPrenada, lblEtapa, lblLitros, lblGrasa, lblProteina, lblRecuentobac, lblRecuentoCel, btnGenealogia, lblFechaP, lblRecriaIda, lblRecriavuelta)
     End Sub
 
     Private Sub btnBuscar_Click(sender As System.Object, e As System.EventArgs) Handles btnBuscar.Click

@@ -34,7 +34,7 @@ F:\ISU\ISU PROG\isu\Isu\Isu\obj\x86\Debug\WindowsApplication1.frmIngresar.resour
 F:\ISU\ISU PROG\isu\Isu\Isu\obj\x86\Debug\WindowsApplication1.frmModificar.resources
 F:\ISU\ISU PROG\isu\Isu\Isu\obj\x86\Debug\WindowsApplication1.Resources.resources
 F:\ISU\ISU PROG\isu\Isu\Isu\obj\x86\Debug\Isu.vbproj.GenerateResource.Cache
-F:\ISU\ISU PROG\isu\Isu\Isu\obj\x86\Debug\WindowsApplication1.frmTambo.resources
 F:\ISU\ISU PROG\isu\Isu\Isu\obj\x86\Debug\WindowsApplication1.frmGenealogia.resources
 F:\ISU\ISU PROG\isu\Isu\Isu\obj\x86\Debug\WindowsApplication1.frmTamboCambios.resources
 F:\ISU\ISU PROG\isu\Isu\Isu\obj\x86\Debug\WindowsApplication1.frmTamboConsultar.resources
+F:\ISU\ISU PROG\isu\Isu\Isu\obj\x86\Debug\WindowsApplication1.frmPersonal.resources

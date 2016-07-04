@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Personal
+Partial Class frmPersonal
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -24,7 +24,7 @@ Partial Class Personal
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.btnBuscar = New System.Windows.Forms.Button()
-        Me.tbxNum = New System.Windows.Forms.TextBox()
+        Me.tbxCI = New System.Windows.Forms.TextBox()
         Me.lblCI = New System.Windows.Forms.Label()
         Me.cbxLugar = New System.Windows.Forms.ComboBox()
         Me.tbxAaaa = New System.Windows.Forms.TextBox()
@@ -58,15 +58,15 @@ Partial Class Personal
         Me.btnBuscar.Text = "Buscar"
         Me.btnBuscar.UseVisualStyleBackColor = True
         '
-        'tbxNum
+        'tbxCI
         '
-        Me.tbxNum.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbxNum.Location = New System.Drawing.Point(259, 43)
-        Me.tbxNum.MaxLength = 8
-        Me.tbxNum.Name = "tbxNum"
-        Me.tbxNum.Size = New System.Drawing.Size(145, 32)
-        Me.tbxNum.TabIndex = 55
-        Me.tbxNum.Text = "00000000"
+        Me.tbxCI.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbxCI.Location = New System.Drawing.Point(259, 43)
+        Me.tbxCI.MaxLength = 8
+        Me.tbxCI.Name = "tbxCI"
+        Me.tbxCI.Size = New System.Drawing.Size(145, 32)
+        Me.tbxCI.TabIndex = 55
+        Me.tbxCI.Text = "00000000"
         '
         'lblCI
         '
@@ -171,6 +171,7 @@ Partial Class Personal
         Me.gbxDatos.Controls.Add(Me.cbxSexo)
         Me.gbxDatos.Controls.Add(Me.lblSexo)
         Me.gbxDatos.Controls.Add(Me.lblPermisos)
+        Me.gbxDatos.Enabled = False
         Me.gbxDatos.Location = New System.Drawing.Point(55, 161)
         Me.gbxDatos.Name = "gbxDatos"
         Me.gbxDatos.Size = New System.Drawing.Size(673, 263)
@@ -180,6 +181,7 @@ Partial Class Personal
         '
         'btnModificar
         '
+        Me.btnModificar.Enabled = False
         Me.btnModificar.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnModificar.Location = New System.Drawing.Point(568, 97)
         Me.btnModificar.Name = "btnModificar"
@@ -190,6 +192,7 @@ Partial Class Personal
         '
         'btnIngresar
         '
+        Me.btnIngresar.Enabled = False
         Me.btnIngresar.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnIngresar.Location = New System.Drawing.Point(434, 97)
         Me.btnIngresar.Name = "btnIngresar"
@@ -198,7 +201,7 @@ Partial Class Personal
         Me.btnIngresar.Text = "Ingresar"
         Me.btnIngresar.UseVisualStyleBackColor = True
         '
-        'Personal
+        'frmPersonal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -208,10 +211,10 @@ Partial Class Personal
         Me.Controls.Add(Me.btnModificar)
         Me.Controls.Add(Me.gbxDatos)
         Me.Controls.Add(Me.btnBuscar)
-        Me.Controls.Add(Me.tbxNum)
+        Me.Controls.Add(Me.tbxCI)
         Me.Controls.Add(Me.lblCI)
         Me.Controls.Add(Me.Panel1)
-        Me.Name = "Personal"
+        Me.Name = "frmPersonal"
         Me.Text = "Personal"
         Me.gbxDatos.ResumeLayout(False)
         Me.gbxDatos.PerformLayout()
@@ -221,7 +224,7 @@ Partial Class Personal
     End Sub
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents btnBuscar As System.Windows.Forms.Button
-    Friend WithEvents tbxNum As System.Windows.Forms.TextBox
+    Friend WithEvents tbxCI As System.Windows.Forms.TextBox
     Friend WithEvents lblCI As System.Windows.Forms.Label
     Friend WithEvents cbxLugar As System.Windows.Forms.ComboBox
     Friend WithEvents tbxAaaa As System.Windows.Forms.TextBox

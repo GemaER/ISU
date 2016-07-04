@@ -73,7 +73,7 @@ Partial Class frmConsultar
         Me.lblRecriaIda = New System.Windows.Forms.Label()
         Me.lblmmp = New System.Windows.Forms.Label()
         Me.lblddp = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
+        Me.lblFechaP = New System.Windows.Forms.Label()
         Me.lblaaaap = New System.Windows.Forms.Label()
         Me.gbxHembra.SuspendLayout()
         Me.gbxLeche.SuspendLayout()
@@ -484,6 +484,7 @@ Partial Class frmConsultar
         '
         'btnGenealogia
         '
+        Me.btnGenealogia.Enabled = False
         Me.btnGenealogia.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnGenealogia.Location = New System.Drawing.Point(656, 29)
         Me.btnGenealogia.Name = "btnGenealogia"
@@ -526,7 +527,7 @@ Partial Class frmConsultar
         Me.gbxPrenadaS.Controls.Add(Me.lblRecriaIda)
         Me.gbxPrenadaS.Controls.Add(Me.lblmmp)
         Me.gbxPrenadaS.Controls.Add(Me.lblddp)
-        Me.gbxPrenadaS.Controls.Add(Me.Label3)
+        Me.gbxPrenadaS.Controls.Add(Me.lblFechaP)
         Me.gbxPrenadaS.Controls.Add(Me.lblaaaap)
         Me.gbxPrenadaS.Enabled = False
         Me.gbxPrenadaS.Location = New System.Drawing.Point(408, 381)
@@ -635,15 +636,15 @@ Partial Class frmConsultar
         Me.lblddp.TabIndex = 109
         Me.lblddp.Text = " "
         '
-        'Label3
+        'lblFechaP
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(6, 16)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(137, 24)
-        Me.Label3.TabIndex = 47
-        Me.Label3.Text = "Fecha preñez"
+        Me.lblFechaP.AutoSize = True
+        Me.lblFechaP.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblFechaP.Location = New System.Drawing.Point(6, 16)
+        Me.lblFechaP.Name = "lblFechaP"
+        Me.lblFechaP.Size = New System.Drawing.Size(137, 24)
+        Me.lblFechaP.TabIndex = 47
+        Me.lblFechaP.Text = "Fecha preñez"
         '
         'lblaaaap
         '
@@ -735,6 +736,6 @@ Partial Class frmConsultar
     Friend WithEvents lblRecriaIda As System.Windows.Forms.Label
     Friend WithEvents lblmmp As System.Windows.Forms.Label
     Friend WithEvents lblddp As System.Windows.Forms.Label
-    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents lblFechaP As System.Windows.Forms.Label
     Friend WithEvents lblaaaap As System.Windows.Forms.Label
 End Class

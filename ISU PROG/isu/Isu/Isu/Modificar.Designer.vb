@@ -76,7 +76,7 @@ Partial Class frmModificar
         Me.tbxmmri = New System.Windows.Forms.TextBox()
         Me.lblRecriaIda = New System.Windows.Forms.Label()
         Me.tbxddri = New System.Windows.Forms.TextBox()
-        Me.tbxaaap = New System.Windows.Forms.TextBox()
+        Me.tbxaaaap = New System.Windows.Forms.TextBox()
         Me.tbxmmp = New System.Windows.Forms.TextBox()
         Me.lblFechaP = New System.Windows.Forms.Label()
         Me.tbxddP = New System.Windows.Forms.TextBox()
@@ -108,6 +108,7 @@ Partial Class frmModificar
         '
         'btnModificar
         '
+        Me.btnModificar.Enabled = False
         Me.btnModificar.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnModificar.Location = New System.Drawing.Point(529, 22)
         Me.btnModificar.Name = "btnModificar"
@@ -138,6 +139,7 @@ Partial Class frmModificar
         '
         'btnGenealogia
         '
+        Me.btnGenealogia.Enabled = False
         Me.btnGenealogia.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnGenealogia.Location = New System.Drawing.Point(653, 22)
         Me.btnGenealogia.Name = "btnGenealogia"
@@ -172,7 +174,6 @@ Partial Class frmModificar
         '
         Me.cbxLugar.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbxLugar.FormattingEnabled = True
-        Me.cbxLugar.Items.AddRange(New Object() {"Holando", "Jersey", "Primer show"})
         Me.cbxLugar.Location = New System.Drawing.Point(214, 106)
         Me.cbxLugar.Name = "cbxLugar"
         Me.cbxLugar.Size = New System.Drawing.Size(145, 32)
@@ -182,7 +183,7 @@ Partial Class frmModificar
         '
         Me.tbxAaaa.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tbxAaaa.Location = New System.Drawing.Point(305, 56)
-        Me.tbxAaaa.MaxLength = 3
+        Me.tbxAaaa.MaxLength = 4
         Me.tbxAaaa.Name = "tbxAaaa"
         Me.tbxAaaa.Size = New System.Drawing.Size(54, 32)
         Me.tbxAaaa.TabIndex = 52
@@ -193,7 +194,7 @@ Partial Class frmModificar
         '
         Me.tbxMm.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tbxMm.Location = New System.Drawing.Point(259, 56)
-        Me.tbxMm.MaxLength = 3
+        Me.tbxMm.MaxLength = 2
         Me.tbxMm.Name = "tbxMm"
         Me.tbxMm.Size = New System.Drawing.Size(40, 32)
         Me.tbxMm.TabIndex = 51
@@ -204,7 +205,7 @@ Partial Class frmModificar
         '
         Me.tbxDd.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tbxDd.Location = New System.Drawing.Point(216, 56)
-        Me.tbxDd.MaxLength = 3
+        Me.tbxDd.MaxLength = 2
         Me.tbxDd.Name = "tbxDd"
         Me.tbxDd.Size = New System.Drawing.Size(37, 32)
         Me.tbxDd.TabIndex = 50
@@ -587,11 +588,10 @@ Partial Class frmModificar
         Me.gbxPrenadaS.Controls.Add(Me.tbxmmri)
         Me.gbxPrenadaS.Controls.Add(Me.lblRecriaIda)
         Me.gbxPrenadaS.Controls.Add(Me.tbxddri)
-        Me.gbxPrenadaS.Controls.Add(Me.tbxaaap)
+        Me.gbxPrenadaS.Controls.Add(Me.tbxaaaap)
         Me.gbxPrenadaS.Controls.Add(Me.tbxmmp)
         Me.gbxPrenadaS.Controls.Add(Me.lblFechaP)
         Me.gbxPrenadaS.Controls.Add(Me.tbxddP)
-        Me.gbxPrenadaS.Enabled = False
         Me.gbxPrenadaS.Location = New System.Drawing.Point(398, 364)
         Me.gbxPrenadaS.Name = "gbxPrenadaS"
         Me.gbxPrenadaS.Size = New System.Drawing.Size(399, 144)
@@ -600,9 +600,10 @@ Partial Class frmModificar
         '
         'tbxaaaarv
         '
+        Me.tbxaaaarv.Enabled = False
         Me.tbxaaaarv.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tbxaaaarv.Location = New System.Drawing.Point(340, 101)
-        Me.tbxaaaarv.MaxLength = 3
+        Me.tbxaaaarv.MaxLength = 4
         Me.tbxaaaarv.Name = "tbxaaaarv"
         Me.tbxaaaarv.Size = New System.Drawing.Size(54, 32)
         Me.tbxaaaarv.TabIndex = 64
@@ -611,9 +612,10 @@ Partial Class frmModificar
         '
         'tbxmmrv
         '
+        Me.tbxmmrv.Enabled = False
         Me.tbxmmrv.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tbxmmrv.Location = New System.Drawing.Point(294, 101)
-        Me.tbxmmrv.MaxLength = 3
+        Me.tbxmmrv.MaxLength = 2
         Me.tbxmmrv.Name = "tbxmmrv"
         Me.tbxmmrv.Size = New System.Drawing.Size(40, 32)
         Me.tbxmmrv.TabIndex = 63
@@ -623,6 +625,7 @@ Partial Class frmModificar
         'lblRecriavuelta
         '
         Me.lblRecriavuelta.AutoSize = True
+        Me.lblRecriavuelta.Enabled = False
         Me.lblRecriavuelta.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblRecriavuelta.Location = New System.Drawing.Point(6, 104)
         Me.lblRecriavuelta.Name = "lblRecriavuelta"
@@ -632,9 +635,10 @@ Partial Class frmModificar
         '
         'tbxddrv
         '
+        Me.tbxddrv.Enabled = False
         Me.tbxddrv.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tbxddrv.Location = New System.Drawing.Point(251, 101)
-        Me.tbxddrv.MaxLength = 3
+        Me.tbxddrv.MaxLength = 2
         Me.tbxddrv.Name = "tbxddrv"
         Me.tbxddrv.Size = New System.Drawing.Size(37, 32)
         Me.tbxddrv.TabIndex = 62
@@ -643,9 +647,10 @@ Partial Class frmModificar
         '
         'tbxaaaaRI
         '
+        Me.tbxaaaaRI.Enabled = False
         Me.tbxaaaaRI.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tbxaaaaRI.Location = New System.Drawing.Point(340, 63)
-        Me.tbxaaaaRI.MaxLength = 3
+        Me.tbxaaaaRI.MaxLength = 4
         Me.tbxaaaaRI.Name = "tbxaaaaRI"
         Me.tbxaaaaRI.Size = New System.Drawing.Size(54, 32)
         Me.tbxaaaaRI.TabIndex = 60
@@ -654,9 +659,10 @@ Partial Class frmModificar
         '
         'tbxmmri
         '
+        Me.tbxmmri.Enabled = False
         Me.tbxmmri.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tbxmmri.Location = New System.Drawing.Point(294, 63)
-        Me.tbxmmri.MaxLength = 3
+        Me.tbxmmri.MaxLength = 2
         Me.tbxmmri.Name = "tbxmmri"
         Me.tbxmmri.Size = New System.Drawing.Size(40, 32)
         Me.tbxmmri.TabIndex = 59
@@ -666,6 +672,7 @@ Partial Class frmModificar
         'lblRecriaIda
         '
         Me.lblRecriaIda.AutoSize = True
+        Me.lblRecriaIda.Enabled = False
         Me.lblRecriaIda.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblRecriaIda.Location = New System.Drawing.Point(6, 66)
         Me.lblRecriaIda.Name = "lblRecriaIda"
@@ -675,31 +682,34 @@ Partial Class frmModificar
         '
         'tbxddri
         '
+        Me.tbxddri.Enabled = False
         Me.tbxddri.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tbxddri.Location = New System.Drawing.Point(251, 63)
-        Me.tbxddri.MaxLength = 3
+        Me.tbxddri.MaxLength = 2
         Me.tbxddri.Name = "tbxddri"
         Me.tbxddri.Size = New System.Drawing.Size(37, 32)
         Me.tbxddri.TabIndex = 58
         Me.tbxddri.Text = "dd"
         Me.tbxddri.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'tbxaaap
+        'tbxaaaap
         '
-        Me.tbxaaap.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbxaaap.Location = New System.Drawing.Point(340, 19)
-        Me.tbxaaap.MaxLength = 3
-        Me.tbxaaap.Name = "tbxaaap"
-        Me.tbxaaap.Size = New System.Drawing.Size(54, 32)
-        Me.tbxaaap.TabIndex = 56
-        Me.tbxaaap.Text = "aaaa"
-        Me.tbxaaap.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.tbxaaaap.Enabled = False
+        Me.tbxaaaap.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbxaaaap.Location = New System.Drawing.Point(340, 19)
+        Me.tbxaaaap.MaxLength = 4
+        Me.tbxaaaap.Name = "tbxaaaap"
+        Me.tbxaaaap.Size = New System.Drawing.Size(54, 32)
+        Me.tbxaaaap.TabIndex = 56
+        Me.tbxaaaap.Text = "aaaa"
+        Me.tbxaaaap.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'tbxmmp
         '
+        Me.tbxmmp.Enabled = False
         Me.tbxmmp.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tbxmmp.Location = New System.Drawing.Point(294, 19)
-        Me.tbxmmp.MaxLength = 3
+        Me.tbxmmp.MaxLength = 2
         Me.tbxmmp.Name = "tbxmmp"
         Me.tbxmmp.Size = New System.Drawing.Size(40, 32)
         Me.tbxmmp.TabIndex = 55
@@ -709,6 +719,7 @@ Partial Class frmModificar
         'lblFechaP
         '
         Me.lblFechaP.AutoSize = True
+        Me.lblFechaP.Enabled = False
         Me.lblFechaP.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblFechaP.Location = New System.Drawing.Point(6, 22)
         Me.lblFechaP.Name = "lblFechaP"
@@ -718,9 +729,10 @@ Partial Class frmModificar
         '
         'tbxddP
         '
+        Me.tbxddP.Enabled = False
         Me.tbxddP.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tbxddP.Location = New System.Drawing.Point(251, 19)
-        Me.tbxddP.MaxLength = 3
+        Me.tbxddP.MaxLength = 2
         Me.tbxddP.Name = "tbxddP"
         Me.tbxddP.Size = New System.Drawing.Size(37, 32)
         Me.tbxddP.TabIndex = 54
@@ -758,9 +770,9 @@ Partial Class frmModificar
         Me.gbxPrenadaS.ResumeLayout(False)
         Me.gbxPrenadaS.PerformLayout()
         Me.ResumeLayout(False)
-        Me.PerformLayout
+        Me.PerformLayout()
 
-End Sub
+    End Sub
     Friend WithEvents btnBuscar As System.Windows.Forms.Button
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents btnModificar As System.Windows.Forms.Button
@@ -815,7 +827,7 @@ End Sub
     Friend WithEvents tbxmmri As System.Windows.Forms.TextBox
     Friend WithEvents lblRecriaIda As System.Windows.Forms.Label
     Friend WithEvents tbxddri As System.Windows.Forms.TextBox
-    Friend WithEvents tbxaaap As System.Windows.Forms.TextBox
+    Friend WithEvents tbxaaaap As System.Windows.Forms.TextBox
     Friend WithEvents tbxmmp As System.Windows.Forms.TextBox
     Friend WithEvents lblFechaP As System.Windows.Forms.Label
     Friend WithEvents tbxddP As System.Windows.Forms.TextBox

@@ -45,18 +45,18 @@ Partial Class frmTamboConsultar
         Me.lblReposicion = New System.Windows.Forms.Label()
         Me.btnBuscar = New System.Windows.Forms.Button()
         Me.gbxDatos = New System.Windows.Forms.GroupBox()
-        Me.tbxGanadoVacas = New System.Windows.Forms.TextBox()
-        Me.lblGanadovacas = New System.Windows.Forms.Label()
-        Me.tbxGanadoToros = New System.Windows.Forms.TextBox()
-        Me.lblGanadoToros = New System.Windows.Forms.Label()
-        Me.tbxGanado = New System.Windows.Forms.TextBox()
-        Me.lblGanado = New System.Windows.Forms.Label()
+        Me.cbxCantidad = New System.Windows.Forms.ComboBox()
+        Me.lblOrdeñecant = New System.Windows.Forms.Label()
         Me.tbxLugar = New System.Windows.Forms.TextBox()
         Me.tbxNum = New System.Windows.Forms.TextBox()
         Me.lblHectareas = New System.Windows.Forms.Label()
         Me.lblOrdeñet = New System.Windows.Forms.Label()
-        Me.cbxCantidad = New System.Windows.Forms.ComboBox()
-        Me.lbOrdeñecant = New System.Windows.Forms.Label()
+        Me.tbxGanado = New System.Windows.Forms.TextBox()
+        Me.lblGanado = New System.Windows.Forms.Label()
+        Me.tbxGanadoToros = New System.Windows.Forms.TextBox()
+        Me.lblGanadoToros = New System.Windows.Forms.Label()
+        Me.tbxGanadoVacas = New System.Windows.Forms.TextBox()
+        Me.lblGanadovacas = New System.Windows.Forms.Label()
         Me.gbxDatos.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -82,6 +82,7 @@ Partial Class frmTamboConsultar
         '
         Me.cbxTambo.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbxTambo.FormattingEnabled = True
+        Me.cbxTambo.Items.AddRange(New Object() {"Ejemplo1"})
         Me.cbxTambo.Location = New System.Drawing.Point(395, 42)
         Me.cbxTambo.Name = "cbxTambo"
         Me.cbxTambo.Size = New System.Drawing.Size(121, 32)
@@ -129,6 +130,7 @@ Partial Class frmTamboConsultar
         '
         Me.TextBox7.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox7.Location = New System.Drawing.Point(268, 257)
+        Me.TextBox7.MaxLength = 3
         Me.TextBox7.Name = "TextBox7"
         Me.TextBox7.Size = New System.Drawing.Size(121, 32)
         Me.TextBox7.TabIndex = 94
@@ -147,6 +149,7 @@ Partial Class frmTamboConsultar
         '
         Me.TextBox6.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox6.Location = New System.Drawing.Point(268, 219)
+        Me.TextBox6.MaxLength = 3
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.Size = New System.Drawing.Size(121, 32)
         Me.TextBox6.TabIndex = 92
@@ -165,6 +168,7 @@ Partial Class frmTamboConsultar
         '
         Me.TextBox5.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox5.Location = New System.Drawing.Point(268, 182)
+        Me.TextBox5.MaxLength = 3
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(121, 32)
         Me.TextBox5.TabIndex = 90
@@ -219,6 +223,7 @@ Partial Class frmTamboConsultar
         '
         Me.TextBox1.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox1.Location = New System.Drawing.Point(268, 295)
+        Me.TextBox1.MaxLength = 3
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(121, 32)
         Me.TextBox1.TabIndex = 84
@@ -265,7 +270,7 @@ Partial Class frmTamboConsultar
         'gbxDatos
         '
         Me.gbxDatos.Controls.Add(Me.cbxCantidad)
-        Me.gbxDatos.Controls.Add(Me.lbOrdeñecant)
+        Me.gbxDatos.Controls.Add(Me.lblOrdeñecant)
         Me.gbxDatos.Controls.Add(Me.tbxLugar)
         Me.gbxDatos.Controls.Add(Me.tbxNum)
         Me.gbxDatos.Controls.Add(Me.lblHectareas)
@@ -294,66 +299,32 @@ Partial Class frmTamboConsultar
         Me.gbxDatos.Controls.Add(Me.lblProducciond)
         Me.gbxDatos.Controls.Add(Me.tbxEdad)
         Me.gbxDatos.Controls.Add(Me.lblReposicion)
+        Me.gbxDatos.Enabled = False
         Me.gbxDatos.Location = New System.Drawing.Point(12, 119)
         Me.gbxDatos.Name = "gbxDatos"
         Me.gbxDatos.Size = New System.Drawing.Size(772, 354)
         Me.gbxDatos.TabIndex = 117
         Me.gbxDatos.TabStop = False
-        Me.gbxDatos.Visible = False
         '
-        'tbxGanadoVacas
+        'cbxCantidad
         '
-        Me.tbxGanadoVacas.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbxGanadoVacas.Location = New System.Drawing.Point(642, 86)
-        Me.tbxGanadoVacas.Name = "tbxGanadoVacas"
-        Me.tbxGanadoVacas.Size = New System.Drawing.Size(121, 32)
-        Me.tbxGanadoVacas.TabIndex = 100
+        Me.cbxCantidad.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbxCantidad.FormattingEnabled = True
+        Me.cbxCantidad.Items.AddRange(New Object() {"Uno", "Dos", "Tres"})
+        Me.cbxCantidad.Location = New System.Drawing.Point(642, 274)
+        Me.cbxCantidad.Name = "cbxCantidad"
+        Me.cbxCantidad.Size = New System.Drawing.Size(121, 32)
+        Me.cbxCantidad.TabIndex = 110
         '
-        'lblGanadovacas
+        'lblOrdeñecant
         '
-        Me.lblGanadovacas.AutoSize = True
-        Me.lblGanadovacas.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblGanadovacas.Location = New System.Drawing.Point(395, 89)
-        Me.lblGanadovacas.Name = "lblGanadovacas"
-        Me.lblGanadovacas.Size = New System.Drawing.Size(185, 24)
-        Me.lblGanadovacas.TabIndex = 99
-        Me.lblGanadovacas.Text = "Cantidad de vacas"
-        '
-        'tbxGanadoToros
-        '
-        Me.tbxGanadoToros.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbxGanadoToros.Location = New System.Drawing.Point(642, 124)
-        Me.tbxGanadoToros.Name = "tbxGanadoToros"
-        Me.tbxGanadoToros.Size = New System.Drawing.Size(121, 32)
-        Me.tbxGanadoToros.TabIndex = 102
-        '
-        'lblGanadoToros
-        '
-        Me.lblGanadoToros.AutoSize = True
-        Me.lblGanadoToros.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblGanadoToros.Location = New System.Drawing.Point(395, 127)
-        Me.lblGanadoToros.Name = "lblGanadoToros"
-        Me.lblGanadoToros.Size = New System.Drawing.Size(176, 24)
-        Me.lblGanadoToros.TabIndex = 101
-        Me.lblGanadoToros.Text = "Cantidad de toros"
-        '
-        'tbxGanado
-        '
-        Me.tbxGanado.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbxGanado.Location = New System.Drawing.Point(642, 162)
-        Me.tbxGanado.Name = "tbxGanado"
-        Me.tbxGanado.Size = New System.Drawing.Size(121, 32)
-        Me.tbxGanado.TabIndex = 104
-        '
-        'lblGanado
-        '
-        Me.lblGanado.AutoSize = True
-        Me.lblGanado.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblGanado.Location = New System.Drawing.Point(395, 165)
-        Me.lblGanado.Name = "lblGanado"
-        Me.lblGanado.Size = New System.Drawing.Size(130, 24)
-        Me.lblGanado.TabIndex = 103
-        Me.lblGanado.Text = "Ganado total"
+        Me.lblOrdeñecant.AutoSize = True
+        Me.lblOrdeñecant.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblOrdeñecant.Location = New System.Drawing.Point(395, 283)
+        Me.lblOrdeñecant.Name = "lblOrdeñecant"
+        Me.lblOrdeñecant.Size = New System.Drawing.Size(204, 24)
+        Me.lblOrdeñecant.TabIndex = 109
+        Me.lblOrdeñecant.Text = "Cantidad de ordeñes"
         '
         'tbxLugar
         '
@@ -391,25 +362,59 @@ Partial Class frmTamboConsultar
         Me.lblOrdeñet.TabIndex = 105
         Me.lblOrdeñet.Text = "Tipo de ordeñe"
         '
-        'cbxCantidad
+        'tbxGanado
         '
-        Me.cbxCantidad.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cbxCantidad.FormattingEnabled = True
-        Me.cbxCantidad.Items.AddRange(New Object() {"Uno", "Dos", "Tres"})
-        Me.cbxCantidad.Location = New System.Drawing.Point(642, 274)
-        Me.cbxCantidad.Name = "cbxCantidad"
-        Me.cbxCantidad.Size = New System.Drawing.Size(121, 32)
-        Me.cbxCantidad.TabIndex = 110
+        Me.tbxGanado.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbxGanado.Location = New System.Drawing.Point(642, 162)
+        Me.tbxGanado.Name = "tbxGanado"
+        Me.tbxGanado.Size = New System.Drawing.Size(121, 32)
+        Me.tbxGanado.TabIndex = 104
         '
-        'lbOrdeñecant
+        'lblGanado
         '
-        Me.lbOrdeñecant.AutoSize = True
-        Me.lbOrdeñecant.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbOrdeñecant.Location = New System.Drawing.Point(395, 283)
-        Me.lbOrdeñecant.Name = "lbOrdeñecant"
-        Me.lbOrdeñecant.Size = New System.Drawing.Size(204, 24)
-        Me.lbOrdeñecant.TabIndex = 109
-        Me.lbOrdeñecant.Text = "Cantidad de ordeñes"
+        Me.lblGanado.AutoSize = True
+        Me.lblGanado.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblGanado.Location = New System.Drawing.Point(395, 165)
+        Me.lblGanado.Name = "lblGanado"
+        Me.lblGanado.Size = New System.Drawing.Size(130, 24)
+        Me.lblGanado.TabIndex = 103
+        Me.lblGanado.Text = "Ganado total"
+        '
+        'tbxGanadoToros
+        '
+        Me.tbxGanadoToros.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbxGanadoToros.Location = New System.Drawing.Point(642, 124)
+        Me.tbxGanadoToros.Name = "tbxGanadoToros"
+        Me.tbxGanadoToros.Size = New System.Drawing.Size(121, 32)
+        Me.tbxGanadoToros.TabIndex = 102
+        '
+        'lblGanadoToros
+        '
+        Me.lblGanadoToros.AutoSize = True
+        Me.lblGanadoToros.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblGanadoToros.Location = New System.Drawing.Point(395, 127)
+        Me.lblGanadoToros.Name = "lblGanadoToros"
+        Me.lblGanadoToros.Size = New System.Drawing.Size(176, 24)
+        Me.lblGanadoToros.TabIndex = 101
+        Me.lblGanadoToros.Text = "Cantidad de toros"
+        '
+        'tbxGanadoVacas
+        '
+        Me.tbxGanadoVacas.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbxGanadoVacas.Location = New System.Drawing.Point(642, 86)
+        Me.tbxGanadoVacas.Name = "tbxGanadoVacas"
+        Me.tbxGanadoVacas.Size = New System.Drawing.Size(121, 32)
+        Me.tbxGanadoVacas.TabIndex = 100
+        '
+        'lblGanadovacas
+        '
+        Me.lblGanadovacas.AutoSize = True
+        Me.lblGanadovacas.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblGanadovacas.Location = New System.Drawing.Point(395, 89)
+        Me.lblGanadovacas.Name = "lblGanadovacas"
+        Me.lblGanadovacas.Size = New System.Drawing.Size(185, 24)
+        Me.lblGanadovacas.TabIndex = 99
+        Me.lblGanadovacas.Text = "Cantidad de vacas"
         '
         'frmTamboConsultar
         '
@@ -464,5 +469,5 @@ Partial Class frmTamboConsultar
     Friend WithEvents lblHectareas As System.Windows.Forms.Label
     Friend WithEvents lblOrdeñet As System.Windows.Forms.Label
     Friend WithEvents cbxCantidad As System.Windows.Forms.ComboBox
-    Friend WithEvents lbOrdeñecant As System.Windows.Forms.Label
+    Friend WithEvents lblOrdeñecant As System.Windows.Forms.Label
 End Class
