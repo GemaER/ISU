@@ -56,10 +56,7 @@
         <task id="5" name="Armado de terminales y servidor" meeting="false" start="2016-06-15" duration="2" complete="0" expand="true">
             <depend id="10" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="10" name="Revision del armado" color="#66ccff" meeting="false" start="2016-06-17" duration="1" complete="0" expand="true">
-            <depend id="11" type="2" difference="0" hardness="Strong"/>
-        </task>
-        <task id="11" name="Revision del armado (2)" color="#66ccff" meeting="false" start="2016-06-20" duration="1" complete="0" expand="true">
+        <task id="10" name="Revision del armado" color="#66ccff" meeting="false" start="2016-06-17" duration="2" complete="0" expand="true">
             <depend id="12" type="2" difference="0" hardness="Strong"/>
         </task>
         <task id="12" name="Armado de esquema lógico" meeting="false" start="2016-06-21" duration="2" complete="0" expand="true">
