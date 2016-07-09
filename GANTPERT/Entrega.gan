@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Entrega " company="" webLink="http://" view-date="2016-05-31" view-index="0" gantt-divider-location="353" resource-divider-location="300" version="2.7.2" locale="es">
+<?xml version="1.0" encoding="UTF-8"?><project name="Entrega " company="" webLink="http://" view-date="2016-06-06" view-index="0" gantt-divider-location="353" resource-divider-location="300" version="2.7.2" locale="es">
     <description/>
     <view zooming-state="default:1" id="gantt-chart">
         <field id="tpd3" name="Nombre" width="57" order="0"/>
@@ -49,11 +49,17 @@
         <task id="16" name="Carpeta Taller" color="#8cb6ce" meeting="false" start="2016-07-04" duration="1" complete="0" expand="true"/>
         <task id="17" name="Revision de carpeta taller" color="#66ccff" meeting="false" start="2016-06-02" duration="1" complete="0" expand="true"/>
         <task id="19" name="Modelo entrevista" meeting="false" start="2016-06-01" duration="1" complete="0" expand="true"/>
-        <task id="20" name="Entrevistas (dos)" meeting="false" start="2016-06-13" duration="1" complete="0" expand="true"/>
+        <task id="20" name="Entrevistas (dos)" meeting="false" start="2016-06-13" duration="2" complete="0" expand="true"/>
         <task id="21" name="Analisis F.O.D.A." meeting="false" start="2016-06-27" duration="1" complete="0" expand="true"/>
         <task id="22" name="Anteproyecto" meeting="false" start="2016-06-27" duration="1" complete="0" expand="true"/>
         <task id="23" name="Reglas" meeting="false" start="2016-05-16" duration="3" complete="0" expand="true"/>
         <task id="24" name="Modelo de acta" meeting="false" start="2016-05-13" duration="1" complete="0" expand="true"/>
+        <task id="25" name="DER" meeting="false" start="2016-06-22" duration="1" complete="0" expand="true"/>
+        <task id="26" name="Revision del DER" color="#66ccff" meeting="false" start="2016-06-29" duration="1" complete="0" expand="true"/>
+        <task id="29" name="RNE" meeting="false" start="2016-07-04" duration="1" complete="0" expand="true"/>
+        <task id="27" name="Pasaje a tabla" meeting="false" start="2016-07-05" duration="1" complete="0" expand="true"/>
+        <task id="30" name="Diccionario de datos" meeting="false" start="2016-07-06" duration="1" complete="0" expand="true"/>
+        <task id="32" name="Carpeta base de datos" meeting="false" start="2016-07-07" duration="1" complete="0" expand="true"/>
     </tasks>
     <resources/>
     <allocations/>
