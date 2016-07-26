@@ -42,10 +42,10 @@ do
 		done
 		if  sudo useradd -d $Homee -mk /etc/skel -g $Groupp -c "$CI" -s /bin/shell $Logg
 		then
-			tput cup 2 3; tput setaf 1; read -p "Error" aux; tput setaf 0
-		else
 			tput cup 2 3;  tput setaf 2 ; read -p "Usuario creado" ;  tput setaf 0
 			sudo passwd $Logg
+		else
+			tput cup 2 3; tput setaf 1; read -p "Error" aux; tput setaf 0
 		fi
 	else
 		tput cup 2 3; tput setaf 1; read -p "El usuario ya existe" aux; tput setaf 0

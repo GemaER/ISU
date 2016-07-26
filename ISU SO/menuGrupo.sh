@@ -1,6 +1,6 @@
-!/bin/bash
+#!/bin/bash
 op=0
-while [  $op -ne 4  ]
+while [  $op -ne 5  ]
 do
 	clear
 	tput cup 1 3; echo "I. S."; tput cup 1 8; tput setaf 4 ; echo " U. insumos y soporte al usuario"
