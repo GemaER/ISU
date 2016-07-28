@@ -1,0 +1,43 @@
+C:\Users\Usuario\Desktop\isu\Isu\Isu\bin\Debug\Isu.exe
+C:\Users\Usuario\Desktop\isu\Isu\Isu\bin\Debug\Isu.pdb
+C:\Users\Usuario\Desktop\isu\Isu\Isu\bin\Debug\Isu.xml
+C:\Users\Usuario\Desktop\isu\Isu\Isu\obj\x86\Debug\WindowsApplication1.Resources.resources
+C:\Users\Usuario\Desktop\isu\Isu\Isu\obj\x86\Debug\Isu.vbproj.GenerateResource.Cache
+C:\Users\Usuario\Desktop\isu\Isu\Isu\obj\x86\Debug\Isu.exe
+C:\Users\Usuario\Desktop\isu\Isu\Isu\obj\x86\Debug\Isu.xml
+C:\Users\Usuario\Desktop\isu\Isu\Isu\obj\x86\Debug\Isu.pdb
+C:\Users\Usuario\Desktop\isu\Isu\Isu\obj\x86\Debug\WindowsApplication1.frmISU.resources
+C:\Users\Usuario\Desktop\isu\Isu\Isu\obj\x86\Debug\WindowsApplication1.frmIngresar.resources
+C:\Users\Usuario\Desktop\isu\Isu\Isu\obj\x86\Debug\WindowsApplication1.frmConsult.resources
+C:\Users\Usuario\Desktop\isu\Isu\Isu\obj\x86\Debug\WindowsApplication1.frmConsultar.resources
+C:\Users\Usuario\Desktop\isu\Isu\Isu\obj\x86\Debug\WindowsApplication1.frmEliminar.resources
+C:\Users\Usuario\Desktop\isu\Isu\Isu\obj\x86\Debug\WindowsApplication1.frmEnlistar.resources
+C:\Users\Usuario\Desktop\isu\Isu\Isu\obj\x86\Debug\WindowsApplication1.frmInsert.resources
+C:\Users\Usuario\Desktop\isu\Isu\Isu\obj\x86\Debug\WindowsApplication1.frmModificar.resources
+C:\Users\Usuario\Desktop\isu\Isu\Isu\obj\x86\Debug\WindowsApplication1.frmModify.resources
+C:\Users\Usuario\Desktop\isu\Isu\Isu\obj\x86\Debug\WindowsApplication1.frmRemove.resources
+C:\Users\Usuario\Desktop\isu\Isu\Isu\obj\x86\Debug\WindowsApplication1.frmShow.resources
+C:\Users\Usuario\Desktop\Gema\Proyecto\isu\Isu\Isu\obj\x86\Debug\Isu.exe
+C:\Users\Usuario\Desktop\Gema\Proyecto\isu\Isu\Isu\obj\x86\Debug\Isu.xml
+C:\Users\Usuario\Desktop\Gema\Proyecto\isu\Isu\Isu\obj\x86\Debug\Isu.pdb
+F:\ISU\ISU PROG\isu\Isu\Isu\obj\x86\Debug\Isu.exe
+F:\ISU\ISU PROG\isu\Isu\Isu\obj\x86\Debug\Isu.xml
+F:\ISU\ISU PROG\isu\Isu\Isu\obj\x86\Debug\Isu.pdb
+F:\ISU\ISU PROG\isu\Isu\Isu\bin\Debug\Isu.exe
+F:\ISU\ISU PROG\isu\Isu\Isu\bin\Debug\Isu.pdb
+F:\ISU\ISU PROG\isu\Isu\Isu\bin\Debug\Isu.xml
+F:\ISU\ISU PROG\isu\Isu\Isu\obj\x86\Debug\WindowsApplication1.frmISU.resources
+F:\ISU\ISU PROG\isu\Isu\Isu\obj\x86\Debug\WindowsApplication1.frmConsultar.resources
+F:\ISU\ISU PROG\isu\Isu\Isu\obj\x86\Debug\WindowsApplication1.frmEliminar.resources
+F:\ISU\ISU PROG\isu\Isu\Isu\obj\x86\Debug\WindowsApplication1.frmEnlistar.resources
+F:\ISU\ISU PROG\isu\Isu\Isu\obj\x86\Debug\WindowsApplication1.frmIngresar.resources
+F:\ISU\ISU PROG\isu\Isu\Isu\obj\x86\Debug\WindowsApplication1.frmModificar.resources
+F:\ISU\ISU PROG\isu\Isu\Isu\obj\x86\Debug\WindowsApplication1.Resources.resources
+F:\ISU\ISU PROG\isu\Isu\Isu\obj\x86\Debug\Isu.vbproj.GenerateResource.Cache
+F:\ISU\ISU PROG\isu\Isu\Isu\obj\x86\Debug\WindowsApplication1.frmGenealogia.resources
+F:\ISU\ISU PROG\isu\Isu\Isu\obj\x86\Debug\WindowsApplication1.frmTamboCambios.resources
+F:\ISU\ISU PROG\isu\Isu\Isu\obj\x86\Debug\WindowsApplication1.frmTamboConsultar.resources
+F:\ISU\ISU PROG\isu\Isu\Isu\obj\x86\Debug\WindowsApplication1.frmPersonal.resources
+C:\Users\Usuario\Desktop\Gema\Estudio\UTU\Tercero\ISU\Primer Entrega\ISU PROG\isu\Isu\Isu\obj\x86\Debug\Isu.exe
+C:\Users\Usuario\Desktop\Gema\Estudio\UTU\Tercero\ISU\Primer Entrega\ISU PROG\isu\Isu\Isu\obj\x86\Debug\Isu.xml
+C:\Users\Usuario\Desktop\Gema\Estudio\UTU\Tercero\ISU\Primer Entrega\ISU PROG\isu\Isu\Isu\obj\x86\Debug\Isu.pdb
