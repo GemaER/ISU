@@ -25,9 +25,9 @@ Partial Class frmAnimal
         Me.gbxPrenadaS = New System.Windows.Forms.GroupBox()
         Me.dtprecriavuelta = New System.Windows.Forms.DateTimePicker()
         Me.dtprecriaida = New System.Windows.Forms.DateTimePicker()
-        Me.dtppreñez = New System.Windows.Forms.DateTimePicker()
         Me.lblRecriavuelta = New System.Windows.Forms.Label()
         Me.lblRecriaIda = New System.Windows.Forms.Label()
+        Me.dtppreñez = New System.Windows.Forms.DateTimePicker()
         Me.lblFechaP = New System.Windows.Forms.Label()
         Me.gbxBasico = New System.Windows.Forms.GroupBox()
         Me.dtpNacimiento = New System.Windows.Forms.DateTimePicker()
@@ -40,32 +40,38 @@ Partial Class frmAnimal
         Me.cbxDivision = New System.Windows.Forms.ComboBox()
         Me.lblRaza = New System.Windows.Forms.Label()
         Me.lblLugar = New System.Windows.Forms.Label()
-        Me.btnGenealogia = New System.Windows.Forms.Button()
         Me.btnBuscar = New System.Windows.Forms.Button()
         Me.gbxHembra = New System.Windows.Forms.GroupBox()
-        Me.lblAntibiotico = New System.Windows.Forms.Label()
-        Me.gbxPrenada = New System.Windows.Forms.GroupBox()
-        Me.rbnSip = New System.Windows.Forms.RadioButton()
-        Me.rbnNop = New System.Windows.Forms.RadioButton()
         Me.lblEtapa = New System.Windows.Forms.Label()
-        Me.gbxAntibiotico = New System.Windows.Forms.GroupBox()
-        Me.rbnSia = New System.Windows.Forms.RadioButton()
-        Me.rbnNoa = New System.Windows.Forms.RadioButton()
-        Me.lblPrenada = New System.Windows.Forms.Label()
-        Me.tbxPorcentajep = New System.Windows.Forms.TextBox()
-        Me.lblPorcentajep = New System.Windows.Forms.Label()
         Me.cbxEtapa = New System.Windows.Forms.ComboBox()
         Me.tbxNum = New System.Windows.Forms.TextBox()
         Me.lblNumero = New System.Windows.Forms.Label()
         Me.pnlBlue = New System.Windows.Forms.Panel()
         Me.btnOpcion = New System.Windows.Forms.Button()
-        Me.gbxX = New System.Windows.Forms.GroupBox()
+        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.gbxM = New System.Windows.Forms.GroupBox()
+        Me.lblNumM = New System.Windows.Forms.Label()
+        Me.lblSexoM = New System.Windows.Forms.Label()
+        Me.lblRazaM = New System.Windows.Forms.Label()
+        Me.gbxH = New System.Windows.Forms.GroupBox()
+        Me.lblNumH = New System.Windows.Forms.Label()
+        Me.lblSexoH = New System.Windows.Forms.Label()
+        Me.lblRazaH = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
+        Me.ComboBox4 = New System.Windows.Forms.ComboBox()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
         Me.gbxPrenadaS.SuspendLayout()
         Me.gbxBasico.SuspendLayout()
         Me.gbxHembra.SuspendLayout()
-        Me.gbxPrenada.SuspendLayout()
-        Me.gbxAntibiotico.SuspendLayout()
-        Me.gbxX.SuspendLayout()
+        Me.gbxM.SuspendLayout()
+        Me.gbxH.SuspendLayout()
         Me.SuspendLayout()
         '
         'gbxPrenadaS
@@ -76,7 +82,7 @@ Partial Class frmAnimal
         Me.gbxPrenadaS.Controls.Add(Me.lblRecriaIda)
         Me.gbxPrenadaS.Location = New System.Drawing.Point(12, 336)
         Me.gbxPrenadaS.Name = "gbxPrenadaS"
-        Me.gbxPrenadaS.Size = New System.Drawing.Size(374, 174)
+        Me.gbxPrenadaS.Size = New System.Drawing.Size(374, 188)
         Me.gbxPrenadaS.TabIndex = 66
         Me.gbxPrenadaS.TabStop = False
         '
@@ -97,15 +103,6 @@ Partial Class frmAnimal
         Me.dtprecriaida.Name = "dtprecriaida"
         Me.dtprecriaida.Size = New System.Drawing.Size(145, 32)
         Me.dtprecriaida.TabIndex = 67
-        '
-        'dtppreñez
-        '
-        Me.dtppreñez.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dtppreñez.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dtppreñez.Location = New System.Drawing.Point(211, 28)
-        Me.dtppreñez.Name = "dtppreñez"
-        Me.dtppreñez.Size = New System.Drawing.Size(145, 32)
-        Me.dtppreñez.TabIndex = 66
         '
         'lblRecriavuelta
         '
@@ -129,16 +126,25 @@ Partial Class frmAnimal
         Me.lblRecriaIda.TabIndex = 57
         Me.lblRecriaIda.Text = "Campo de recria (ida)"
         '
+        'dtppreñez
+        '
+        Me.dtppreñez.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dtppreñez.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.dtppreñez.Location = New System.Drawing.Point(211, 55)
+        Me.dtppreñez.Name = "dtppreñez"
+        Me.dtppreñez.Size = New System.Drawing.Size(145, 32)
+        Me.dtppreñez.TabIndex = 66
+        '
         'lblFechaP
         '
         Me.lblFechaP.AutoSize = True
         Me.lblFechaP.Enabled = False
         Me.lblFechaP.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblFechaP.Location = New System.Drawing.Point(6, 34)
+        Me.lblFechaP.Location = New System.Drawing.Point(6, 61)
         Me.lblFechaP.Name = "lblFechaP"
-        Me.lblFechaP.Size = New System.Drawing.Size(137, 24)
+        Me.lblFechaP.Size = New System.Drawing.Size(124, 24)
         Me.lblFechaP.TabIndex = 47
-        Me.lblFechaP.Text = "Fecha preñez"
+        Me.lblFechaP.Text = "Fecha inicio"
         '
         'gbxBasico
         '
@@ -256,21 +262,10 @@ Partial Class frmAnimal
         Me.lblLugar.TabIndex = 4
         Me.lblLugar.Text = "Lugar actual"
         '
-        'btnGenealogia
-        '
-        Me.btnGenealogia.Enabled = False
-        Me.btnGenealogia.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnGenealogia.Location = New System.Drawing.Point(652, 26)
-        Me.btnGenealogia.Name = "btnGenealogia"
-        Me.btnGenealogia.Size = New System.Drawing.Size(141, 42)
-        Me.btnGenealogia.TabIndex = 64
-        Me.btnGenealogia.Text = "Genealogia"
-        Me.btnGenealogia.UseVisualStyleBackColor = True
-        '
         'btnBuscar
         '
         Me.btnBuscar.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBuscar.Location = New System.Drawing.Point(404, 26)
+        Me.btnBuscar.Location = New System.Drawing.Point(272, 29)
         Me.btnBuscar.Name = "btnBuscar"
         Me.btnBuscar.Size = New System.Drawing.Size(118, 42)
         Me.btnBuscar.TabIndex = 63
@@ -279,145 +274,36 @@ Partial Class frmAnimal
         '
         'gbxHembra
         '
-        Me.gbxHembra.Controls.Add(Me.lblAntibiotico)
-        Me.gbxHembra.Controls.Add(Me.gbxPrenada)
+        Me.gbxHembra.Controls.Add(Me.Button1)
+        Me.gbxHembra.Controls.Add(Me.DateTimePicker1)
+        Me.gbxHembra.Controls.Add(Me.Label1)
+        Me.gbxHembra.Controls.Add(Me.dtppreñez)
+        Me.gbxHembra.Controls.Add(Me.lblFechaP)
         Me.gbxHembra.Controls.Add(Me.lblEtapa)
-        Me.gbxHembra.Controls.Add(Me.gbxAntibiotico)
-        Me.gbxHembra.Controls.Add(Me.lblPrenada)
-        Me.gbxHembra.Controls.Add(Me.tbxPorcentajep)
-        Me.gbxHembra.Controls.Add(Me.lblPorcentajep)
         Me.gbxHembra.Controls.Add(Me.cbxEtapa)
         Me.gbxHembra.Enabled = False
-        Me.gbxHembra.Location = New System.Drawing.Point(414, 90)
+        Me.gbxHembra.Location = New System.Drawing.Point(414, 336)
         Me.gbxHembra.Name = "gbxHembra"
-        Me.gbxHembra.Size = New System.Drawing.Size(376, 240)
+        Me.gbxHembra.Size = New System.Drawing.Size(376, 188)
         Me.gbxHembra.TabIndex = 62
         Me.gbxHembra.TabStop = False
-        '
-        'lblAntibiotico
-        '
-        Me.lblAntibiotico.AutoSize = True
-        Me.lblAntibiotico.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblAntibiotico.Location = New System.Drawing.Point(8, 65)
-        Me.lblAntibiotico.Name = "lblAntibiotico"
-        Me.lblAntibiotico.Size = New System.Drawing.Size(202, 24)
-        Me.lblAntibiotico.TabIndex = 38
-        Me.lblAntibiotico.Text = "Antibiotico influyente"
-        '
-        'gbxPrenada
-        '
-        Me.gbxPrenada.Controls.Add(Me.rbnSip)
-        Me.gbxPrenada.Controls.Add(Me.rbnNop)
-        Me.gbxPrenada.Location = New System.Drawing.Point(215, 104)
-        Me.gbxPrenada.Name = "gbxPrenada"
-        Me.gbxPrenada.Size = New System.Drawing.Size(144, 39)
-        Me.gbxPrenada.TabIndex = 44
-        Me.gbxPrenada.TabStop = False
-        '
-        'rbnSip
-        '
-        Me.rbnSip.AutoSize = True
-        Me.rbnSip.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rbnSip.Location = New System.Drawing.Point(7, 7)
-        Me.rbnSip.Name = "rbnSip"
-        Me.rbnSip.Size = New System.Drawing.Size(47, 28)
-        Me.rbnSip.TabIndex = 39
-        Me.rbnSip.TabStop = True
-        Me.rbnSip.Text = "Si"
-        Me.rbnSip.UseVisualStyleBackColor = True
-        '
-        'rbnNop
-        '
-        Me.rbnNop.AutoSize = True
-        Me.rbnNop.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rbnNop.Location = New System.Drawing.Point(84, 7)
-        Me.rbnNop.Name = "rbnNop"
-        Me.rbnNop.Size = New System.Drawing.Size(54, 28)
-        Me.rbnNop.TabIndex = 40
-        Me.rbnNop.TabStop = True
-        Me.rbnNop.Text = "No"
-        Me.rbnNop.UseVisualStyleBackColor = True
         '
         'lblEtapa
         '
         Me.lblEtapa.AutoSize = True
         Me.lblEtapa.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblEtapa.Location = New System.Drawing.Point(8, 25)
+        Me.lblEtapa.Location = New System.Drawing.Point(6, 16)
         Me.lblEtapa.Name = "lblEtapa"
         Me.lblEtapa.Size = New System.Drawing.Size(65, 24)
         Me.lblEtapa.TabIndex = 5
         Me.lblEtapa.Text = "Etapa"
         '
-        'gbxAntibiotico
-        '
-        Me.gbxAntibiotico.Controls.Add(Me.rbnSia)
-        Me.gbxAntibiotico.Controls.Add(Me.rbnNoa)
-        Me.gbxAntibiotico.Location = New System.Drawing.Point(216, 58)
-        Me.gbxAntibiotico.Name = "gbxAntibiotico"
-        Me.gbxAntibiotico.Size = New System.Drawing.Size(144, 40)
-        Me.gbxAntibiotico.TabIndex = 43
-        Me.gbxAntibiotico.TabStop = False
-        '
-        'rbnSia
-        '
-        Me.rbnSia.AutoSize = True
-        Me.rbnSia.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rbnSia.Location = New System.Drawing.Point(6, 7)
-        Me.rbnSia.Name = "rbnSia"
-        Me.rbnSia.Size = New System.Drawing.Size(47, 28)
-        Me.rbnSia.TabIndex = 39
-        Me.rbnSia.TabStop = True
-        Me.rbnSia.Text = "Si"
-        Me.rbnSia.UseVisualStyleBackColor = True
-        '
-        'rbnNoa
-        '
-        Me.rbnNoa.AutoSize = True
-        Me.rbnNoa.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rbnNoa.Location = New System.Drawing.Point(84, 7)
-        Me.rbnNoa.Name = "rbnNoa"
-        Me.rbnNoa.Size = New System.Drawing.Size(54, 28)
-        Me.rbnNoa.TabIndex = 40
-        Me.rbnNoa.TabStop = True
-        Me.rbnNoa.Text = "No"
-        Me.rbnNoa.UseVisualStyleBackColor = True
-        '
-        'lblPrenada
-        '
-        Me.lblPrenada.AutoSize = True
-        Me.lblPrenada.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrenada.Location = New System.Drawing.Point(7, 111)
-        Me.lblPrenada.Name = "lblPrenada"
-        Me.lblPrenada.Size = New System.Drawing.Size(89, 24)
-        Me.lblPrenada.TabIndex = 7
-        Me.lblPrenada.Text = "Preñada"
-        '
-        'tbxPorcentajep
-        '
-        Me.tbxPorcentajep.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbxPorcentajep.Location = New System.Drawing.Point(215, 150)
-        Me.tbxPorcentajep.MaxLength = 3
-        Me.tbxPorcentajep.Name = "tbxPorcentajep"
-        Me.tbxPorcentajep.Size = New System.Drawing.Size(144, 32)
-        Me.tbxPorcentajep.TabIndex = 42
-        Me.tbxPorcentajep.Text = "000"
-        '
-        'lblPorcentajep
-        '
-        Me.lblPorcentajep.AutoSize = True
-        Me.lblPorcentajep.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPorcentajep.Location = New System.Drawing.Point(6, 153)
-        Me.lblPorcentajep.Name = "lblPorcentajep"
-        Me.lblPorcentajep.Size = New System.Drawing.Size(208, 24)
-        Me.lblPorcentajep.TabIndex = 41
-        Me.lblPorcentajep.Text = "Porcentaje de preñez"
-        '
         'cbxEtapa
         '
         Me.cbxEtapa.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbxEtapa.FormattingEnabled = True
-        Me.cbxEtapa.Items.AddRange(New Object() {"Ninguno", "Servicio", "Preñada", "Lactancia"})
-        Me.cbxEtapa.Location = New System.Drawing.Point(215, 22)
+        Me.cbxEtapa.Items.AddRange(New Object() {"Ninguno", "Servicio", "Preñada", "Lactancia", "Seca", "Antibiotico"})
+        Me.cbxEtapa.Location = New System.Drawing.Point(213, 13)
         Me.cbxEtapa.Name = "cbxEtapa"
         Me.cbxEtapa.Size = New System.Drawing.Size(144, 32)
         Me.cbxEtapa.TabIndex = 34
@@ -425,7 +311,7 @@ Partial Class frmAnimal
         'tbxNum
         '
         Me.tbxNum.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbxNum.Location = New System.Drawing.Point(228, 32)
+        Me.tbxNum.Location = New System.Drawing.Point(121, 35)
         Me.tbxNum.MaxLength = 9
         Me.tbxNum.Name = "tbxNum"
         Me.tbxNum.Size = New System.Drawing.Size(145, 32)
@@ -455,21 +341,215 @@ Partial Class frmAnimal
         '
         Me.btnOpcion.Enabled = False
         Me.btnOpcion.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnOpcion.Location = New System.Drawing.Point(528, 26)
+        Me.btnOpcion.Location = New System.Drawing.Point(540, 289)
         Me.btnOpcion.Name = "btnOpcion"
         Me.btnOpcion.Size = New System.Drawing.Size(118, 42)
         Me.btnOpcion.TabIndex = 105
         Me.btnOpcion.UseVisualStyleBackColor = True
         '
-        'gbxX
+        'DateTimePicker1
         '
-        Me.gbxX.Controls.Add(Me.dtppreñez)
-        Me.gbxX.Controls.Add(Me.lblFechaP)
-        Me.gbxX.Location = New System.Drawing.Point(414, 336)
-        Me.gbxX.Name = "gbxX"
-        Me.gbxX.Size = New System.Drawing.Size(376, 174)
-        Me.gbxX.TabIndex = 107
-        Me.gbxX.TabStop = False
+        Me.DateTimePicker1.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.DateTimePicker1.Location = New System.Drawing.Point(211, 98)
+        Me.DateTimePicker1.Name = "DateTimePicker1"
+        Me.DateTimePicker1.Size = New System.Drawing.Size(145, 32)
+        Me.DateTimePicker1.TabIndex = 68
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Enabled = False
+        Me.Label1.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(6, 104)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(97, 24)
+        Me.Label1.TabIndex = 67
+        Me.Label1.Text = "Fecha fin"
+        '
+        'gbxM
+        '
+        Me.gbxM.BackColor = System.Drawing.Color.LightSteelBlue
+        Me.gbxM.Controls.Add(Me.Button2)
+        Me.gbxM.Controls.Add(Me.ComboBox4)
+        Me.gbxM.Controls.Add(Me.ComboBox1)
+        Me.gbxM.Controls.Add(Me.TextBox1)
+        Me.gbxM.Controls.Add(Me.lblNumM)
+        Me.gbxM.Controls.Add(Me.lblSexoM)
+        Me.gbxM.Controls.Add(Me.lblRazaM)
+        Me.gbxM.Location = New System.Drawing.Point(414, 29)
+        Me.gbxM.Name = "gbxM"
+        Me.gbxM.Size = New System.Drawing.Size(376, 126)
+        Me.gbxM.TabIndex = 111
+        Me.gbxM.TabStop = False
+        Me.gbxM.Text = "progenitor macho"
+        '
+        'lblNumM
+        '
+        Me.lblNumM.AutoSize = True
+        Me.lblNumM.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblNumM.Location = New System.Drawing.Point(6, 15)
+        Me.lblNumM.Name = "lblNumM"
+        Me.lblNumM.Size = New System.Drawing.Size(82, 24)
+        Me.lblNumM.TabIndex = 49
+        Me.lblNumM.Text = "Numero"
+        '
+        'lblSexoM
+        '
+        Me.lblSexoM.AutoSize = True
+        Me.lblSexoM.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblSexoM.Location = New System.Drawing.Point(6, 51)
+        Me.lblSexoM.Name = "lblSexoM"
+        Me.lblSexoM.Size = New System.Drawing.Size(58, 24)
+        Me.lblSexoM.TabIndex = 51
+        Me.lblSexoM.Text = "Sexo"
+        '
+        'lblRazaM
+        '
+        Me.lblRazaM.AutoSize = True
+        Me.lblRazaM.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblRazaM.Location = New System.Drawing.Point(6, 89)
+        Me.lblRazaM.Name = "lblRazaM"
+        Me.lblRazaM.Size = New System.Drawing.Size(58, 24)
+        Me.lblRazaM.TabIndex = 50
+        Me.lblRazaM.Text = "Raza"
+        '
+        'gbxH
+        '
+        Me.gbxH.BackColor = System.Drawing.Color.Bisque
+        Me.gbxH.Controls.Add(Me.Button3)
+        Me.gbxH.Controls.Add(Me.ComboBox3)
+        Me.gbxH.Controls.Add(Me.ComboBox2)
+        Me.gbxH.Controls.Add(Me.TextBox2)
+        Me.gbxH.Controls.Add(Me.lblNumH)
+        Me.gbxH.Controls.Add(Me.lblSexoH)
+        Me.gbxH.Controls.Add(Me.lblRazaH)
+        Me.gbxH.Location = New System.Drawing.Point(414, 157)
+        Me.gbxH.Name = "gbxH"
+        Me.gbxH.Size = New System.Drawing.Size(376, 126)
+        Me.gbxH.TabIndex = 110
+        Me.gbxH.TabStop = False
+        Me.gbxH.Text = "progenitor hembra"
+        '
+        'lblNumH
+        '
+        Me.lblNumH.AutoSize = True
+        Me.lblNumH.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblNumH.Location = New System.Drawing.Point(6, 16)
+        Me.lblNumH.Name = "lblNumH"
+        Me.lblNumH.Size = New System.Drawing.Size(82, 24)
+        Me.lblNumH.TabIndex = 49
+        Me.lblNumH.Text = "Numero"
+        '
+        'lblSexoH
+        '
+        Me.lblSexoH.AutoSize = True
+        Me.lblSexoH.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblSexoH.Location = New System.Drawing.Point(6, 54)
+        Me.lblSexoH.Name = "lblSexoH"
+        Me.lblSexoH.Size = New System.Drawing.Size(58, 24)
+        Me.lblSexoH.TabIndex = 51
+        Me.lblSexoH.Text = "Sexo"
+        '
+        'lblRazaH
+        '
+        Me.lblRazaH.AutoSize = True
+        Me.lblRazaH.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblRazaH.Location = New System.Drawing.Point(6, 92)
+        Me.lblRazaH.Name = "lblRazaH"
+        Me.lblRazaH.Size = New System.Drawing.Size(58, 24)
+        Me.lblRazaH.TabIndex = 50
+        Me.lblRazaH.Text = "Raza"
+        '
+        'Button1
+        '
+        Me.Button1.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(126, 140)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(118, 42)
+        Me.Button1.TabIndex = 112
+        Me.Button1.Text = "Agregar"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox1.Location = New System.Drawing.Point(99, 12)
+        Me.TextBox1.MaxLength = 9
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(145, 32)
+        Me.TextBox1.TabIndex = 112
+        Me.TextBox1.Text = "000000000"
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox2.Location = New System.Drawing.Point(99, 13)
+        Me.TextBox2.MaxLength = 9
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(145, 32)
+        Me.TextBox2.TabIndex = 113
+        Me.TextBox2.Text = "000000000"
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"Macho", "Hembra"})
+        Me.ComboBox1.Location = New System.Drawing.Point(99, 48)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(145, 32)
+        Me.ComboBox1.TabIndex = 67
+        '
+        'ComboBox2
+        '
+        Me.ComboBox2.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBox2.FormattingEnabled = True
+        Me.ComboBox2.Items.AddRange(New Object() {"Macho", "Hembra"})
+        Me.ComboBox2.Location = New System.Drawing.Point(99, 51)
+        Me.ComboBox2.Name = "ComboBox2"
+        Me.ComboBox2.Size = New System.Drawing.Size(145, 32)
+        Me.ComboBox2.TabIndex = 113
+        '
+        'ComboBox3
+        '
+        Me.ComboBox3.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBox3.FormattingEnabled = True
+        Me.ComboBox3.Items.AddRange(New Object() {"Holando", "Jersey", "Primer show"})
+        Me.ComboBox3.Location = New System.Drawing.Point(99, 89)
+        Me.ComboBox3.Name = "ComboBox3"
+        Me.ComboBox3.Size = New System.Drawing.Size(145, 32)
+        Me.ComboBox3.TabIndex = 67
+        '
+        'ComboBox4
+        '
+        Me.ComboBox4.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBox4.FormattingEnabled = True
+        Me.ComboBox4.Items.AddRange(New Object() {"Holando", "Jersey", "Primer show"})
+        Me.ComboBox4.Location = New System.Drawing.Point(99, 86)
+        Me.ComboBox4.Name = "ComboBox4"
+        Me.ComboBox4.Size = New System.Drawing.Size(145, 32)
+        Me.ComboBox4.TabIndex = 114
+        '
+        'Button2
+        '
+        Me.Button2.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.Location = New System.Drawing.Point(250, 42)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(118, 42)
+        Me.Button2.TabIndex = 112
+        Me.Button2.Text = "Buscar"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button3
+        '
+        Me.Button3.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.Location = New System.Drawing.Point(250, 45)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(118, 42)
+        Me.Button3.TabIndex = 115
+        Me.Button3.Text = "Buscar"
+        Me.Button3.UseVisualStyleBackColor = True
         '
         'frmAnimal
         '
@@ -477,12 +557,12 @@ Partial Class frmAnimal
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.ClientSize = New System.Drawing.Size(832, 536)
-        Me.Controls.Add(Me.gbxX)
+        Me.Controls.Add(Me.gbxM)
+        Me.Controls.Add(Me.gbxH)
         Me.Controls.Add(Me.btnOpcion)
         Me.Controls.Add(Me.pnlBlue)
         Me.Controls.Add(Me.gbxPrenadaS)
         Me.Controls.Add(Me.gbxBasico)
-        Me.Controls.Add(Me.btnGenealogia)
         Me.Controls.Add(Me.btnBuscar)
         Me.Controls.Add(Me.gbxHembra)
         Me.Controls.Add(Me.tbxNum)
@@ -495,12 +575,10 @@ Partial Class frmAnimal
         Me.gbxBasico.PerformLayout()
         Me.gbxHembra.ResumeLayout(False)
         Me.gbxHembra.PerformLayout()
-        Me.gbxPrenada.ResumeLayout(False)
-        Me.gbxPrenada.PerformLayout()
-        Me.gbxAntibiotico.ResumeLayout(False)
-        Me.gbxAntibiotico.PerformLayout()
-        Me.gbxX.ResumeLayout(False)
-        Me.gbxX.PerformLayout()
+        Me.gbxM.ResumeLayout(False)
+        Me.gbxM.PerformLayout()
+        Me.gbxH.ResumeLayout(False)
+        Me.gbxH.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -519,20 +597,9 @@ Partial Class frmAnimal
     Friend WithEvents cbxDivision As System.Windows.Forms.ComboBox
     Friend WithEvents lblRaza As System.Windows.Forms.Label
     Friend WithEvents lblLugar As System.Windows.Forms.Label
-    Friend WithEvents btnGenealogia As System.Windows.Forms.Button
     Friend WithEvents btnBuscar As System.Windows.Forms.Button
     Friend WithEvents gbxHembra As System.Windows.Forms.GroupBox
-    Friend WithEvents lblAntibiotico As System.Windows.Forms.Label
-    Friend WithEvents gbxPrenada As System.Windows.Forms.GroupBox
-    Friend WithEvents rbnSip As System.Windows.Forms.RadioButton
-    Friend WithEvents rbnNop As System.Windows.Forms.RadioButton
     Friend WithEvents lblEtapa As System.Windows.Forms.Label
-    Friend WithEvents gbxAntibiotico As System.Windows.Forms.GroupBox
-    Friend WithEvents rbnSia As System.Windows.Forms.RadioButton
-    Friend WithEvents rbnNoa As System.Windows.Forms.RadioButton
-    Friend WithEvents lblPrenada As System.Windows.Forms.Label
-    Friend WithEvents tbxPorcentajep As System.Windows.Forms.TextBox
-    Friend WithEvents lblPorcentajep As System.Windows.Forms.Label
     Friend WithEvents cbxEtapa As System.Windows.Forms.ComboBox
     Friend WithEvents tbxNum As System.Windows.Forms.TextBox
     Friend WithEvents lblNumero As System.Windows.Forms.Label
@@ -542,5 +609,23 @@ Partial Class frmAnimal
     Friend WithEvents dtppreñez As System.Windows.Forms.DateTimePicker
     Friend WithEvents pnlBlue As System.Windows.Forms.Panel
     Friend WithEvents btnOpcion As System.Windows.Forms.Button
-    Friend WithEvents gbxX As System.Windows.Forms.GroupBox
+    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents DateTimePicker1 As System.Windows.Forms.DateTimePicker
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents gbxM As System.Windows.Forms.GroupBox
+    Friend WithEvents lblNumM As System.Windows.Forms.Label
+    Friend WithEvents lblSexoM As System.Windows.Forms.Label
+    Friend WithEvents lblRazaM As System.Windows.Forms.Label
+    Friend WithEvents gbxH As System.Windows.Forms.GroupBox
+    Friend WithEvents lblNumH As System.Windows.Forms.Label
+    Friend WithEvents lblSexoH As System.Windows.Forms.Label
+    Friend WithEvents lblRazaH As System.Windows.Forms.Label
+    Friend WithEvents ComboBox4 As System.Windows.Forms.ComboBox
+    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents ComboBox3 As System.Windows.Forms.ComboBox
+    Friend WithEvents ComboBox2 As System.Windows.Forms.ComboBox
+    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents Button3 As System.Windows.Forms.Button
 End Class

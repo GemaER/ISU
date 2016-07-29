@@ -36,7 +36,27 @@ Partial Class frmOrdeñe
         Me.lblLitros = New System.Windows.Forms.Label()
         Me.lblRecuentobac = New System.Windows.Forms.Label()
         Me.tbxLitros = New System.Windows.Forms.TextBox()
+        Me.lblOrdeñecant = New System.Windows.Forms.Label()
+        Me.cbxCantidad = New System.Windows.Forms.ComboBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.tbxNum = New System.Windows.Forms.TextBox()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.btnOpcion = New System.Windows.Forms.Button()
+        Me.gbxTercer = New System.Windows.Forms.GroupBox()
+        Me.lblFinalt = New System.Windows.Forms.Label()
+        Me.lblIniciot = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker()
+        Me.DateTimePicker3 = New System.Windows.Forms.DateTimePicker()
         Me.gbxLeche.SuspendLayout()
+        Me.GroupBox1.SuspendLayout()
+        Me.gbxTercer.SuspendLayout()
         Me.SuspendLayout()
         '
         'pnlBlue
@@ -50,6 +70,11 @@ Partial Class frmOrdeñe
         '
         'gbxLeche
         '
+        Me.gbxLeche.Controls.Add(Me.GroupBox1)
+        Me.gbxLeche.Controls.Add(Me.ComboBox1)
+        Me.gbxLeche.Controls.Add(Me.Label1)
+        Me.gbxLeche.Controls.Add(Me.TextBox1)
+        Me.gbxLeche.Controls.Add(Me.Label2)
         Me.gbxLeche.Controls.Add(Me.tbxGrasa)
         Me.gbxLeche.Controls.Add(Me.lblGrasa)
         Me.gbxLeche.Controls.Add(Me.tbxProteina)
@@ -63,17 +88,16 @@ Partial Class frmOrdeñe
         Me.gbxLeche.Controls.Add(Me.lblRecuentobac)
         Me.gbxLeche.Controls.Add(Me.tbxLitros)
         Me.gbxLeche.Enabled = False
-        Me.gbxLeche.Location = New System.Drawing.Point(38, 45)
+        Me.gbxLeche.Location = New System.Drawing.Point(28, 180)
         Me.gbxLeche.Name = "gbxLeche"
-        Me.gbxLeche.Size = New System.Drawing.Size(399, 282)
+        Me.gbxLeche.Size = New System.Drawing.Size(756, 329)
         Me.gbxLeche.TabIndex = 73
         Me.gbxLeche.TabStop = False
-        Me.gbxLeche.Text = "Lactancia"
         '
         'tbxGrasa
         '
         Me.tbxGrasa.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbxGrasa.Location = New System.Drawing.Point(251, 57)
+        Me.tbxGrasa.Location = New System.Drawing.Point(251, 97)
         Me.tbxGrasa.MaxLength = 3
         Me.tbxGrasa.Name = "tbxGrasa"
         Me.tbxGrasa.Size = New System.Drawing.Size(142, 32)
@@ -84,7 +108,7 @@ Partial Class frmOrdeñe
         '
         Me.lblGrasa.AutoSize = True
         Me.lblGrasa.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblGrasa.Location = New System.Drawing.Point(6, 60)
+        Me.lblGrasa.Location = New System.Drawing.Point(6, 100)
         Me.lblGrasa.Name = "lblGrasa"
         Me.lblGrasa.Size = New System.Drawing.Size(199, 24)
         Me.lblGrasa.TabIndex = 56
@@ -93,7 +117,7 @@ Partial Class frmOrdeñe
         'tbxProteina
         '
         Me.tbxProteina.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbxProteina.Location = New System.Drawing.Point(251, 100)
+        Me.tbxProteina.Location = New System.Drawing.Point(251, 140)
         Me.tbxProteina.MaxLength = 3
         Me.tbxProteina.Name = "tbxProteina"
         Me.tbxProteina.Size = New System.Drawing.Size(142, 32)
@@ -104,7 +128,7 @@ Partial Class frmOrdeñe
         '
         Me.lblProteina.AutoSize = True
         Me.lblProteina.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblProteina.Location = New System.Drawing.Point(6, 103)
+        Me.lblProteina.Location = New System.Drawing.Point(6, 143)
         Me.lblProteina.Name = "lblProteina"
         Me.lblProteina.Size = New System.Drawing.Size(222, 24)
         Me.lblProteina.TabIndex = 54
@@ -113,7 +137,7 @@ Partial Class frmOrdeñe
         'tbxUrea
         '
         Me.tbxUrea.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbxUrea.Location = New System.Drawing.Point(251, 147)
+        Me.tbxUrea.Location = New System.Drawing.Point(251, 187)
         Me.tbxUrea.MaxLength = 3
         Me.tbxUrea.Name = "tbxUrea"
         Me.tbxUrea.Size = New System.Drawing.Size(142, 32)
@@ -124,7 +148,7 @@ Partial Class frmOrdeñe
         '
         Me.lblUrea.AutoSize = True
         Me.lblUrea.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblUrea.Location = New System.Drawing.Point(6, 150)
+        Me.lblUrea.Location = New System.Drawing.Point(6, 190)
         Me.lblUrea.Name = "lblUrea"
         Me.lblUrea.Size = New System.Drawing.Size(188, 24)
         Me.lblUrea.TabIndex = 52
@@ -133,7 +157,7 @@ Partial Class frmOrdeñe
         'tbxRecuentocel
         '
         Me.tbxRecuentocel.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbxRecuentocel.Location = New System.Drawing.Point(251, 224)
+        Me.tbxRecuentocel.Location = New System.Drawing.Point(251, 264)
         Me.tbxRecuentocel.MaxLength = 11
         Me.tbxRecuentocel.Name = "tbxRecuentocel"
         Me.tbxRecuentocel.Size = New System.Drawing.Size(142, 32)
@@ -144,7 +168,7 @@ Partial Class frmOrdeñe
         '
         Me.lblRecuentoCel.AutoSize = True
         Me.lblRecuentoCel.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblRecuentoCel.Location = New System.Drawing.Point(6, 224)
+        Me.lblRecuentoCel.Location = New System.Drawing.Point(6, 264)
         Me.lblRecuentoCel.Name = "lblRecuentoCel"
         Me.lblRecuentoCel.Size = New System.Drawing.Size(200, 48)
         Me.lblRecuentoCel.TabIndex = 50
@@ -153,7 +177,7 @@ Partial Class frmOrdeñe
         'tbxRecuentobac
         '
         Me.tbxRecuentobac.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbxRecuentobac.Location = New System.Drawing.Point(251, 185)
+        Me.tbxRecuentobac.Location = New System.Drawing.Point(251, 225)
         Me.tbxRecuentobac.MaxLength = 11
         Me.tbxRecuentobac.Name = "tbxRecuentobac"
         Me.tbxRecuentobac.Size = New System.Drawing.Size(142, 32)
@@ -164,7 +188,7 @@ Partial Class frmOrdeñe
         '
         Me.lblLitros.AutoSize = True
         Me.lblLitros.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblLitros.Location = New System.Drawing.Point(6, 22)
+        Me.lblLitros.Location = New System.Drawing.Point(6, 62)
         Me.lblLitros.Name = "lblLitros"
         Me.lblLitros.Size = New System.Drawing.Size(63, 24)
         Me.lblLitros.TabIndex = 46
@@ -174,7 +198,7 @@ Partial Class frmOrdeñe
         '
         Me.lblRecuentobac.AutoSize = True
         Me.lblRecuentobac.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblRecuentobac.Location = New System.Drawing.Point(6, 188)
+        Me.lblRecuentobac.Location = New System.Drawing.Point(6, 228)
         Me.lblRecuentobac.Name = "lblRecuentobac"
         Me.lblRecuentobac.Size = New System.Drawing.Size(205, 24)
         Me.lblRecuentobac.TabIndex = 48
@@ -183,12 +207,193 @@ Partial Class frmOrdeñe
         'tbxLitros
         '
         Me.tbxLitros.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbxLitros.Location = New System.Drawing.Point(251, 19)
+        Me.tbxLitros.Location = New System.Drawing.Point(251, 59)
         Me.tbxLitros.MaxLength = 11
         Me.tbxLitros.Name = "tbxLitros"
         Me.tbxLitros.Size = New System.Drawing.Size(142, 32)
         Me.tbxLitros.TabIndex = 47
         Me.tbxLitros.Text = "00000000000"
+        '
+        'lblOrdeñecant
+        '
+        Me.lblOrdeñecant.AutoSize = True
+        Me.lblOrdeñecant.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblOrdeñecant.Location = New System.Drawing.Point(43, 59)
+        Me.lblOrdeñecant.Name = "lblOrdeñecant"
+        Me.lblOrdeñecant.Size = New System.Drawing.Size(62, 24)
+        Me.lblOrdeñecant.TabIndex = 108
+        Me.lblOrdeñecant.Text = "Turno"
+        '
+        'cbxCantidad
+        '
+        Me.cbxCantidad.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbxCantidad.FormattingEnabled = True
+        Me.cbxCantidad.Items.AddRange(New Object() {"1", "2", "3"})
+        Me.cbxCantidad.Location = New System.Drawing.Point(279, 51)
+        Me.cbxCantidad.Name = "cbxCantidad"
+        Me.cbxCantidad.Size = New System.Drawing.Size(142, 32)
+        Me.cbxCantidad.TabIndex = 109
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(7, 22)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(151, 24)
+        Me.Label2.TabIndex = 109
+        Me.Label2.Text = "Numero de lote"
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox1.Location = New System.Drawing.Point(251, 19)
+        Me.TextBox1.MaxLength = 3
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(142, 32)
+        Me.TextBox1.TabIndex = 110
+        Me.TextBox1.Text = "000"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(436, 22)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(290, 24)
+        Me.Label1.TabIndex = 111
+        Me.Label1.Text = "Cantidad de vacas ordeñadas"
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"1", "2", "3"})
+        Me.ComboBox1.Location = New System.Drawing.Point(505, 59)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(142, 32)
+        Me.ComboBox1.TabIndex = 110
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.Button3)
+        Me.GroupBox1.Controls.Add(Me.tbxNum)
+        Me.GroupBox1.Controls.Add(Me.Label3)
+        Me.GroupBox1.Location = New System.Drawing.Point(416, 110)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(330, 186)
+        Me.GroupBox1.TabIndex = 112
+        Me.GroupBox1.TabStop = False
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(85, 30)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(163, 24)
+        Me.Label3.TabIndex = 113
+        Me.Label3.Text = "Numero de vaca"
+        '
+        'tbxNum
+        '
+        Me.tbxNum.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbxNum.Location = New System.Drawing.Point(86, 72)
+        Me.tbxNum.MaxLength = 9
+        Me.tbxNum.Name = "tbxNum"
+        Me.tbxNum.Size = New System.Drawing.Size(145, 32)
+        Me.tbxNum.TabIndex = 114
+        Me.tbxNum.Text = "000000000"
+        '
+        'Button3
+        '
+        Me.Button3.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.Location = New System.Drawing.Point(103, 118)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(118, 42)
+        Me.Button3.TabIndex = 116
+        Me.Button3.Text = "Ordeñada"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'btnOpcion
+        '
+        Me.btnOpcion.Enabled = False
+        Me.btnOpcion.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnOpcion.Location = New System.Drawing.Point(157, 117)
+        Me.btnOpcion.Name = "btnOpcion"
+        Me.btnOpcion.Size = New System.Drawing.Size(118, 42)
+        Me.btnOpcion.TabIndex = 110
+        Me.btnOpcion.UseVisualStyleBackColor = True
+        '
+        'gbxTercer
+        '
+        Me.gbxTercer.Controls.Add(Me.DateTimePicker3)
+        Me.gbxTercer.Controls.Add(Me.DateTimePicker2)
+        Me.gbxTercer.Controls.Add(Me.DateTimePicker1)
+        Me.gbxTercer.Controls.Add(Me.Label5)
+        Me.gbxTercer.Controls.Add(Me.lblFinalt)
+        Me.gbxTercer.Controls.Add(Me.lblIniciot)
+        Me.gbxTercer.Enabled = False
+        Me.gbxTercer.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gbxTercer.Location = New System.Drawing.Point(444, 38)
+        Me.gbxTercer.Name = "gbxTercer"
+        Me.gbxTercer.Size = New System.Drawing.Size(345, 136)
+        Me.gbxTercer.TabIndex = 111
+        Me.gbxTercer.TabStop = False
+        '
+        'lblFinalt
+        '
+        Me.lblFinalt.AutoSize = True
+        Me.lblFinalt.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblFinalt.Location = New System.Drawing.Point(26, 101)
+        Me.lblFinalt.Name = "lblFinalt"
+        Me.lblFinalt.Size = New System.Drawing.Size(99, 24)
+        Me.lblFinalt.TabIndex = 64
+        Me.lblFinalt.Text = "Hora final"
+        '
+        'lblIniciot
+        '
+        Me.lblIniciot.AutoSize = True
+        Me.lblIniciot.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblIniciot.Location = New System.Drawing.Point(26, 63)
+        Me.lblIniciot.Name = "lblIniciot"
+        Me.lblIniciot.Size = New System.Drawing.Size(110, 24)
+        Me.lblIniciot.TabIndex = 62
+        Me.lblIniciot.Text = "Hora inicio"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(26, 28)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(69, 24)
+        Me.Label5.TabIndex = 78
+        Me.Label5.Text = "Fecha"
+        '
+        'DateTimePicker1
+        '
+        Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.DateTimePicker1.Location = New System.Drawing.Point(178, 21)
+        Me.DateTimePicker1.Name = "DateTimePicker1"
+        Me.DateTimePicker1.Size = New System.Drawing.Size(152, 32)
+        Me.DateTimePicker1.TabIndex = 79
+        '
+        'DateTimePicker2
+        '
+        Me.DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Time
+        Me.DateTimePicker2.Location = New System.Drawing.Point(178, 57)
+        Me.DateTimePicker2.Name = "DateTimePicker2"
+        Me.DateTimePicker2.Size = New System.Drawing.Size(152, 32)
+        Me.DateTimePicker2.TabIndex = 80
+        '
+        'DateTimePicker3
+        '
+        Me.DateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Time
+        Me.DateTimePicker3.Location = New System.Drawing.Point(178, 95)
+        Me.DateTimePicker3.Name = "DateTimePicker3"
+        Me.DateTimePicker3.Size = New System.Drawing.Size(152, 32)
+        Me.DateTimePicker3.TabIndex = 81
         '
         'frmOrdeñe
         '
@@ -196,13 +401,22 @@ Partial Class frmOrdeñe
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.ClientSize = New System.Drawing.Size(832, 536)
+        Me.Controls.Add(Me.gbxTercer)
+        Me.Controls.Add(Me.btnOpcion)
+        Me.Controls.Add(Me.lblOrdeñecant)
+        Me.Controls.Add(Me.cbxCantidad)
         Me.Controls.Add(Me.gbxLeche)
         Me.Controls.Add(Me.pnlBlue)
         Me.Name = "frmOrdeñe"
         Me.Text = "frmOrdeñe"
         Me.gbxLeche.ResumeLayout(False)
         Me.gbxLeche.PerformLayout()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
+        Me.gbxTercer.ResumeLayout(False)
+        Me.gbxTercer.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents pnlBlue As System.Windows.Forms.Panel
@@ -219,4 +433,22 @@ Partial Class frmOrdeñe
     Friend WithEvents lblLitros As System.Windows.Forms.Label
     Friend WithEvents lblRecuentobac As System.Windows.Forms.Label
     Friend WithEvents tbxLitros As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents lblOrdeñecant As System.Windows.Forms.Label
+    Friend WithEvents cbxCantidad As System.Windows.Forms.ComboBox
+    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents tbxNum As System.Windows.Forms.TextBox
+    Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents btnOpcion As System.Windows.Forms.Button
+    Friend WithEvents gbxTercer As System.Windows.Forms.GroupBox
+    Friend WithEvents DateTimePicker3 As System.Windows.Forms.DateTimePicker
+    Friend WithEvents DateTimePicker2 As System.Windows.Forms.DateTimePicker
+    Friend WithEvents DateTimePicker1 As System.Windows.Forms.DateTimePicker
+    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents lblFinalt As System.Windows.Forms.Label
+    Friend WithEvents lblIniciot As System.Windows.Forms.Label
 End Class

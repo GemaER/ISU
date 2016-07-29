@@ -5,4 +5,5 @@
         Boton_idioma(btnOpcion)
         btnBuscar.Text = buscar
     End Sub
+
 End Class

@@ -113,11 +113,6 @@
         frmTambo.Show()
     End Sub
 
-    Private Sub tsPersonalIngresar_Click(sender As System.Object, e As System.EventArgs) Handles tsPersonalIngresar.Click
-        opcion = 0
-        frmPersonal.Show()
-    End Sub
-
     Private Sub tsPersonalModificar_Click(sender As System.Object, e As System.EventArgs) Handles tsPersonalModificar.Click
         opcion = 1
         frmPersonal.Show()
@@ -263,8 +258,37 @@
         frmEnlistar.Show()
     End Sub
 
-    Private Sub tsOrdeñe_Click(sender As System.Object, e As System.EventArgs) Handles tsOrdeñe.Click
-        frmOrdeñe.Show()
+
+    Private Sub AnimalToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles AnimalToolStripMenuItem.Click
+        opcion = 0
+        frmPersonal.Show()
     End Sub
 
+    Private Sub EstadoToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles EstadoToolStripMenuItem.Click
+        opcion = -1
+        frmPersonal.Show()
+    End Sub
+
+    Private Sub ConfiguracionToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles ConfiguracionToolStripMenuItem.Click
+        frmOrdeñeConfig.Show()
+    End Sub
+
+    Private Sub PrimerOrdeñeToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles PrimerOrdeñeToolStripMenuItem.Click
+        frmOrdeñe.Show()
+        opcion = 1
+    End Sub
+
+    Private Sub SegundoOrdeñeToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles SegundoOrdeñeToolStripMenuItem.Click
+        frmOrdeñe.Show()
+        opcion = 2
+    End Sub
+
+    Private Sub TercerOrdeñeToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles TercerOrdeñeToolStripMenuItem.Click
+        frmOrdeñe.Show()
+        opcion = 3
+    End Sub
+
+    Private Sub AlimentoToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles AlimentoToolStripMenuItem.Click
+        frmAlimento.show()
+    End Sub
 End Class
