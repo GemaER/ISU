@@ -24,7 +24,10 @@ Partial Class frmPersonal
     Private Sub InitializeComponent()
         Me.btnOpcion = New System.Windows.Forms.Button()
         Me.gbxDatos = New System.Windows.Forms.GroupBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.tbxNombre = New System.Windows.Forms.TextBox()
         Me.dtpNacimiento = New System.Windows.Forms.DateTimePicker()
+        Me.lblNombre = New System.Windows.Forms.Label()
         Me.cbxPuesto = New System.Windows.Forms.ComboBox()
         Me.lblNacimiento = New System.Windows.Forms.Label()
         Me.cbxSexo = New System.Windows.Forms.ComboBox()
@@ -34,9 +37,6 @@ Partial Class frmPersonal
         Me.tbxCI = New System.Windows.Forms.TextBox()
         Me.lblCI = New System.Windows.Forms.Label()
         Me.pnlBlue = New System.Windows.Forms.Panel()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.gbxDatos.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -54,9 +54,9 @@ Partial Class frmPersonal
         'gbxDatos
         '
         Me.gbxDatos.Controls.Add(Me.PictureBox1)
-        Me.gbxDatos.Controls.Add(Me.TextBox1)
+        Me.gbxDatos.Controls.Add(Me.tbxNombre)
         Me.gbxDatos.Controls.Add(Me.dtpNacimiento)
-        Me.gbxDatos.Controls.Add(Me.Label1)
+        Me.gbxDatos.Controls.Add(Me.lblNombre)
         Me.gbxDatos.Controls.Add(Me.cbxPuesto)
         Me.gbxDatos.Controls.Add(Me.lblNacimiento)
         Me.gbxDatos.Controls.Add(Me.cbxSexo)
@@ -69,6 +69,23 @@ Partial Class frmPersonal
         Me.gbxDatos.TabIndex = 102
         Me.gbxDatos.TabStop = False
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Location = New System.Drawing.Point(21, 43)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(192, 171)
+        Me.PictureBox1.TabIndex = 108
+        Me.PictureBox1.TabStop = False
+        '
+        'tbxNombre
+        '
+        Me.tbxNombre.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbxNombre.Location = New System.Drawing.Point(474, 53)
+        Me.tbxNombre.MaxLength = 50
+        Me.tbxNombre.Name = "tbxNombre"
+        Me.tbxNombre.Size = New System.Drawing.Size(145, 32)
+        Me.tbxNombre.TabIndex = 107
+        '
         'dtpNacimiento
         '
         Me.dtpNacimiento.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -77,6 +94,16 @@ Partial Class frmPersonal
         Me.dtpNacimiento.Name = "dtpNacimiento"
         Me.dtpNacimiento.Size = New System.Drawing.Size(145, 32)
         Me.dtpNacimiento.TabIndex = 65
+        '
+        'lblNombre
+        '
+        Me.lblNombre.AutoSize = True
+        Me.lblNombre.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblNombre.Location = New System.Drawing.Point(266, 56)
+        Me.lblNombre.Name = "lblNombre"
+        Me.lblNombre.Size = New System.Drawing.Size(82, 24)
+        Me.lblNombre.TabIndex = 106
+        Me.lblNombre.Text = "Nombre"
         '
         'cbxPuesto
         '
@@ -167,33 +194,6 @@ Partial Class frmPersonal
         Me.pnlBlue.TabIndex = 105
         Me.pnlBlue.Visible = False
         '
-        'TextBox1
-        '
-        Me.TextBox1.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(474, 53)
-        Me.TextBox1.MaxLength = 50
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(145, 32)
-        Me.TextBox1.TabIndex = 107
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(266, 56)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(82, 24)
-        Me.Label1.TabIndex = 106
-        Me.Label1.Text = "Nombre"
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Location = New System.Drawing.Point(21, 43)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(192, 171)
-        Me.PictureBox1.TabIndex = 108
-        Me.PictureBox1.TabStop = False
-        '
         'frmPersonal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -228,6 +228,6 @@ Partial Class frmPersonal
     Friend WithEvents dtpNacimiento As System.Windows.Forms.DateTimePicker
     Friend WithEvents pnlBlue As System.Windows.Forms.Panel
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents tbxNombre As System.Windows.Forms.TextBox
+    Friend WithEvents lblNombre As System.Windows.Forms.Label
 End Class

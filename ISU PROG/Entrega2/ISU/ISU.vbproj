@@ -137,6 +137,12 @@
     <Compile Include="Tambo.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Control.Designer.vb">
+      <DependentUpon>Control.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Control.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Alimento.resx">
@@ -168,6 +174,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Tambo.resx">
       <DependentUpon>Tambo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control.resx">
+      <DependentUpon>Control.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

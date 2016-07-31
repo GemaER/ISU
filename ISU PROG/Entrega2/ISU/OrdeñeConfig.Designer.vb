@@ -79,7 +79,7 @@ Partial Class frmOrdeñeConfig
         Me.gbxTercer.Controls.Add(Me.lblIniciot)
         Me.gbxTercer.Enabled = False
         Me.gbxTercer.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.gbxTercer.Location = New System.Drawing.Point(432, 388)
+        Me.gbxTercer.Location = New System.Drawing.Point(436, 360)
         Me.gbxTercer.Name = "gbxTercer"
         Me.gbxTercer.Size = New System.Drawing.Size(345, 136)
         Me.gbxTercer.TabIndex = 112
@@ -188,7 +188,7 @@ Partial Class frmOrdeñeConfig
         Me.gbxSegundo.Controls.Add(Me.lblInicios)
         Me.gbxSegundo.Enabled = False
         Me.gbxSegundo.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.gbxSegundo.Location = New System.Drawing.Point(432, 226)
+        Me.gbxSegundo.Location = New System.Drawing.Point(436, 198)
         Me.gbxSegundo.Name = "gbxSegundo"
         Me.gbxSegundo.Size = New System.Drawing.Size(345, 136)
         Me.gbxSegundo.TabIndex = 111
@@ -297,7 +297,7 @@ Partial Class frmOrdeñeConfig
         Me.gbxPrimer.Controls.Add(Me.lblIniciop)
         Me.gbxPrimer.Enabled = False
         Me.gbxPrimer.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.gbxPrimer.Location = New System.Drawing.Point(432, 74)
+        Me.gbxPrimer.Location = New System.Drawing.Point(436, 46)
         Me.gbxPrimer.Name = "gbxPrimer"
         Me.gbxPrimer.Size = New System.Drawing.Size(345, 136)
         Me.gbxPrimer.TabIndex = 110
@@ -388,10 +388,11 @@ Partial Class frmOrdeñeConfig
         '
         Me.btnOpcion.Enabled = False
         Me.btnOpcion.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnOpcion.Location = New System.Drawing.Point(114, 267)
+        Me.btnOpcion.Location = New System.Drawing.Point(126, 268)
         Me.btnOpcion.Name = "btnOpcion"
         Me.btnOpcion.Size = New System.Drawing.Size(118, 42)
         Me.btnOpcion.TabIndex = 113
+        Me.btnOpcion.Text = "Guardar"
         Me.btnOpcion.UseVisualStyleBackColor = True
         '
         'frmOrdeñeConfig

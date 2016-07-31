@@ -24,6 +24,12 @@ Partial Class frmOrdeñe
     Private Sub InitializeComponent()
         Me.pnlBlue = New System.Windows.Forms.Panel()
         Me.gbxLeche = New System.Windows.Forms.GroupBox()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.tbxNum = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.tbxGrasa = New System.Windows.Forms.TextBox()
         Me.lblGrasa = New System.Windows.Forms.Label()
         Me.tbxProteina = New System.Windows.Forms.TextBox()
@@ -38,22 +44,18 @@ Partial Class frmOrdeñe
         Me.tbxLitros = New System.Windows.Forms.TextBox()
         Me.lblOrdeñecant = New System.Windows.Forms.Label()
         Me.cbxCantidad = New System.Windows.Forms.ComboBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.tbxNum = New System.Windows.Forms.TextBox()
-        Me.Button3 = New System.Windows.Forms.Button()
         Me.btnOpcion = New System.Windows.Forms.Button()
         Me.gbxTercer = New System.Windows.Forms.GroupBox()
+        Me.DateTimePicker3 = New System.Windows.Forms.DateTimePicker()
+        Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker()
+        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.lblFinalt = New System.Windows.Forms.Label()
         Me.lblIniciot = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
-        Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker()
-        Me.DateTimePicker3 = New System.Windows.Forms.DateTimePicker()
+        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.gbxLeche.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.gbxTercer.SuspendLayout()
@@ -70,9 +72,11 @@ Partial Class frmOrdeñe
         '
         'gbxLeche
         '
+        Me.gbxLeche.Controls.Add(Me.TextBox3)
+        Me.gbxLeche.Controls.Add(Me.TextBox2)
+        Me.gbxLeche.Controls.Add(Me.CheckBox1)
+        Me.gbxLeche.Controls.Add(Me.CheckBox2)
         Me.gbxLeche.Controls.Add(Me.GroupBox1)
-        Me.gbxLeche.Controls.Add(Me.ComboBox1)
-        Me.gbxLeche.Controls.Add(Me.Label1)
         Me.gbxLeche.Controls.Add(Me.TextBox1)
         Me.gbxLeche.Controls.Add(Me.Label2)
         Me.gbxLeche.Controls.Add(Me.tbxGrasa)
@@ -90,9 +94,70 @@ Partial Class frmOrdeñe
         Me.gbxLeche.Enabled = False
         Me.gbxLeche.Location = New System.Drawing.Point(28, 180)
         Me.gbxLeche.Name = "gbxLeche"
-        Me.gbxLeche.Size = New System.Drawing.Size(756, 329)
+        Me.gbxLeche.Size = New System.Drawing.Size(756, 334)
         Me.gbxLeche.TabIndex = 73
         Me.gbxLeche.TabStop = False
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.Button3)
+        Me.GroupBox1.Controls.Add(Me.tbxNum)
+        Me.GroupBox1.Controls.Add(Me.Label3)
+        Me.GroupBox1.Location = New System.Drawing.Point(416, 140)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(330, 186)
+        Me.GroupBox1.TabIndex = 112
+        Me.GroupBox1.TabStop = False
+        '
+        'Button3
+        '
+        Me.Button3.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.Location = New System.Drawing.Point(103, 118)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(118, 42)
+        Me.Button3.TabIndex = 116
+        Me.Button3.Text = "Ordeñada"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'tbxNum
+        '
+        Me.tbxNum.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbxNum.Location = New System.Drawing.Point(86, 72)
+        Me.tbxNum.MaxLength = 9
+        Me.tbxNum.Name = "tbxNum"
+        Me.tbxNum.Size = New System.Drawing.Size(145, 32)
+        Me.tbxNum.TabIndex = 114
+        Me.tbxNum.Text = "000000000"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(85, 30)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(151, 24)
+        Me.Label3.TabIndex = 113
+        Me.Label3.Text = "Numero de lote"
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox1.Location = New System.Drawing.Point(251, 19)
+        Me.TextBox1.MaxLength = 3
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(142, 32)
+        Me.TextBox1.TabIndex = 110
+        Me.TextBox1.Text = "000"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(7, 22)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(151, 24)
+        Me.Label2.TabIndex = 109
+        Me.Label2.Text = "Numero de lote"
         '
         'tbxGrasa
         '
@@ -234,87 +299,6 @@ Partial Class frmOrdeñe
         Me.cbxCantidad.Size = New System.Drawing.Size(142, 32)
         Me.cbxCantidad.TabIndex = 109
         '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(7, 22)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(151, 24)
-        Me.Label2.TabIndex = 109
-        Me.Label2.Text = "Numero de lote"
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(251, 19)
-        Me.TextBox1.MaxLength = 3
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(142, 32)
-        Me.TextBox1.TabIndex = 110
-        Me.TextBox1.Text = "000"
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(436, 22)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(290, 24)
-        Me.Label1.TabIndex = 111
-        Me.Label1.Text = "Cantidad de vacas ordeñadas"
-        '
-        'ComboBox1
-        '
-        Me.ComboBox1.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"1", "2", "3"})
-        Me.ComboBox1.Location = New System.Drawing.Point(505, 59)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(142, 32)
-        Me.ComboBox1.TabIndex = 110
-        '
-        'GroupBox1
-        '
-        Me.GroupBox1.Controls.Add(Me.Button3)
-        Me.GroupBox1.Controls.Add(Me.tbxNum)
-        Me.GroupBox1.Controls.Add(Me.Label3)
-        Me.GroupBox1.Location = New System.Drawing.Point(416, 110)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(330, 186)
-        Me.GroupBox1.TabIndex = 112
-        Me.GroupBox1.TabStop = False
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(85, 30)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(163, 24)
-        Me.Label3.TabIndex = 113
-        Me.Label3.Text = "Numero de vaca"
-        '
-        'tbxNum
-        '
-        Me.tbxNum.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbxNum.Location = New System.Drawing.Point(86, 72)
-        Me.tbxNum.MaxLength = 9
-        Me.tbxNum.Name = "tbxNum"
-        Me.tbxNum.Size = New System.Drawing.Size(145, 32)
-        Me.tbxNum.TabIndex = 114
-        Me.tbxNum.Text = "000000000"
-        '
-        'Button3
-        '
-        Me.Button3.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(103, 118)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(118, 42)
-        Me.Button3.TabIndex = 116
-        Me.Button3.Text = "Ordeñada"
-        Me.Button3.UseVisualStyleBackColor = True
-        '
         'btnOpcion
         '
         Me.btnOpcion.Enabled = False
@@ -341,6 +325,40 @@ Partial Class frmOrdeñe
         Me.gbxTercer.TabIndex = 111
         Me.gbxTercer.TabStop = False
         '
+        'DateTimePicker3
+        '
+        Me.DateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Time
+        Me.DateTimePicker3.Location = New System.Drawing.Point(178, 95)
+        Me.DateTimePicker3.Name = "DateTimePicker3"
+        Me.DateTimePicker3.Size = New System.Drawing.Size(152, 32)
+        Me.DateTimePicker3.TabIndex = 81
+        '
+        'DateTimePicker2
+        '
+        Me.DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Time
+        Me.DateTimePicker2.Location = New System.Drawing.Point(178, 57)
+        Me.DateTimePicker2.Name = "DateTimePicker2"
+        Me.DateTimePicker2.Size = New System.Drawing.Size(152, 32)
+        Me.DateTimePicker2.TabIndex = 80
+        '
+        'DateTimePicker1
+        '
+        Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.DateTimePicker1.Location = New System.Drawing.Point(178, 21)
+        Me.DateTimePicker1.Name = "DateTimePicker1"
+        Me.DateTimePicker1.Size = New System.Drawing.Size(152, 32)
+        Me.DateTimePicker1.TabIndex = 79
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(26, 28)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(69, 24)
+        Me.Label5.TabIndex = 78
+        Me.Label5.Text = "Fecha"
+        '
         'lblFinalt
         '
         Me.lblFinalt.AutoSize = True
@@ -361,39 +379,47 @@ Partial Class frmOrdeñe
         Me.lblIniciot.TabIndex = 62
         Me.lblIniciot.Text = "Hora inicio"
         '
-        'Label5
+        'CheckBox2
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(26, 28)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(69, 24)
-        Me.Label5.TabIndex = 78
-        Me.Label5.Text = "Fecha"
+        Me.CheckBox2.AutoSize = True
+        Me.CheckBox2.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox2.Location = New System.Drawing.Point(415, 77)
+        Me.CheckBox2.Name = "CheckBox2"
+        Me.CheckBox2.Size = New System.Drawing.Size(193, 28)
+        Me.CheckBox2.TabIndex = 114
+        Me.CheckBox2.Text = "Consumo externo"
+        Me.CheckBox2.UseVisualStyleBackColor = True
         '
-        'DateTimePicker1
+        'CheckBox1
         '
-        Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DateTimePicker1.Location = New System.Drawing.Point(178, 21)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(152, 32)
-        Me.DateTimePicker1.TabIndex = 79
+        Me.CheckBox1.AutoSize = True
+        Me.CheckBox1.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox1.Location = New System.Drawing.Point(415, 40)
+        Me.CheckBox1.Name = "CheckBox1"
+        Me.CheckBox1.Size = New System.Drawing.Size(187, 28)
+        Me.CheckBox1.TabIndex = 115
+        Me.CheckBox1.Text = "Consumo interno"
+        Me.CheckBox1.UseVisualStyleBackColor = True
         '
-        'DateTimePicker2
+        'TextBox2
         '
-        Me.DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Time
-        Me.DateTimePicker2.Location = New System.Drawing.Point(178, 57)
-        Me.DateTimePicker2.Name = "DateTimePicker2"
-        Me.DateTimePicker2.Size = New System.Drawing.Size(152, 32)
-        Me.DateTimePicker2.TabIndex = 80
+        Me.TextBox2.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox2.Location = New System.Drawing.Point(608, 38)
+        Me.TextBox2.MaxLength = 11
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(142, 32)
+        Me.TextBox2.TabIndex = 116
+        Me.TextBox2.Text = "00000000000"
         '
-        'DateTimePicker3
+        'TextBox3
         '
-        Me.DateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Time
-        Me.DateTimePicker3.Location = New System.Drawing.Point(178, 95)
-        Me.DateTimePicker3.Name = "DateTimePicker3"
-        Me.DateTimePicker3.Size = New System.Drawing.Size(152, 32)
-        Me.DateTimePicker3.TabIndex = 81
+        Me.TextBox3.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox3.Location = New System.Drawing.Point(607, 75)
+        Me.TextBox3.MaxLength = 11
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(142, 32)
+        Me.TextBox3.TabIndex = 117
+        Me.TextBox3.Text = "00000000000"
         '
         'frmOrdeñe
         '
@@ -439,8 +465,6 @@ Partial Class frmOrdeñe
     Friend WithEvents cbxCantidad As System.Windows.Forms.ComboBox
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
-    Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents tbxNum As System.Windows.Forms.TextBox
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents btnOpcion As System.Windows.Forms.Button
@@ -451,4 +475,8 @@ Partial Class frmOrdeñe
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents lblFinalt As System.Windows.Forms.Label
     Friend WithEvents lblIniciot As System.Windows.Forms.Label
+    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents CheckBox1 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox2 As System.Windows.Forms.CheckBox
 End Class

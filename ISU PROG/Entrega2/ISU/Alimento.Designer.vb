@@ -23,15 +23,17 @@ Partial Class frmAlimento
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.pnlBlue = New System.Windows.Forms.Panel()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.cbxCantidad = New System.Windows.Forms.ComboBox()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
-        Me.btnBuscar = New System.Windows.Forms.Button()
-        Me.GroupBox2.SuspendLayout()
+        Me.gbxDatos = New System.Windows.Forms.GroupBox()
+        Me.dtpHora = New System.Windows.Forms.DateTimePicker()
+        Me.lblHora = New System.Windows.Forms.Label()
+        Me.ftpFecha = New System.Windows.Forms.DateTimePicker()
+        Me.cbxTipo = New System.Windows.Forms.ComboBox()
+        Me.lblTipo = New System.Windows.Forms.Label()
+        Me.tbxCantidad = New System.Windows.Forms.TextBox()
+        Me.lblFecha = New System.Windows.Forms.Label()
+        Me.lblCantidad = New System.Windows.Forms.Label()
+        Me.btnGuardar = New System.Windows.Forms.Button()
+        Me.gbxDatos.SuspendLayout()
         Me.SuspendLayout()
         '
         'pnlBlue
@@ -43,88 +45,108 @@ Partial Class frmAlimento
         Me.pnlBlue.TabIndex = 73
         Me.pnlBlue.Visible = False
         '
-        'GroupBox2
+        'gbxDatos
         '
-        Me.GroupBox2.Controls.Add(Me.DateTimePicker1)
-        Me.GroupBox2.Controls.Add(Me.cbxCantidad)
-        Me.GroupBox2.Controls.Add(Me.Label4)
-        Me.GroupBox2.Controls.Add(Me.TextBox5)
-        Me.GroupBox2.Controls.Add(Me.Label1)
-        Me.GroupBox2.Controls.Add(Me.Label5)
-        Me.GroupBox2.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox2.Location = New System.Drawing.Point(61, 75)
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(351, 332)
-        Me.GroupBox2.TabIndex = 116
-        Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "Alimento proporcionado"
+        Me.gbxDatos.Controls.Add(Me.dtpHora)
+        Me.gbxDatos.Controls.Add(Me.lblHora)
+        Me.gbxDatos.Controls.Add(Me.ftpFecha)
+        Me.gbxDatos.Controls.Add(Me.cbxTipo)
+        Me.gbxDatos.Controls.Add(Me.lblTipo)
+        Me.gbxDatos.Controls.Add(Me.tbxCantidad)
+        Me.gbxDatos.Controls.Add(Me.lblFecha)
+        Me.gbxDatos.Controls.Add(Me.lblCantidad)
+        Me.gbxDatos.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gbxDatos.Location = New System.Drawing.Point(73, 64)
+        Me.gbxDatos.Name = "gbxDatos"
+        Me.gbxDatos.Size = New System.Drawing.Size(442, 400)
+        Me.gbxDatos.TabIndex = 116
+        Me.gbxDatos.TabStop = False
+        Me.gbxDatos.Text = "Alimento proporcionado"
         '
-        'cbxCantidad
+        'dtpHora
         '
-        Me.cbxCantidad.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cbxCantidad.FormattingEnabled = True
-        Me.cbxCantidad.Items.AddRange(New Object() {"1", "2", "3"})
-        Me.cbxCantidad.Location = New System.Drawing.Point(107, 166)
-        Me.cbxCantidad.Name = "cbxCantidad"
-        Me.cbxCantidad.Size = New System.Drawing.Size(145, 32)
-        Me.cbxCantidad.TabIndex = 113
+        Me.dtpHora.Format = System.Windows.Forms.DateTimePickerFormat.Time
+        Me.dtpHora.Location = New System.Drawing.Point(255, 250)
+        Me.dtpHora.Name = "dtpHora"
+        Me.dtpHora.Size = New System.Drawing.Size(145, 32)
+        Me.dtpHora.TabIndex = 116
         '
-        'Label4
+        'lblHora
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(148, 139)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(49, 24)
-        Me.Label4.TabIndex = 112
-        Me.Label4.Text = "Tipo"
+        Me.lblHora.AutoSize = True
+        Me.lblHora.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHora.Location = New System.Drawing.Point(295, 223)
+        Me.lblHora.Name = "lblHora"
+        Me.lblHora.Size = New System.Drawing.Size(55, 24)
+        Me.lblHora.TabIndex = 115
+        Me.lblHora.Text = "Hora"
         '
-        'TextBox5
+        'ftpFecha
         '
-        Me.TextBox5.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox5.Location = New System.Drawing.Point(107, 89)
-        Me.TextBox5.MaxLength = 50
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(145, 32)
-        Me.TextBox5.TabIndex = 111
+        Me.ftpFecha.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.ftpFecha.Location = New System.Drawing.Point(29, 250)
+        Me.ftpFecha.Name = "ftpFecha"
+        Me.ftpFecha.Size = New System.Drawing.Size(145, 32)
+        Me.ftpFecha.TabIndex = 114
         '
-        'Label5
+        'cbxTipo
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(123, 62)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(93, 24)
-        Me.Label5.TabIndex = 110
-        Me.Label5.Text = "Cantidad"
+        Me.cbxTipo.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbxTipo.FormattingEnabled = True
+        Me.cbxTipo.Items.AddRange(New Object() {"1", "2", "3"})
+        Me.cbxTipo.Location = New System.Drawing.Point(255, 133)
+        Me.cbxTipo.Name = "cbxTipo"
+        Me.cbxTipo.Size = New System.Drawing.Size(145, 32)
+        Me.cbxTipo.TabIndex = 113
         '
-        'Label1
+        'lblTipo
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(147, 234)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(69, 24)
-        Me.Label1.TabIndex = 78
-        Me.Label1.Text = "Fecha"
+        Me.lblTipo.AutoSize = True
+        Me.lblTipo.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTipo.Location = New System.Drawing.Point(304, 106)
+        Me.lblTipo.Name = "lblTipo"
+        Me.lblTipo.Size = New System.Drawing.Size(49, 24)
+        Me.lblTipo.TabIndex = 112
+        Me.lblTipo.Text = "Tipo"
         '
-        'DateTimePicker1
+        'tbxCantidad
         '
-        Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DateTimePicker1.Location = New System.Drawing.Point(107, 261)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(152, 32)
-        Me.DateTimePicker1.TabIndex = 114
+        Me.tbxCantidad.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbxCantidad.Location = New System.Drawing.Point(29, 133)
+        Me.tbxCantidad.MaxLength = 50
+        Me.tbxCantidad.Name = "tbxCantidad"
+        Me.tbxCantidad.Size = New System.Drawing.Size(145, 32)
+        Me.tbxCantidad.TabIndex = 111
         '
-        'btnBuscar
+        'lblFecha
         '
-        Me.btnBuscar.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBuscar.Location = New System.Drawing.Point(558, 231)
-        Me.btnBuscar.Name = "btnBuscar"
-        Me.btnBuscar.Size = New System.Drawing.Size(118, 42)
-        Me.btnBuscar.TabIndex = 117
-        Me.btnBuscar.Text = "Guardar"
-        Me.btnBuscar.UseVisualStyleBackColor = True
+        Me.lblFecha.AutoSize = True
+        Me.lblFecha.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblFecha.Location = New System.Drawing.Point(69, 223)
+        Me.lblFecha.Name = "lblFecha"
+        Me.lblFecha.Size = New System.Drawing.Size(69, 24)
+        Me.lblFecha.TabIndex = 78
+        Me.lblFecha.Text = "Fecha"
+        '
+        'lblCantidad
+        '
+        Me.lblCantidad.AutoSize = True
+        Me.lblCantidad.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCantidad.Location = New System.Drawing.Point(45, 106)
+        Me.lblCantidad.Name = "lblCantidad"
+        Me.lblCantidad.Size = New System.Drawing.Size(93, 24)
+        Me.lblCantidad.TabIndex = 110
+        Me.lblCantidad.Text = "Cantidad"
+        '
+        'btnGuardar
+        '
+        Me.btnGuardar.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnGuardar.Location = New System.Drawing.Point(596, 229)
+        Me.btnGuardar.Name = "btnGuardar"
+        Me.btnGuardar.Size = New System.Drawing.Size(118, 42)
+        Me.btnGuardar.TabIndex = 117
+        Me.btnGuardar.Text = "Guardar"
+        Me.btnGuardar.UseVisualStyleBackColor = True
         '
         'frmAlimento
         '
@@ -132,23 +154,25 @@ Partial Class frmAlimento
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.ClientSize = New System.Drawing.Size(832, 536)
-        Me.Controls.Add(Me.btnBuscar)
-        Me.Controls.Add(Me.GroupBox2)
+        Me.Controls.Add(Me.btnGuardar)
+        Me.Controls.Add(Me.gbxDatos)
         Me.Controls.Add(Me.pnlBlue)
         Me.Name = "frmAlimento"
         Me.Text = "Alimento"
-        Me.GroupBox2.ResumeLayout(False)
-        Me.GroupBox2.PerformLayout()
+        Me.gbxDatos.ResumeLayout(False)
+        Me.gbxDatos.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
     Friend WithEvents pnlBlue As System.Windows.Forms.Panel
-    Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
-    Friend WithEvents cbxCantidad As System.Windows.Forms.ComboBox
-    Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
-    Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents DateTimePicker1 As System.Windows.Forms.DateTimePicker
-    Friend WithEvents btnBuscar As System.Windows.Forms.Button
+    Friend WithEvents gbxDatos As System.Windows.Forms.GroupBox
+    Friend WithEvents cbxTipo As System.Windows.Forms.ComboBox
+    Friend WithEvents lblTipo As System.Windows.Forms.Label
+    Friend WithEvents tbxCantidad As System.Windows.Forms.TextBox
+    Friend WithEvents lblCantidad As System.Windows.Forms.Label
+    Friend WithEvents lblFecha As System.Windows.Forms.Label
+    Friend WithEvents ftpFecha As System.Windows.Forms.DateTimePicker
+    Friend WithEvents btnGuardar As System.Windows.Forms.Button
+    Friend WithEvents dtpHora As System.Windows.Forms.DateTimePicker
+    Friend WithEvents lblHora As System.Windows.Forms.Label
 End Class

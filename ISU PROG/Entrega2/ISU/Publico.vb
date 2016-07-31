@@ -4,7 +4,7 @@
     Public servicio, preñada, lactancia, seca, campo, rodeo, tambo, raza, division, lugar, etapa, sexo, hembraa As String
     Public contraseña, usuario, iniciar, ingresar, enlistar, consultar, eliminar, modificar, salir, sesion, si, no As String
     Public numero, nacimiento, antibi, preñez, estado, litros, grasa, urea, proteina, bacteria, somatica As String
-    Public gene, fecha_preñez, fecha_ida, fecha_vuelta, auxiliar As String
+    Public gene, fechaI, fechaF, fecha_ida, fecha_vuelta, auxiliar, guardar As String
     Public Sub Boton_idioma(btnOpcion As Button)
         Select Case opcion
             Case 0
@@ -15,6 +15,8 @@
                 btnOpcion.Text = consultar
             Case 3
                 btnOpcion.Text = eliminar
+            Case 4
+                btnOpcion.Text = guardar
         End Select
     End Sub
     Public Sub Variables_asignacion()
@@ -44,7 +46,6 @@
                 macho = "macho"
                 hembra = "hembra"
                 buscar = "buscar"
-                gen = "Genealogia"
                 ninguno = "Ninguno"
                 servicio = "Servicio"
                 preñada = "Preñada"
@@ -67,11 +68,12 @@
                 urea = "Urea"
                 bacteria = "recuento bacteriano"
                 somatica = "recuento de celulas somáticas" 'como agregar renglón
-                fecha_preñez = "fecha de preñez"
                 fecha_ida = "campo da recria (ida)"
                 fecha_vuelta = "campo da recria (vuelta)"
                 si = "Se"
                 no = "Não"
+                fechaI = "fecha"
+                fechaF = "fecha"
             Case 1
                 contraseña = "Password"
                 usuario = "User"

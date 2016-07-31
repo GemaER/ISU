@@ -128,10 +128,6 @@
         frmPersonal.Show()
     End Sub
 
-    Private Sub tsIngresar_Click(sender As System.Object, e As System.EventArgs) Handles tsIngresar.Click
-        opcion = 0
-        frmAnimal.Show()
-    End Sub
 
     Private Sub tsConsultar_Click(sender As System.Object, e As System.EventArgs) Handles tsConsultar.Click
         opcion = 1
@@ -259,14 +255,14 @@
     End Sub
 
 
-    Private Sub AnimalToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles AnimalToolStripMenuItem.Click
-        opcion = 0
-        frmPersonal.Show()
+    Private Sub AnimalToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs)
+        opcion = -1
+        frmAnimal.Show()
     End Sub
 
-    Private Sub EstadoToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles EstadoToolStripMenuItem.Click
-        opcion = -1
-        frmPersonal.Show()
+    Private Sub EstadoToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs)
+        opcion = 0
+        frmAnimal.Show()
     End Sub
 
     Private Sub ConfiguracionToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles ConfiguracionToolStripMenuItem.Click
@@ -290,5 +286,24 @@
 
     Private Sub AlimentoToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles AlimentoToolStripMenuItem.Click
         frmAlimento.show()
+    End Sub
+
+    Private Sub tsPersonalIngresar_Click(sender As System.Object, e As System.EventArgs) Handles tsPersonalIngresar.Click
+        opcion = 0
+        frmPersonal.Show()
+    End Sub
+
+    Private Sub tsIngresar_Click(sender As System.Object, e As System.EventArgs) Handles tsIngresar.Click
+        opcion = 0
+        frmAnimal.Show()
+    End Sub
+
+    Private Sub VentaToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles VentaToolStripMenuItem.Click
+        frmAlimento.Show()
+        opcion = 1
+    End Sub
+
+    Private Sub ControlToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles ControlToolStripMenuItem.Click
+        frmControl.Show()
     End Sub
 End Class

@@ -1,10 +1,12 @@
 ﻿Public Class frmPersonal
 
     Private Sub Personal_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
-        If frmISU.tsModificar.Text() = "Modify" Then
-            lblCI.Text() = "Identity Card"
-            lblPermisos.Text() = "Permissions"
-        ElseIf frmISU.tsModificar.Text = "Mudança" Then
+        If idioma = 1 Then
+            lblCI.Text() = CI + "Identity Card"
+            lblPermisos.Text() = permiso + "Permissions"
+            lblNacimiento.Text = nacimiento
+            lblNombre.Text = nombre
+        ElseIf idioma = 2 Then
             lblCI.Text() = "carteira de identidade"
             lblPermisos.Text() = "Permissões"
         End If

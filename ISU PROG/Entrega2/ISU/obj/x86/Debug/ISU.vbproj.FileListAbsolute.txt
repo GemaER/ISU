@@ -26,3 +26,5 @@ C:\Users\Usuario\Desktop\Gema\Estudio\UTU\Tercero\ISU\Programación\Entrega2\ISU
 C:\Users\Usuario\Desktop\Gema\Estudio\UTU\Tercero\ISU\Programación\Entrega2\ISU\obj\x86\Debug\ISU.frmPersonal.resources
 C:\Users\Usuario\Desktop\Gema\Estudio\UTU\Tercero\ISU\Programación\Entrega2\ISU\obj\x86\Debug\ISU.frmTambo.resources
 C:\Users\Usuario\Desktop\Gema\Estudio\UTU\Tercero\ISU\Programación\Entrega2\ISU\obj\x86\Debug\ISU.vbproj.GenerateResource.Cache
+C:\Users\Usuario\Desktop\Gema\Estudio\UTU\Tercero\ISU\Programación\Entrega2\ISU\obj\x86\Debug\ISU.frmAlimento.resources
+C:\Users\Usuario\Desktop\Gema\Estudio\UTU\Tercero\ISU\Programación\Entrega2\ISU\obj\x86\Debug\ISU.frmOrdeñeConfig.resources
